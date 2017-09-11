@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
+		<header/>
+		<body>
+
+			<trans-unit id="salutation.description">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="name.description">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="address.description">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="room_number.description">
+				<source>Room number</source>
+			</trans-unit>
+			<trans-unit id="telephone.description">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="letters.description">
+				<source>Letters</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

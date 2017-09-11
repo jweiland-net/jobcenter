@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	<f:render partial="EmployerContact/Search" />
+
+	<div class="rulerbefore4">
+		<f:if condition="{contact.image}">
+			<f:for each="{contact.image}" as="image">
+				<f:image image="{image.originalResource}" width="400" height="300" />
+			</f:for>
+		</f:if>
+		<dl class="extdl clearfix rulerafter">
+			<dt class="noborder">
+				<f:if condition="{contact.salutation}">
+					<f:then>
+						<f:translate key="tx_jobcenter_domain_model_contact.salutation.mrs"/>
+					</f:then>
+					<f:else>
+						<f:translate key="tx_jobcenter_domain_model_contact.salutation.mr"/>
+					</f:else>
+				</f:if>
+				{contact.firstName} {contact.lastName}
+			</dt>
+			<f:if condition="{contact.address}">
+				<dd class="grid_8 floatleft noborder">{contact.address}
+					<f:if condition="{contact.roomNumber}">
+						<br />
+						<f:translate key="tx_jobcenter_domain_model_contact.room_number"/>: {contact.roomNumber}
+					</f:if>
+				</dd>
+			</f:if>
+			<f:if condition="{contact.telephone}">
+				<dd class="grid_4 floatleft noborder">
+					<span aria-hidden="true" class="icon-phone_pf"></span>{contact.telephone}
+				</dd>
+			</f:if>
+			<f:if condition="{contact.email}">
+				<dd class="grid_4 floatleft noborder">
+					<span aria-hidden="true" class="icon-email_pf"></span><f:link.email email="{contact.email}">{contact.email}</f:link.email>
+				</dd>
+			</f:if>
+		</dl>
+	</div>
+</f:section>

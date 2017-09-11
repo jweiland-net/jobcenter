@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_jobcenter_domain_model_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+				<source>Mr.</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+				<source>Mrs.</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+				<source>Room number</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.letters">
+				<source>Letters</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+				<source>Handicapped</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+				<source>Fallback?</source>
+			</trans-unit>
+
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact">
+				<source>Contact for Employer</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+				<source>Mr.</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+				<source>Mrs.</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+				<source>Firstname</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+				<source>Lastname</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+				<source>Room number</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+				<source>Telephone</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+				<source>Fallback?</source>
+			</trans-unit>
+
+			<trans-unit id="tx_jobcenter_domain_model_letter">
+				<source>Letters</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+				<source>Letter start</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+				<source>Letter end</source>
+			</trans-unit>
+
+			<trans-unit id="tx_jobcenter_domain_model_zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_zip.zip">
+				<source>Zip</source>
+			</trans-unit>
+
+			<trans-unit id="search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="noResults">
+				<source>No results found</source>
+			</trans-unit>
+			<trans-unit id="age">
+				<source>Age</source>
+			</trans-unit>
+			<trans-unit id="infotext">
+				<source>Info: your data will not be saved.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

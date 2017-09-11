@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
+		<header/>
+		<body>
+
+			<trans-unit id="letter_start.description">
+				<source>Letter start</source>
+			</trans-unit>
+			<trans-unit id="letter_end.description">
+				<source>Letter end</source>
+			</trans-unit>
+			<trans-unit id="handicapped.description">
+				<source>Handicapped</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

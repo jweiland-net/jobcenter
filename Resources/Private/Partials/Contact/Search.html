@@ -1,0 +1,25 @@
+<div class="search">
+	<f:form action="list" name="search" class="extform">
+		<div class="extdiv">
+			<label>
+				<f:translate key="tx_jobcenter_domain_model_contact.name"/>
+			</label>
+			<f:form.textfield name="name" value="{name}"/>
+		</div>
+		<div class="extdiv">
+			<label>
+				<f:translate key="age"/>
+			</label>
+			<f:form.select name="pid" options="{pids}" value="{pid}"/>
+		</div>
+		<div class="extdiv">
+			<label>
+				<f:translate key="tx_jobcenter_domain_model_contact.handicapped"/>
+			</label>
+			<f:form.checkbox name="handicapped" value="1" checked="{f:if(condition: handicapped, then: 'checked', else: '')}"/>
+		</div>
+		<div class="powermail_fieldwrap_submit marginbottom">
+			<f:form.submit value="{f:translate(key: 'search')}" class="powermail_submit"/>
+		</div>
+	</f:form>
+</div>
