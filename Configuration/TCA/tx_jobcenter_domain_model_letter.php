@@ -6,9 +6,9 @@ return array(
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'dividers2tabs' => TRUE,
+        'dividers2tabs' => true,
         'versioningWS' => 2,
-        'versioning_followPages' => TRUE,
+        'versioning_followPages' => true,
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -17,13 +17,13 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
             'starttime' => 'starttime',
-            'endtime' => 'endtime',
+            'endtime' => 'endtime'
         ),
         'searchFields' => 'letter_start,letter_end,handicapped,',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('jobcenter') . 'Resources/Public/Icons/tx_jobcenter_domain_model_letter.gif'
+        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_letter.gif'
     ),
     'interface' => array(
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, letter_start, letter_end',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, letter_start, letter_end'
     ),
     'columns' => array(
         'sys_language_uid' => array(
@@ -36,8 +36,8 @@ return array(
                 'items' => array(
                     array('LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1),
                     array('LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0)
-                ),
-            ),
+                )
+            )
         ),
         'l10n_parent' => array(
             'displayCond' => 'FIELD:sys_language_uid:>:0',
@@ -46,31 +46,31 @@ return array(
             'config' => array(
                 'type' => 'select',
                 'items' => array(
-                    array('', 0),
+                    array('', 0)
                 ),
                 'foreign_table' => 'tx_jobcenter_domain_model_letter',
-                'foreign_table_where' => 'AND tx_jobcenter_domain_model_letter.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_letter.sys_language_uid IN (-1,0)',
-            ),
+                'foreign_table_where' => 'AND tx_jobcenter_domain_model_letter.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_letter.sys_language_uid IN (-1,0)'
+            )
         ),
         'l10n_diffsource' => array(
             'config' => array(
-                'type' => 'passthrough',
-            ),
+                'type' => 'passthrough'
+            )
         ),
         't3ver_label' => array(
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.versionLabel',
             'config' => array(
                 'type' => 'input',
                 'size' => 30,
-                'max' => 255,
+                'max' => 255
             )
         ),
         'hidden' => array(
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
             'config' => array(
-                'type' => 'check',
-            ),
+                'type' => 'check'
+            )
         ),
         'starttime' => array(
             'exclude' => 1,
@@ -85,8 +85,8 @@ return array(
                 'default' => 0,
                 'range' => array(
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ),
-            ),
+                )
+            )
         ),
         'endtime' => array(
             'exclude' => 1,
@@ -101,8 +101,8 @@ return array(
                 'default' => 0,
                 'range' => array(
                     'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ),
-            ),
+                )
+            )
         ),
         'letter_start' => array(
             'exclude' => 1,
@@ -111,7 +111,7 @@ return array(
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
-            ),
+            )
         ),
         'letter_end' => array(
             'exclude' => 1,
@@ -120,18 +120,18 @@ return array(
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
-            ),
+            )
         ),
         'contact' => array(
             'config' => array(
-                'type' => 'passthrough',
-            ),
-        ),
+                'type' => 'passthrough'
+            )
+        )
     ),
     'types' => array(
-        '1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, letter_start, letter_end,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+        '1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, letter_start, letter_end,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime')
     ),
     'palettes' => array(
-        '1' => array('showitem' => ''),
-    ),
+        '1' => array('showitem' => '')
+    )
 );

@@ -1,24 +1,36 @@
 plugin.tx_jobcenter {
-	view {
-		templateRootPath = {$plugin.tx_jobcenter.view.templateRootPath}
-		partialRootPath = {$plugin.tx_jobcenter.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_jobcenter.view.layoutRootPath}
-	}
-	persistence {
-		storagePid = {$plugin.tx_jobcenter.persistence.storagePid}
-		classes {
-			JWeiland\Jobcenter\Domain\Model\EmployerContact {
-				mapping {
-					tableName = tx_jobcenter_domain_model_employer_contact
-				}
-			}
-		}
-	}
-	settings {
-		pidForManagement15_24 = {$plugin.tx_jobcenter.settings.pidForManagement15_24}
-		pidForManagement25_49 = {$plugin.tx_jobcenter.settings.pidForManagement25_49}
-		pidForService = {$plugin.tx_jobcenter.settings.pidForService}
-	}
+  view {
+    templateRootPaths {
+      0 = EXT:jobcenter/Resources/Private/Templates/
+      1 = {$plugin.tx_jobcenter.view.templateRootPath}
+    }
+
+    partialRootPaths {
+      0 = EXT:jobcenter/Resources/Private/Partials/
+      1 = {$plugin.tx_jobcenter.view.partialRootPath}
+    }
+    layoutRootPaths {
+      0 = EXT:jobcenter/Resources/Private/Layouts/
+      1 = {$plugin.tx_jobcenter.view.layoutRootPath}
+    }
+  }
+
+  persistence {
+    storagePid = {$plugin.tx_jobcenter.persistence.storagePid}
+    classes {
+      JWeiland\Jobcenter\Domain\Model\EmployerContact {
+        mapping {
+          tableName = tx_jobcenter_domain_model_employer_contact
+        }
+      }
+    }
+  }
+
+  settings {
+    pidForManagement15_24 = {$plugin.tx_jobcenter.settings.pidForManagement15_24}
+    pidForManagement25_49 = {$plugin.tx_jobcenter.settings.pidForManagement25_49}
+    pidForService = {$plugin.tx_jobcenter.settings.pidForService}
+  }
 }
 
 plugin.tx_jobcenter._CSS_DEFAULT_STYLE (

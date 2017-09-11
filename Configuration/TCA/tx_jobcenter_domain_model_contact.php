@@ -6,10 +6,10 @@ return array(
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'dividers2tabs' => TRUE,
+        'dividers2tabs' => true,
 
         'versioningWS' => 2,
-        'versioning_followPages' => TRUE,
+        'versioning_followPages' => true,
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -18,13 +18,13 @@ return array(
         'enablecolumns' => array(
             'disabled' => 'hidden',
             'starttime' => 'starttime',
-            'endtime' => 'endtime',
+            'endtime' => 'endtime'
         ),
         'searchFields' => 'salutation,name,address,room_number,telephone,letters,',
-        'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('jobcenter') . 'Resources/Public/Icons/tx_jobcenter_domain_model_contact.gif'
+        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_contact.gif'
     ),
     'interface' => array(
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, salutation, name, address, room_number, telephone, handicapped, letters, is_fallback',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, salutation, name, address, room_number, telephone, handicapped, letters, is_fallback'
     ),
     'columns' => array(
         'sys_language_uid' => array(
@@ -37,8 +37,8 @@ return array(
                 'items' => array(
                     array('LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages', -1),
                     array('LLL:EXT:lang/locallang_general.xlf:LGL.default_value', 0)
-                ),
-            ),
+                )
+            )
         ),
         'l10n_parent' => array(
             'displayCond' => 'FIELD:sys_language_uid:>:0',
@@ -47,31 +47,31 @@ return array(
             'config' => array(
                 'type' => 'select',
                 'items' => array(
-                    array('', 0),
+                    array('', 0)
                 ),
                 'foreign_table' => 'tx_jobcenter_domain_model_contact',
-                'foreign_table_where' => 'AND tx_jobcenter_domain_model_contact.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_contact.sys_language_uid IN (-1,0)',
-            ),
+                'foreign_table_where' => 'AND tx_jobcenter_domain_model_contact.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_contact.sys_language_uid IN (-1,0)'
+            )
         ),
         'l10n_diffsource' => array(
             'config' => array(
-                'type' => 'passthrough',
-            ),
+                'type' => 'passthrough'
+            )
         ),
         't3ver_label' => array(
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.versionLabel',
             'config' => array(
                 'type' => 'input',
                 'size' => 30,
-                'max' => 255,
+                'max' => 255
             )
         ),
         'hidden' => array(
             'exclude' => 1,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
             'config' => array(
-                'type' => 'check',
-            ),
+                'type' => 'check'
+            )
         ),
         'starttime' => array(
             'exclude' => 1,
@@ -85,9 +85,9 @@ return array(
                 'checkbox' => 0,
                 'default' => 0,
                 'range' => array(
-                    'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ),
-            ),
+                    'lower' => mktime(0, 0, 0, (int)date('m'), (int)date('d'), (int)date('Y'))
+                )
+            )
         ),
         'endtime' => array(
             'exclude' => 1,
@@ -101,9 +101,9 @@ return array(
                 'checkbox' => 0,
                 'default' => 0,
                 'range' => array(
-                    'lower' => mktime(0, 0, 0, date('m'), date('d'), date('Y'))
-                ),
-            ),
+                    'lower' => mktime(0, 0, 0, (int)date('m'), (int)date('d'), (int)date('Y'))
+                )
+            )
         ),
         'salutation' => array(
             'exclude' => 1,
@@ -113,9 +113,9 @@ return array(
                 'size' => 1,
                 'items' => array(
                     array('LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.salutation.mr', 0),
-                    array('LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.salutation.mrs', 1),
-                ),
-            ),
+                    array('LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.salutation.mrs', 1)
+                )
+            )
         ),
         'name' => array(
             'exclude' => 1,
@@ -124,7 +124,7 @@ return array(
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
-            ),
+            )
         ),
         'address' => array(
             'exclude' => 1,
@@ -133,7 +133,7 @@ return array(
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
-            ),
+            )
         ),
         'room_number' => array(
             'exclude' => 1,
@@ -142,7 +142,7 @@ return array(
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
-            ),
+            )
         ),
         'telephone' => array(
             'exclude' => 1,
@@ -151,7 +151,7 @@ return array(
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim'
-            ),
+            )
         ),
         'handicapped' => array(
             'exclude' => 1,
@@ -159,7 +159,7 @@ return array(
             'config' => array(
                 'type' => 'check',
                 'default' => 0
-            ),
+            )
         ),
         'letters' => array(
             'exclude' => 1,
@@ -175,21 +175,21 @@ return array(
                     'showSynchronizationLink' => 1,
                     'showPossibleLocalizationRecords' => 1,
                     'showAllLocalizationLink' => 1
-                ),
-            ),
+                )
+            )
         ),
         'is_fallback' => array(
             'exclude' => 1,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.is_fallback',
             'config' => array(
-                'type' => 'check',
-            ),
-        ),
+                'type' => 'check'
+            )
+        )
     ),
     'types' => array(
-        '1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, salutation, name, address, room_number, telephone, handicapped, letters, is_fallback,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime'),
+        '1' => array('showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, salutation, name, address, room_number, telephone, handicapped, letters, is_fallback,--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,starttime, endtime')
     ),
     'palettes' => array(
-        '1' => array('showitem' => ''),
-    ),
+        '1' => array('showitem' => '')
+    )
 );

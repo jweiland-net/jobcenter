@@ -1,44 +1,36 @@
 <?php
+declare(strict_types=1);
 namespace JWeiland\Jobcenter\Domain\Model;
 
-/***************************************************************
- *  Copyright notice
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- *  (c) 2015 Stefan Froemken <projects@jweiland.net>, jweiland.net
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
  *
- *  All rights reserved
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
  *
- *  This script is part of the TYPO3 project. The TYPO3 project is
- *  free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  The GNU General Public License can be found at
- *  http://www.gnu.org/copyleft/gpl.html.
- *
- *  This script is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  This copyright notice MUST APPEAR in all copies of the script!
- ***************************************************************/
+ * The TYPO3 project - inspiring people to share!
+ */
+
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * @package jobcenter
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * Class EmployerContact
+ *
+ * @package JWeiland\Jobcenter\Domain\Model
  */
-class EmployerContact extends AbstractEntity {
-
+class EmployerContact extends AbstractEntity
+{
     /**
      * Salutation
      *
-     * @var boolean
+     * @var bool
      */
-    protected $salutation = FALSE;
+    protected $salutation = false;
 
     /**
      * FirstName
@@ -66,7 +58,7 @@ class EmployerContact extends AbstractEntity {
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<JWeiland\Jobcenter\Domain\Model\Zip>
      */
-    protected $zip = null;
+    protected $zip;
 
     /**
      * Room number
@@ -94,19 +86,20 @@ class EmployerContact extends AbstractEntity {
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<TYPO3\CMS\Extbase\Domain\Model\FileReference>
      */
-    protected $image = null;
+    protected $image;
 
     /**
      * is fallback
      *
-     * @var boolean
+     * @var bool
      */
     protected $isFallback = false;
 
     /**
      * __construct
      */
-    public function __construct() {
+    public function __construct()
+    {
         //Do not remove the next line: It would break the functionality
         $this->initStorageObjects();
     }
@@ -116,7 +109,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return void
      */
-    protected function initStorageObjects() {
+    protected function initStorageObjects()
+    {
         /**
          * Do not modify this method!
          * It will be rewritten on each save in the extension builder
@@ -129,20 +123,22 @@ class EmployerContact extends AbstractEntity {
     /**
      * Returns the salutation
      *
-     * @return boolean $salutation
+     * @return bool $salutation
      */
-    public function getSalutation() {
+    public function getSalutation(): bool
+    {
         return $this->salutation;
     }
 
     /**
      * Sets the salutation
      *
-     * @param boolean $salutation
+     * @param bool $salutation
      * @return void
      */
-    public function setSalutation($salutation) {
-        $this->salutation = (bool) $salutation;
+    public function setSalutation(bool $salutation)
+    {
+        $this->salutation = $salutation;
     }
 
     /**
@@ -150,7 +146,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return string $firstName
      */
-    public function getFirstName() {
+    public function getFirstName(): string
+    {
         return $this->firstName;
     }
 
@@ -160,8 +157,9 @@ class EmployerContact extends AbstractEntity {
      * @param string $firstName
      * @return void
      */
-    public function setFirstName($firstName) {
-        $this->firstName = (string)$firstName;
+    public function setFirstName(string $firstName)
+    {
+        $this->firstName = $firstName;
     }
 
     /**
@@ -169,7 +167,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return string $lastName
      */
-    public function getLastName() {
+    public function getLastName(): string
+    {
         return $this->lastName;
     }
 
@@ -179,8 +178,9 @@ class EmployerContact extends AbstractEntity {
      * @param string $lastName
      * @return void
      */
-    public function setLastName($lastName) {
-        $this->lastName = (string)$lastName;
+    public function setLastName(string $lastName)
+    {
+        $this->lastName = $lastName;
     }
 
     /**
@@ -188,7 +188,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return string $address
      */
-    public function getAddress() {
+    public function getAddress(): string
+    {
         return $this->address;
     }
 
@@ -198,26 +199,29 @@ class EmployerContact extends AbstractEntity {
      * @param string $address
      * @return void
      */
-    public function setAddress($address) {
+    public function setAddress(string $address)
+    {
         $this->address = $address;
     }
 
     /**
      * Returns the zip
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage $zip
+     * @return ObjectStorage $zip
      */
-    public function getZip() {
+    public function getZip(): ObjectStorage
+    {
         return $this->zip;
     }
 
     /**
      * Sets the zip
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $zip
+     * @param ObjectStorage $zip
      * @return void
      */
-    public function setZip(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $zip) {
+    public function setZip(ObjectStorage $zip)
+    {
         $this->zip = $zip;
     }
 
@@ -226,7 +230,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return string $roomNumber
      */
-    public function getRoomNumber() {
+    public function getRoomNumber(): string
+    {
         return $this->roomNumber;
     }
 
@@ -236,7 +241,8 @@ class EmployerContact extends AbstractEntity {
      * @param string $roomNumber
      * @return void
      */
-    public function setRoomNumber($roomNumber) {
+    public function setRoomNumber(string $roomNumber)
+    {
         $this->roomNumber = $roomNumber;
     }
 
@@ -245,7 +251,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return string $telephone
      */
-    public function getTelephone() {
+    public function getTelephone(): string
+    {
         return $this->telephone;
     }
 
@@ -255,7 +262,8 @@ class EmployerContact extends AbstractEntity {
      * @param string $telephone
      * @return void
      */
-    public function setTelephone($telephone) {
+    public function setTelephone(string $telephone)
+    {
         $this->telephone = $telephone;
     }
 
@@ -264,7 +272,8 @@ class EmployerContact extends AbstractEntity {
      *
      * @return string $email
      */
-    public function getEmail() {
+    public function getEmail(): string
+    {
         return $this->email;
     }
 
@@ -274,45 +283,49 @@ class EmployerContact extends AbstractEntity {
      * @param string $email
      * @return void
      */
-    public function setEmail($email) {
-        $this->email = (string)$email;
+    public function setEmail(string $email)
+    {
+        $this->email = $email;
     }
 
     /**
      * Returns the image
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage $image
+     * @return ObjectStorage $image
      */
-    public function getImage() {
+    public function getImage(): ObjectStorage
+    {
         return $this->image;
     }
 
     /**
      * Sets the image
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $image
+     * @param ObjectStorage $image
      * @return void
      */
-    public function setImage($image) {
+    public function setImage(ObjectStorage $image)
+    {
         $this->image = $image;
     }
 
     /**
      * Returns the isFallback
      *
-     * @return boolean $isFallback
+     * @return bool $isFallback
      */
-    public function getIsFallback() {
+    public function getIsFallback(): bool
+    {
         return $this->isFallback;
     }
 
     /**
      * Sets the isFallback
      *
-     * @param boolean $isFallback
+     * @param bool $isFallback
      */
-    public function setIsFallback($isFallback) {
+    public function setIsFallback(bool $isFallback)
+    {
         $this->isFallback = $isFallback;
     }
-
 }

@@ -1,40 +1,35 @@
 <?php
+declare(strict_types=1);
 namespace JWeiland\Jobcenter\Domain\Model;
 
-/***************************************************************
- *  Copyright notice
+/*
+ * This file is part of the TYPO3 CMS project.
  *
- *  (c) 2015 Stefan Froemken <projects@jweiland.net>, jweiland.net
+ * It is free software; you can redistribute it and/or modify it under
+ * the terms of the GNU General Public License, either version 2
+ * of the License, or any later version.
  *
- *  All rights reserved
+ * For the full copyright and license information, please read the
+ * LICENSE.txt file that was distributed with this source code.
  *
- *  This script is part of the TYPO3 project. The TYPO3 project is
- *  free software; you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation; either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  The GNU General Public License can be found at
- *  http://www.gnu.org/copyleft/gpl.html.
- *
- *  This script is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  This copyright notice MUST APPEAR in all copies of the script!
- ***************************************************************/
+ * The TYPO3 project - inspiring people to share!
+ */
+
+use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
+use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * @package jobcenter
- * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ * Class Contact
+ *
+ * @package JWeiland\Jobcenter\Domain\Model
  */
-class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
+class Contact extends AbstractEntity
+{
 
     /**
      * Salutation
      *
-     * @var boolean
+     * @var bool
      */
     protected $salutation = false;
 
@@ -69,7 +64,7 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
     /**
      * Handicapped
      *
-     * @var boolean
+     * @var bool
      */
     protected $handicapped = false;
 
@@ -84,14 +79,15 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
     /**
      * is fallback
      *
-     * @var boolean
+     * @var bool
      */
     protected $isFallback = false;
 
     /**
      * __construct
      */
-    public function __construct() {
+    public function __construct()
+    {
         //Do not remove the next line: It would break the functionality
         $this->initStorageObjects();
     }
@@ -101,32 +97,35 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      *
      * @return void
      */
-    protected function initStorageObjects() {
+    protected function initStorageObjects()
+    {
         /**
          * Do not modify this method!
          * It will be rewritten on each save in the extension builder
          * You may modify the constructor of this class instead
          */
-        $this->letters = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->letters = new ObjectStorage();
     }
 
     /**
      * Returns the salutation
      *
-     * @return boolean $salutation
+     * @return bool $salutation
      */
-    public function getSalutation() {
+    public function getSalutation(): bool
+    {
         return $this->salutation;
     }
 
     /**
      * Sets the salutation
      *
-     * @param boolean $salutation
+     * @param bool $salutation
      * @return void
      */
-    public function setSalutation($salutation) {
-        $this->salutation = (bool)$salutation;
+    public function setSalutation(bool $salutation)
+    {
+        $this->salutation = $salutation;
     }
 
     /**
@@ -134,7 +133,8 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      *
      * @return string $name
      */
-    public function getName() {
+    public function getName(): string
+    {
         return $this->name;
     }
 
@@ -144,8 +144,9 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      * @param string $name
      * @return void
      */
-    public function setName($name) {
-        $this->name = (string)$name;
+    public function setName(string $name)
+    {
+        $this->name = $name;
     }
 
     /**
@@ -153,7 +154,8 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      *
      * @return string $address
      */
-    public function getAddress() {
+    public function getAddress(): string
+    {
         return $this->address;
     }
 
@@ -163,8 +165,9 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      * @param string $address
      * @return void
      */
-    public function setAddress($address) {
-        $this->address = (string)$address;
+    public function setAddress(string $address)
+    {
+        $this->address = $address;
     }
 
     /**
@@ -172,7 +175,8 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      *
      * @return string $roomNumber
      */
-    public function getRoomNumber() {
+    public function getRoomNumber(): string
+    {
         return $this->roomNumber;
     }
 
@@ -182,8 +186,9 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      * @param string $roomNumber
      * @return void
      */
-    public function setRoomNumber($roomNumber) {
-        $this->roomNumber = (string)$roomNumber;
+    public function setRoomNumber(string $roomNumber)
+    {
+        $this->roomNumber = $roomNumber;
     }
 
     /**
@@ -191,7 +196,8 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      *
      * @return string $telephone
      */
-    public function getTelephone() {
+    public function getTelephone(): string
+    {
         return $this->telephone;
     }
 
@@ -201,36 +207,40 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      * @param string $telephone
      * @return void
      */
-    public function setTelephone($telephone) {
-        $this->telephone = (string)$telephone;
+    public function setTelephone(string $telephone)
+    {
+        $this->telephone = $telephone;
     }
 
     /**
      * Adds a Letter
      *
-     * @param \JWeiland\Jobcenter\Domain\Model\Letter $letter
+     * @param Letter $letter
      * @return void
      */
-    public function addLetter(\JWeiland\Jobcenter\Domain\Model\Letter $letter) {
+    public function addLetter(Letter $letter)
+    {
         $this->letters->attach($letter);
     }
 
     /**
      * Removes a Letter
      *
-     * @param \JWeiland\Jobcenter\Domain\Model\Letter $letterToRemove The Letter to be removed
+     * @param Letter $letterToRemove The Letter to be removed
      * @return void
      */
-    public function removeLetter(\JWeiland\Jobcenter\Domain\Model\Letter $letterToRemove) {
+    public function removeLetter(Letter $letterToRemove)
+    {
         $this->letters->detach($letterToRemove);
     }
 
     /**
      * Returns the handicapped
      *
-     * @return boolean handicapped
+     * @return bool handicapped
      */
-    public function getHandicapped() {
+    public function getHandicapped(): bool
+    {
         return $this->handicapped;
     }
 
@@ -239,45 +249,49 @@ class Contact extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
      *
      * @param bool $handicapped
      */
-    public function setHandicapped($handicapped) {
-        $this->handicapped = (bool)$handicapped;
+    public function setHandicapped(bool $handicapped)
+    {
+        $this->handicapped = $handicapped;
     }
 
     /**
      * Returns the letters
      *
-     * @return \TYPO3\CMS\Extbase\Persistence\ObjectStorage $letters
+     * @return ObjectStorage $letters
      */
-    public function getLetters() {
+    public function getLetters(): ObjectStorage
+    {
         return $this->letters;
     }
 
     /**
      * Sets the letters
      *
-     * @param \TYPO3\CMS\Extbase\Persistence\ObjectStorage $letters
+     * @param ObjectStorage $letters
      * @return void
      */
-    public function setLetters(\TYPO3\CMS\Extbase\Persistence\ObjectStorage $letters) {
+    public function setLetters(ObjectStorage $letters)
+    {
         $this->letters = $letters;
     }
 
     /**
      * Returns the isFallback
      *
-     * @return boolean $isFallback
+     * @return bool $isFallback
      */
-    public function getIsFallback() {
+    public function getIsFallback(): bool
+    {
         return $this->isFallback;
     }
 
     /**
      * Sets the isFallback
      *
-     * @param boolean $isFallback
+     * @param bool $isFallback
      */
-    public function setIsFallback($isFallback) {
-        $this->isFallback = (bool)$isFallback;
+    public function setIsFallback(bool $isFallback)
+    {
+        $this->isFallback = $isFallback;
     }
-
 }
