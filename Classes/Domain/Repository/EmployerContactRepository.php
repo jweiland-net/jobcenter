@@ -29,9 +29,9 @@ class EmployerContactRepository extends Repository
     /**
      * @var array
      */
-    protected $defaultOrderings = array(
+    protected $defaultOrderings = [
         'uid' => QueryInterface::ORDER_DESCENDING
-    );
+    ];
 
     /**
      * find contact specialized for given zip

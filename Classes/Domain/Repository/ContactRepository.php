@@ -30,9 +30,9 @@ class ContactRepository extends Repository
     /**
      * @var array
      */
-    protected $defaultOrderings = array(
+    protected $defaultOrderings = [
         'uid' => QueryInterface::ORDER_DESCENDING
-    );
+    ];
 
     /**
      * find contact specialized for given name
@@ -46,9 +46,9 @@ class ContactRepository extends Repository
     public function findContact($name, $pid, $handicapped)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds(array((int)$pid));
+        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
 
-        $constraints = array();
+        $constraints = [];
         $constraints[] = $query->lessThanOrEqual('letters.letterStart', $name);
         $constraints[] = $query->greaterThanOrEqual('letters.letterEnd', $name);
         $constraints[] = $query->equals('handicapped', $handicapped);
@@ -67,9 +67,9 @@ class ContactRepository extends Repository
     public function findFallback($pid, $handicapped)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds(array((int)$pid));
+        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
 
-        $constraints = array();
+        $constraints = [];
         $constraints[] = $query->equals('isFallback', true);
         $constraints[] = $query->equals('handicapped', $handicapped);
 
@@ -87,9 +87,9 @@ class ContactRepository extends Repository
     public function findService($name, $pid)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds(array((int)$pid));
+        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
 
-        $constraints = array();
+        $constraints = [];
         $constraints[] = $query->lessThanOrEqual('letters.letterStart', $name);
         $constraints[] = $query->greaterThanOrEqual('letters.letterEnd', $name);
 
@@ -105,9 +105,9 @@ class ContactRepository extends Repository
     public function findFallbackForService($pid)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds(array((int)$pid));
+        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
 
-        $constraints = array();
+        $constraints = [];
         $constraints[] = $query->equals('isFallback', true);
 
         return $query->matching($query->logicalAnd($constraints))->execute()->getFirst();

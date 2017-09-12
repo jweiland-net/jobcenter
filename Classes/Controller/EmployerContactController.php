@@ -75,9 +75,9 @@ class EmployerContactController extends ActionController
      * get page title from a given page
      *
      * @param integer $pid
-     * @return string
+     * @return string|null
      */
-    protected function getPagetitle(int $pid): string
+    protected function getPagetitle(int $pid)
     {
         $page = BackendUtility::getRecord('pages', $pid, 'title');
         return $page['title'];

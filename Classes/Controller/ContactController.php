@@ -57,9 +57,11 @@ class ContactController extends ActionController
      */
     public function initializeView(ViewInterface $view)
     {
-        $pids = array();
-        $pids[$this->settings['pidForManagement15_24']] = $this->getPagetitle((int)$this->settings['pidForManagement15_24']);
-        $pids[$this->settings['pidForManagement25_49']] = $this->getPagetitle((int)$this->settings['pidForManagement25_49']);
+        $pids = [];
+        $pids[$this->settings['pidForManagement15_24']]
+            = $this->getPagetitle((int)$this->settings['pidForManagement15_24']);
+        $pids[$this->settings['pidForManagement25_49']]
+            = $this->getPagetitle((int)$this->settings['pidForManagement25_49']);
 
         $this->view->assign('pids', $pids);
     }
@@ -99,9 +101,9 @@ class ContactController extends ActionController
      * get page title from a given page
      *
      * @param integer $pid
-     * @return string
+     * @return string|null
      */
-    protected function getPagetitle(int $pid): string
+    protected function getPagetitle(int $pid)
     {
         $page = BackendUtility::getRecord('pages', $pid, 'title');
         return $page['title'];

@@ -5,30 +5,24 @@ if (!defined('TYPO3_MODE')) {
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'JWeiland.' . $_EXTKEY,
     'Contact',
-    array(
+    [
         'Contact' => 'search, list'
-    ), // non-cacheable actions
-    array(
-        'Contact' => 'list'
-    )
+    ], // non-cacheable actions
+    []
 );
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'JWeiland.' . $_EXTKEY,
     'EmployerContact',
-    array(
+    [
         'EmployerContact' => 'search, list'
-    ), // non-cacheable actions
-    array(
-        'EmployerContact' => 'list'
-    )
+    ], // non-cacheable actions
+    []
 );
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'JWeiland.' . $_EXTKEY,
     'Service',
-    array(
+    [
         'Service' => 'search, list'
-    ), // non-cacheable actions
-    array(
-        'Service' => 'list'
-    )
+    ], // non-cacheable actions
+    []
 );
