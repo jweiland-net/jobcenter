@@ -8,7 +8,9 @@ if (!defined('TYPO3_MODE')) {
     [
         'Contact' => 'search, list'
     ], // non-cacheable actions
-    []
+    [
+        'Contact' => 'list'
+    ]
 );
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'JWeiland.' . $_EXTKEY,
@@ -16,7 +18,9 @@ if (!defined('TYPO3_MODE')) {
     [
         'EmployerContact' => 'search, list'
     ], // non-cacheable actions
-    []
+    [
+        'EmployerContact' => 'list'
+    ]
 );
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'JWeiland.' . $_EXTKEY,
@@ -24,5 +28,7 @@ if (!defined('TYPO3_MODE')) {
     [
         'Service' => 'search, list'
     ], // non-cacheable actions
-    []
+    [
+        'Service' => 'list'
+    ]
 );
