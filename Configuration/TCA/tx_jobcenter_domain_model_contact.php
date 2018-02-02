@@ -1,9 +1,4 @@
 <?php
-if (\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.6')) {
-    $ttContentLanguageFile = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf';
-} else {
-    $ttContentLanguageFile = 'LLL:EXT:cms/locallang_ttc.xlf';
-}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact',
@@ -31,9 +26,22 @@ return [
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, salutation, name, address, room_number, telephone, handicapped, letters, is_fallback'
     ],
+    'types' => [
+        '1' => [
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, salutation, name,
+            address, room_number, telephone, handicapped, letters, is_fallback,
+            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, 
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access'
+        ]
+    ],
+    'palettes' => [
+        'access' => [
+            'showitem' => 'starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel',
+        ]
+    ],
     'columns' => [
         'sys_language_uid' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
@@ -50,21 +58,19 @@ return [
             ]
         ],
         'l10n_parent' => [
-            'exclude' => 1,
             'displayCond' => 'FIELD:sys_language_uid:>:0',
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [
-                        '',
-                        0
-                    ]
+                    ['', 0],
                 ],
-                'foreign_table' => 'tt_content',
-                'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.sys_language_uid IN (-1,0)',
-                'default' => 0
+                'foreign_table' => 'tx_jobcenter_domain_model_contact',
+                'foreign_table_where' => 'AND tx_jobcenter_domain_model_contact.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_contact.sys_language_uid IN (-1,0)',
+                'showIconTable' => false,
+                'default' => 0,
             ]
         ],
         'l10n_diffsource' => [
@@ -82,7 +88,7 @@ return [
             ]
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type' => 'check',
@@ -94,7 +100,7 @@ return [
             ]
         ],
         'starttime' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
@@ -106,7 +112,7 @@ return [
             'l10n_display' => 'defaultAsReadonly'
         ],
         'endtime' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
@@ -121,7 +127,7 @@ return [
             'l10n_display' => 'defaultAsReadonly'
         ],
         'salutation' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.salutation',
             'config' => [
                 'type' => 'select',
@@ -133,7 +139,7 @@ return [
             ]
         ],
         'name' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.name',
             'config' => [
                 'type' => 'input',
@@ -142,7 +148,7 @@ return [
             ]
         ],
         'address' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.address',
             'config' => [
                 'type' => 'input',
@@ -151,7 +157,7 @@ return [
             ]
         ],
         'room_number' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.room_number',
             'config' => [
                 'type' => 'input',
@@ -160,7 +166,7 @@ return [
             ]
         ],
         'telephone' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.telephone',
             'config' => [
                 'type' => 'input',
@@ -169,7 +175,7 @@ return [
             ]
         ],
         'handicapped' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.handicapped',
             'config' => [
                 'type' => 'check',
@@ -177,7 +183,7 @@ return [
             ]
         ],
         'letters' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.letters',
             'config' => [
                 'type' => 'inline',
@@ -194,17 +200,11 @@ return [
             ]
         ],
         'is_fallback' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.is_fallback',
             'config' => [
                 'type' => 'check'
             ]
         ]
-    ],
-    'types' => [
-        '1' => ['showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, salutation, name, address, room_number, telephone, handicapped, letters, is_fallback,--div--;' . $ttContentLanguageFile . ':tabs.access,starttime, endtime']
-    ],
-    'palettes' => [
-        '1' => ['showitem' => '']
     ]
 ];
