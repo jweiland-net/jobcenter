@@ -21,11 +21,14 @@
 			<trans-unit id="handicapped.description">
 				<source>Is the contact person responsible for handicapped inhabitants?</source>
 			</trans-unit>
-			<trans-unit id="letters.description">
-				<source>For which range of letter is the contact person responsible?</source>
-			</trans-unit>
 			<trans-unit id="is_fallback.description">
 				<source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
+			</trans-unit>
+			<trans-unit id="self_reliance.description">
+				<source>Is the contact person responsible for self-reliance inhabitants?</source>
+			</trans-unit>
+			<trans-unit id="letters.description">
+				<source>For which range of letter is the contact person responsible?</source>
 			</trans-unit>
 		</body>
 	</file>

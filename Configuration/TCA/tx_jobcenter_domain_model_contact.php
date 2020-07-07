@@ -42,7 +42,7 @@ return [
         'language_hidden' => ['showitem' => 'sys_language_uid, l10n_parent, hidden'],
         'salutation_name' => ['showitem' => 'salutation, name'],
         'address_roomnumber' => ['showitem' => 'address, room_number'],
-        'handicapped_fallback' => ['showitem' => 'handicapped, is_fallback'],
+        'handicapped_fallback' => ['showitem' => 'handicapped, is_fallback, self_reliance'],
         'access' => [
             'showitem' => 'starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel',
         ]
@@ -190,6 +190,22 @@ return [
                 'default' => 0
             ]
         ],
+        'self_reliance' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.self_reliance',
+            'config' => [
+                'type' => 'check',
+                'default' => 0
+            ]
+        ],
+        'is_fallback' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.is_fallback',
+            'config' => [
+                'type' => 'check',
+                'default' => 0
+            ]
+        ],
         'letters' => [
             'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.letters',
@@ -207,12 +223,5 @@ return [
                 ]
             ]
         ],
-        'is_fallback' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_contact.is_fallback',
-            'config' => [
-                'type' => 'check'
-            ]
-        ]
     ]
 ];

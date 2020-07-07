@@ -27,13 +27,17 @@
 				<source>Is the contact person responsible for handicapped inhabitants?</source>
 				<target>Ist der Ansprechpartner für behinderte Einwohner zuständig?</target>
 			</trans-unit>
-			<trans-unit id="letters.description">
-				<source>For which range of letter is the contact person responsible?</source>
-				<target>Für welchen Buchstabenbereich ist der Ansprechpartner zuständig?</target>
-			</trans-unit>
 			<trans-unit id="is_fallback.description">
 				<source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
 				<target>Soll auf diesen Ansprechpartner zurückgegriffen werden, wenn andere Ansprechpartner auf die Anfrage nicht passen.</target>
+			</trans-unit>
+			<trans-unit id="self_reliance.description">
+				<source>Is the contact person responsible for self-reliance inhabitants?</source>
+				<target>Ist der Ansprechpartner für Selbständige Einwohner zuständig?</target>
+			</trans-unit>
+			<trans-unit id="letters.description">
+				<source>For which range of letter is the contact person responsible?</source>
+				<target>Für welchen Buchstabenbereich ist der Ansprechpartner zuständig?</target>
 			</trans-unit>
 		</body>
 	</file>

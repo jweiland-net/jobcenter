@@ -54,21 +54,21 @@
 				<source>Telephone</source>
 				<target>Telefonnummer</target>
 			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.letters">
-				<source>Letters</source>
-				<target>Buchstabenzuordnung</target>
-			</trans-unit>
 			<trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
 				<source>Handicapped</source>
 				<target>Betreuung Schwerbehinderung</target>
 			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.self-reliance">
-				<source>Earnings through self-reliance</source>
-				<target>Verdienst durch Selbständigkeit</target>
-			</trans-unit>
 			<trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
 				<source>Fallback?</source>
 				<target>Fallback?</target>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+				<source>Earnings through self reliance</source>
+				<target>Verdienst durch Selbständigkeit</target>
+			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.letters">
+				<source>Letters</source>
+				<target>Buchstabenzuordnung</target>
 			</trans-unit>
 
 			<trans-unit id="tx_jobcenter_domain_model_employer_contact">

@@ -11,6 +11,7 @@ CREATE TABLE tx_jobcenter_domain_model_contact (
 	room_number varchar(255) DEFAULT '' NOT NULL,
 	telephone varchar(255) DEFAULT '' NOT NULL,
 	handicapped tinyint(1) unsigned DEFAULT '0' NOT NULL,
+	self_reliance tinyint(1) unsigned DEFAULT '0' NOT NULL,
 	letters int(11) unsigned DEFAULT '0' NOT NULL,
 	is_fallback tinyint(4) unsigned DEFAULT '0' NOT NULL,
 
