@@ -1,22 +1,22 @@
 plugin.tx_jobcenter {
-	view {
-		# cat=plugin.tx_jobcenter/file; type=string; label=Path to template root (FE)
-		templateRootPath = EXT:jobcenter/Resources/Private/Templates/
-		# cat=plugin.tx_jobcenter/file; type=string; label=Path to template partials (FE)
-		partialRootPath = EXT:jobcenter/Resources/Private/Partials/
-		# cat=plugin.tx_jobcenter/file; type=string; label=Path to template layouts (FE)
-		layoutRootPath = EXT:jobcenter/Resources/Private/Layouts/
-	}
-	persistence {
-		# cat=plugin.tx_jobcenter//a; type=string; label=Default storage PID
-		storagePid =
-	}
-	settings {
-		# cat=plugin.tx_jobcenter//b; type=int+; label=Storage PID Management 15-24
-		pidForManagement15_24 = 0
-		# cat=plugin.tx_jobcenter//c; type=int+; label=Storage PID Management 25-49
-		pidForManagement25_49 = 0
-		# cat=plugin.tx_jobcenter//e; type=int+; label=Storage PID for Service
-		pidForService = 0
-	}
+  view {
+    # cat=plugin.tx_jobcenter/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:jobcenter/Resources/Private/Templates/
+    # cat=plugin.tx_jobcenter/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:jobcenter/Resources/Private/Partials/
+    # cat=plugin.tx_jobcenter/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:jobcenter/Resources/Private/Layouts/
+  }
+  persistence {
+    # cat=plugin.tx_jobcenter//a; type=string; label=Default storage PID
+    storagePid =
+  }
+  settings {
+    # cat=plugin.tx_jobcenter//b; type=int+; label=Storage PID Management 15-24
+    pidForManagement15_24 = 0
+    # cat=plugin.tx_jobcenter//c; type=int+; label=Storage PID Management 25-49
+    pidForManagement25_49 = 0
+    # cat=plugin.tx_jobcenter//e; type=int+; label=Storage PID for Service
+    pidForService = 0
+  }
 }
