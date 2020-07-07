@@ -17,27 +17,15 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 class Zip extends AbstractEntity
 {
     /**
-     * Zip
-     *
      * @var string
      */
     protected $zip = '';
 
-    /**
-     * Returns the zip
-     *
-     * @return string $zip
-     */
     public function getZip(): string
     {
         return $this->zip;
     }
 
-    /**
-     * Sets the zip
-     *
-     * @param string $zip
-     */
     public function setZip(string $zip)
     {
         $this->zip = $zip;
