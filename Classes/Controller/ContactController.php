@@ -22,25 +22,17 @@ use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 class ContactController extends ActionController
 {
     /**
-     * contactRepository
-     *
      * @var ContactRepository
      */
     protected $contactRepository;
 
-    /**
-     * inject contactRepository
-     *
-     * @param ContactRepository $contactRepository
-     */
     public function injectContactRepository(ContactRepository $contactRepository)
     {
         $this->contactRepository = $contactRepository;
     }
 
     /**
-     * initialize view
-     * add some global available markers to the view
+     * Add some global available markers to the view
      *
      * @param ViewInterface $view The view to be initialized
      */

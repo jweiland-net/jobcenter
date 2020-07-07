@@ -20,17 +20,10 @@ use JWeiland\Jobcenter\Domain\Model\EmployerContact;
 class EmployerContactController extends ActionController
 {
     /**
-     * employerContactRepository
-     *
      * @var EmployerContactRepository
      */
     protected $employerContactRepository;
 
-    /**
-     * inject employerContactRepository
-     *
-     * @param EmployerContactRepository $employerContactRepository
-     */
     public function injectEmployerContactRepository(EmployerContactRepository $employerContactRepository)
     {
         $this->employerContactRepository = $employerContactRepository;

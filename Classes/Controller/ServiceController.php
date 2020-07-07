@@ -20,17 +20,10 @@ use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 class ServiceController extends ActionController
 {
     /**
-     * contactRepository
-     *
      * @var ContactRepository
      */
     protected $contactRepository;
 
-    /**
-     * inject contactRepository
-     *
-     * @param ContactRepository $contactRepository
-     */
     public function injectContactRepository(ContactRepository $contactRepository)
     {
         $this->contactRepository = $contactRepository;
