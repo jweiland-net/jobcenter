@@ -18,9 +18,7 @@ namespace JWeiland\Jobcenter\Domain\Model;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 /**
- * Class Zip
- *
- * @package JWeiland\Jobcenter\Domain\Model
+ * Domain model which will be filled with data from "tx_jobcenter_domain_model_zip"
  */
 class Zip extends AbstractEntity
 {

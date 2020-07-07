@@ -23,9 +23,7 @@ use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 
 /**
- * Class ContactController
- *
- * @package JWeiland\Jobcenter\Controller
+ * Controller to show contacts
  */
 class ContactController extends ActionController
 {

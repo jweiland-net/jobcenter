@@ -21,9 +21,7 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use JWeiland\Jobcenter\Domain\Model\EmployerContact;
 
 /**
- * Class EmployerContactController
- *
- * @package JWeiland\Jobcenter\Controller
+ * Controller for employee contacts
  */
 class EmployerContactController extends ActionController
 {

@@ -19,9 +19,7 @@ use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 /**
- * Class Contact
- *
- * @package JWeiland\Jobcenter\Domain\Model
+ * Domain model which will be filled with data from "tx_jobcenter_domain_model_contact"
  */
 class Contact extends AbstractEntity
 {

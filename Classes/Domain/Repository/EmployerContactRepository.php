@@ -20,9 +20,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**
- * Class EmployerContactRepository
- *
- * @package JWeiland\Jobcenter\Domain\Repository
+ * Repository to find contacts for employees
  */
 class EmployerContactRepository extends Repository
 {

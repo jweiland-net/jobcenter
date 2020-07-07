@@ -21,9 +21,7 @@ use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\Repository;
 
 /**
- * Class ContactRepository
- *
- * @package JWeiland\Jobcenter\Domain\Repository
+ * Repository to find contacts
  */
 class ContactRepository extends Repository
 {

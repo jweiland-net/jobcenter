@@ -21,9 +21,7 @@ use JWeiland\Jobcenter\Domain\Model\Contact;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 
 /**
- * Class ServiceController
- *
- * @package JWeiland\Jobcenter\Controller
+ * Controller for granting of benefits (DE: Leistungsgewaehrung)
  */
 class ServiceController extends ActionController
 {
