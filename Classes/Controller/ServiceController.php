@@ -30,7 +30,6 @@ class ServiceController extends ActionController
      * inject contactRepository
      *
      * @param ContactRepository $contactRepository
-     * @return void
      */
     public function injectContactRepository(ContactRepository $contactRepository)
     {
@@ -39,8 +38,6 @@ class ServiceController extends ActionController
 
     /**
      * action search
-     *
-     * @return void
      */
     public function searchAction()
     {
@@ -50,7 +47,6 @@ class ServiceController extends ActionController
      * action list
      *
      * @param string $name
-     * @return void
      * @throws InvalidQueryException
      */
     public function listAction(string $name)

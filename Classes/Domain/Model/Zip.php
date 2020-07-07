@@ -37,7 +37,6 @@ class Zip extends AbstractEntity
      * Sets the zip
      *
      * @param string $zip
-     * @return void
      */
     public function setZip(string $zip)
     {

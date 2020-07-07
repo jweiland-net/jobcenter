@@ -44,6 +44,10 @@
 				<source>Handicapped</source>
 				<target>Schwerbehinderten-Ausweis vorhanden</target>
 			</trans-unit>
+			<trans-unit id="tx_jobcenter_domain_model_contact.self-reliance">
+				<source>Earnings through self-reliance</source>
+				<target>Verdienst durch Selbständigkeit</target>
+			</trans-unit>
 			<trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
 				<source>Fallback?</source>
 				<target>Fallback?</target>

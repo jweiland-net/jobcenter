@@ -44,7 +44,6 @@ class Letter extends AbstractEntity
      * Sets the letterStart
      *
      * @param string $letterStart
-     * @return void
      */
     public function setLetterStart(string $letterStart)
     {
@@ -65,7 +64,6 @@ class Letter extends AbstractEntity
      * Sets the letterEnd
      *
      * @param string $letterEnd
-     * @return void
      */
     public function setLetterEnd(string $letterEnd)
     {

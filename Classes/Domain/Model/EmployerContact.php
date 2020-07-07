@@ -98,8 +98,6 @@ class EmployerContact extends AbstractEntity
 
     /**
      * Initializes all \TYPO3\CMS\Extbase\Persistence\ObjectStorage properties.
-     *
-     * @return void
      */
     protected function initStorageObjects()
     {
@@ -126,7 +124,6 @@ class EmployerContact extends AbstractEntity
      * Sets the salutation
      *
      * @param bool $salutation
-     * @return void
      */
     public function setSalutation(bool $salutation)
     {
@@ -147,7 +144,6 @@ class EmployerContact extends AbstractEntity
      * Sets the firstName
      *
      * @param string $firstName
-     * @return void
      */
     public function setFirstName(string $firstName)
     {
@@ -168,7 +164,6 @@ class EmployerContact extends AbstractEntity
      * Sets the lastName
      *
      * @param string $lastName
-     * @return void
      */
     public function setLastName(string $lastName)
     {
@@ -189,7 +184,6 @@ class EmployerContact extends AbstractEntity
      * Sets the address
      *
      * @param string $address
-     * @return void
      */
     public function setAddress(string $address)
     {
@@ -210,7 +204,6 @@ class EmployerContact extends AbstractEntity
      * Sets the zip
      *
      * @param ObjectStorage $zip
-     * @return void
      */
     public function setZip(ObjectStorage $zip)
     {
@@ -231,7 +224,6 @@ class EmployerContact extends AbstractEntity
      * Sets the roomNumber
      *
      * @param string $roomNumber
-     * @return void
      */
     public function setRoomNumber(string $roomNumber)
     {
@@ -252,7 +244,6 @@ class EmployerContact extends AbstractEntity
      * Sets the telephone
      *
      * @param string $telephone
-     * @return void
      */
     public function setTelephone(string $telephone)
     {
@@ -273,7 +264,6 @@ class EmployerContact extends AbstractEntity
      * Sets the email
      *
      * @param string $email
-     * @return void
      */
     public function setEmail(string $email)
     {
@@ -294,7 +284,6 @@ class EmployerContact extends AbstractEntity
      * Sets the image
      *
      * @param ObjectStorage $image
-     * @return void
      */
     public function setImage(ObjectStorage $image)
     {

@@ -86,8 +86,6 @@ class Contact extends AbstractEntity
 
     /**
      * Initializes all \TYPO3\CMS\Extbase\Persistence\ObjectStorage properties.
-     *
-     * @return void
      */
     protected function initStorageObjects()
     {
@@ -113,7 +111,6 @@ class Contact extends AbstractEntity
      * Sets the salutation
      *
      * @param bool $salutation
-     * @return void
      */
     public function setSalutation(bool $salutation)
     {
@@ -134,7 +131,6 @@ class Contact extends AbstractEntity
      * Sets the name
      *
      * @param string $name
-     * @return void
      */
     public function setName(string $name)
     {
@@ -155,7 +151,6 @@ class Contact extends AbstractEntity
      * Sets the address
      *
      * @param string $address
-     * @return void
      */
     public function setAddress(string $address)
     {
@@ -176,7 +171,6 @@ class Contact extends AbstractEntity
      * Sets the roomNumber
      *
      * @param string $roomNumber
-     * @return void
      */
     public function setRoomNumber(string $roomNumber)
     {
@@ -197,7 +191,6 @@ class Contact extends AbstractEntity
      * Sets the telephone
      *
      * @param string $telephone
-     * @return void
      */
     public function setTelephone(string $telephone)
     {
@@ -208,7 +201,6 @@ class Contact extends AbstractEntity
      * Adds a Letter
      *
      * @param Letter $letter
-     * @return void
      */
     public function addLetter(Letter $letter)
     {
@@ -219,7 +211,6 @@ class Contact extends AbstractEntity
      * Removes a Letter
      *
      * @param Letter $letterToRemove The Letter to be removed
-     * @return void
      */
     public function removeLetter(Letter $letterToRemove)
     {
@@ -260,7 +251,6 @@ class Contact extends AbstractEntity
      * Sets the letters
      *
      * @param ObjectStorage $letters
-     * @return void
      */
     public function setLetters(ObjectStorage $letters)
     {

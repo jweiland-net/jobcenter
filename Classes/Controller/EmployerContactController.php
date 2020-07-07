@@ -30,7 +30,6 @@ class EmployerContactController extends ActionController
      * inject employerContactRepository
      *
      * @param EmployerContactRepository $employerContactRepository
-     * @return void
      */
     public function injectEmployerContactRepository(EmployerContactRepository $employerContactRepository)
     {
@@ -40,8 +39,6 @@ class EmployerContactController extends ActionController
     /**
      * action search
      * shows the search form
-     *
-     * @return void
      */
     public function searchAction()
     {
@@ -51,7 +48,6 @@ class EmployerContactController extends ActionController
      * action list
      *
      * @param string $zip
-     * @return void
      */
     public function listAction(string $zip)
     {

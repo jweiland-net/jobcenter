@@ -32,7 +32,6 @@ class ContactController extends ActionController
      * inject contactRepository
      *
      * @param ContactRepository $contactRepository
-     * @return void
      */
     public function injectContactRepository(ContactRepository $contactRepository)
     {
@@ -44,8 +43,6 @@ class ContactController extends ActionController
      * add some global available markers to the view
      *
      * @param ViewInterface $view The view to be initialized
-     *
-     * @return void
      */
     public function initializeView(ViewInterface $view)
     {
@@ -61,8 +58,6 @@ class ContactController extends ActionController
     /**
      * action search
      * shows the search form
-     *
-     * @return void
      */
     public function searchAction()
     {
@@ -74,7 +69,6 @@ class ContactController extends ActionController
      * @param string $name
      * @param integer $pid
      * @param bool $handicapped
-     * @return void
      * @throws InvalidQueryException
      */
     public function listAction(string $name, int $pid, bool $handicapped)
