@@ -1,15 +1,44 @@
+\|
+`Contributing <CONTRIBUTING.rst>`__  \|
+`Help & Support <https://typo3.org/help>`__ \|
+`Settings <Documentation/Settings.cfg>`__ \|
+
 Extension Manual
-=================
+################
 
-This is a template manual aiming to pave the way to developers when it comes about documentation. The template provides a structure that a developer can take over and, in addition, many useful snippets and examples. Documentation is written in reST format. Refer to Help writing reStructuredText to get some more insight about the syntax and available reST editors. For instance, you might be particularly interested how you can :
+:Repository:  https://github.com/jweiland-net/jobcenter
+:Read online: https://docs.typo3.org/typo3cms/extensions/jobcenter/
 
-* generate the documentation using on-line services (@todo to write) 
-* `make links`_ accros projects
-* how you should write TypoScript reference.
+About this Repository
+=====================
 
-Any idea or suggestion for improving this template `can be drop`_ to our team_. And remember: documentation is like gift wrapping, it looks like superfluous, but your friend tends to be rather disappointed when their presents arrive in supermarket carrier bags. (Documentation-Driven Design quote)
+jobcenter is an extension for TYPO3 CMS. It is mostly used by cities and towns to help their inhabitants
+to find the correct contact person for granting of benefits in the town hall.
 
-.. _can be drop: http://forge.typo3.org/projects/typo3v4-official_extension_template/issues
-.. _team: http://forge.typo3.org/projects/typo3v4-official_extension_template
-.. _make links: RestructuredtextHelp.html#cross-linking
-.. _can write TypoScript: RestructuredtextHelp.html#typoscript-reference
+Installation
+============
+
+Installation using Composer
+---------------------------
+
+Run the following command within your Composer based TYPO3 project:
+
+```
+composer require jweiland/jobcenter
+```
+
+Installation using Extension Manager
+------------------------------------
+
+Login into TYPO3 Backend of your project and click on `Extensions` in the left menu.
+Press the `Retrieve/Update` button and search for the extension key `jobcenter`.
+Import the extension from TER (TYPO3 Extension Repository)
+
+Found a problem in this repo?
+=============================
+
+If you find any problems in this sample manual, please add an `Issue`_
+
+.. _Adding documentation: https://docs.typo3.org/typo3cms/CoreApiReference/ExtensionArchitecture/Documentation/Index.html
+.. _Directory and File Names: https://docs.typo3.org/typo3cms/HowToDocument/GeneralConventions/DirectoryFilenames.html
+.. _Issue: https://github.com/jweiland-net/jobcenter/issues
