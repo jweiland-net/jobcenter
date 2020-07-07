@@ -5,9 +5,11 @@
 		<body>
 			<trans-unit id="letter_start.description">
 				<source>The contact person is responsible from this letter</source>
+				<target>Der Ansprechpartner ist zuständig ab diesem Buchstaben</target>
 			</trans-unit>
 			<trans-unit id="letter_end.description">
 				<source>The contact person is responsible until this letter</source>
+				<target>Der Ansprechpartner ist zuständig zu zu diesem Buchstaben</target>
 			</trans-unit>
 		</body>
 	</file>

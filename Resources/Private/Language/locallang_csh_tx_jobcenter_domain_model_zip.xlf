@@ -3,11 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
 		<header/>
 		<body>
-			<trans-unit id="letter_start.description">
-				<source>The contact person is responsible from this letter</source>
-			</trans-unit>
-			<trans-unit id="letter_end.description">
-				<source>The contact person is responsible until this letter</source>
+			<trans-unit id="zip.description">
+				<source>Zip of the contact person</source>
+				<target>PLZ des Ansprechpartners</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -6,11 +6,17 @@
 			<trans-unit id="salutation.description">
 				<source>Please choose one of the following salutations</source>
 			</trans-unit>
-			<trans-unit id="name.description">
-				<source>Name of the contact person</source>
+			<trans-unit id="first_name.description">
+				<source>Firstname of the contact person</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>Lastname of the contact person</source>
 			</trans-unit>
 			<trans-unit id="address.description">
 				<source>Address of the contact person</source>
+			</trans-unit>
+			<trans-unit id="zip.description">
+				<source>Zip of the contact person</source>
 			</trans-unit>
 			<trans-unit id="room_number.description">
 				<source>Room number of the contact person</source>
@@ -18,11 +24,11 @@
 			<trans-unit id="telephone.description">
 				<source>Telephone of the contact person</source>
 			</trans-unit>
-			<trans-unit id="handicapped.description">
-				<source>Is the contact person responsible for handicapped inhabitants?</source>
+			<trans-unit id="email.description">
+				<source>Email of the contact person</source>
 			</trans-unit>
-			<trans-unit id="letters.description">
-				<source>For which range of letter is the contact person responsible?</source>
+			<trans-unit id="image.description">
+				<source>Image of the contact person</source>
 			</trans-unit>
 			<trans-unit id="is_fallback.description">
 				<source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
