@@ -17,6 +17,11 @@
 				<target>Jobcenter: Finanzielle Leistungsgewährung</target>
 			</trans-unit>
 
+			<trans-unit id="palette.language_hidden" xml:space="preserve">
+				<source>Visibility and Language</source>
+				<target>Sichtbarkeit und Sprache</target>
+			</trans-unit>
+
 			<trans-unit id="tx_jobcenter_domain_model_contact">
 				<source>Contact</source>
 				<target>Ansprechpartner</target>

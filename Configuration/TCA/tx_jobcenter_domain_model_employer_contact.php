@@ -9,8 +9,7 @@ return [
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
         'dividers2tabs' => true,
-        'versioningWS' => 2,
-        'versioning_followPages' => true,
+        'versioningWS' => true,
         'origUid' => 't3_origuid',
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
@@ -29,13 +28,20 @@ return [
     ],
     'types' => [
         '1' => [
-            'showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden;;1, salutation, first_name,
-            last_name, address, zip, room_number, telephone, email, image, is_fallback,
-            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, 
-            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access'
+            'showitem' => '--palette--;LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:palette.language_hidden;language_hidden,
+                --palette--;;salutation_name,
+                --palette--;;address_zip_room,
+                --palette--;;telephone_email,
+                is_fallback, image,
+                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, 
+                --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access'
         ]
     ],
     'palettes' => [
+        'language_hidden' => ['showitem' => 'sys_language_uid, l10n_parent, hidden'],
+        'salutation_name' => ['showitem' => 'salutation, first_name, last_name'],
+        'address_zip_room' => ['showitem' => 'address, zip, room_number'],
+        'telephone_email' => ['showitem' => 'telephone, email'],
         'access' => [
             'showitem' => 'starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel',
         ]
