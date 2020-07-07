@@ -40,15 +40,18 @@ class ServiceController extends ActionController
      * action list
      *
      * @param string $name
+     * @param bool $selfReliance
      * @throws InvalidQueryException
      */
-    public function listAction(string $name)
+    public function listAction(string $name, bool $selfReliance = false)
     {
-        $service = $this->contactRepository->findService($name, $this->settings['pidForService']);
+        $this->contactRepository->setStoragePids([$this->settings['pidForService']]);
+        $service = $this->contactRepository->findService($name, $selfReliance);
         if (!$service instanceof Contact) {
-            $service = $this->contactRepository->findFallbackForService($this->settings['pidForService']);
+            $service = $this->contactRepository->findFallbackForService();
         }
         $this->view->assign('service', $service);
         $this->view->assign('name', $name);
+        $this->view->assign('selfReliance', $selfReliance);
     }
 }

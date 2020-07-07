@@ -22,23 +22,27 @@ class ContactRepository extends Repository
     /**
      * @var array
      */
+    protected $storagePids = [];
+
+    /**
+     * @var array
+     */
     protected $defaultOrderings = [
         'uid' => QueryInterface::ORDER_DESCENDING
     ];
 
     /**
-     * find contact specialized for given name
+     * Find contact specialized for given name
      *
      * @param string $name
-     * @param integer $pid
-     * @param boolean $handicapped
-     * @return Contact|object|null
+     * @param bool $handicapped
+     * @return Contact|null
      * @throws InvalidQueryException
      */
-    public function findContact($name, $pid, $handicapped)
+    public function findContact(string $name, bool $handicapped)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
+        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
 
         $constraints = [];
         $constraints[] = $query->lessThanOrEqual('letters.letterStart', $name);
@@ -46,62 +50,79 @@ class ContactRepository extends Repository
         $constraints[] = $query->equals('handicapped', $handicapped);
         $constraints[] = $query->equals('isFallback', false);
 
-        return $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        /** @var Contact|null $contact */
+        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        return $contact;
     }
 
     /**
-     * find fallback
+     * Find a fallback for contact
      *
-     * @param integer $pid
-     * @param boolean $handicapped
-     * @return Contact|object|null
+     * @param bool $handicapped
+     * @return Contact|null
      */
-    public function findFallback($pid, $handicapped)
+    public function findFallback(bool $handicapped)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
+        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
 
         $constraints = [];
         $constraints[] = $query->equals('isFallback', true);
         $constraints[] = $query->equals('handicapped', $handicapped);
 
-        return $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        /** @var Contact|null $contact */
+        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        return $contact;
     }
 
     /**
-     * find service places
+     * Find a contact for service
      *
      * @param string $name
-     * @param integer $pid
-     * @return Contact|object
+     * @param bool $selfReliance
+     * @return Contact|null
      * @throws InvalidQueryException
      */
-    public function findService($name, $pid)
+    public function findService(string $name, bool $selfReliance)
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
+        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
 
         $constraints = [];
         $constraints[] = $query->lessThanOrEqual('letters.letterStart', $name);
         $constraints[] = $query->greaterThanOrEqual('letters.letterEnd', $name);
+        $constraints[] = $query->equals('selfReliance', $selfReliance);
 
-        return $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        /** @var Contact|null $contact */
+        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        return $contact;
     }
 
     /**
-     * find fallback for service
+     * Find fallback for service
      *
-     * @param integer $pid
-     * @return Contact|object
+     * @return Contact|null
      */
-    public function findFallbackForService($pid)
+    public function findFallbackForService()
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds([(int)$pid]);
+        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
 
         $constraints = [];
         $constraints[] = $query->equals('isFallback', true);
 
-        return $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        /** @var Contact|null $contact */
+        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        return $contact;
+    }
+
+    public function getStoragePids(): array
+    {
+        return $this->storagePids;
+    }
+
+    public function setStoragePids(array $storagePids)
+    {
+        $this->storagePids = $storagePids;
     }
 }

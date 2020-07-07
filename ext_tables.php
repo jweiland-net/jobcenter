@@ -2,6 +2,7 @@
 if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
+
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr(
     'tx_jobcenter_domain_model_contact',
     'EXT:jobcenter/Resources/Private/Language/locallang_csh_tx_jobcenter_domain_model_contact.xlf'

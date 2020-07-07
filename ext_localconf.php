@@ -2,8 +2,9 @@
 if (!defined('TYPO3_MODE')) {
     die('Access denied.');
 }
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'JWeiland.' . $_EXTKEY,
+    'JWeiland.jobcenter',
     'Contact',
     [
         'Contact' => 'search, list'
@@ -13,7 +14,7 @@ if (!defined('TYPO3_MODE')) {
     ]
 );
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'JWeiland.' . $_EXTKEY,
+    'JWeiland.jobcenter',
     'EmployerContact',
     [
         'EmployerContact' => 'search, list'
@@ -23,7 +24,7 @@ if (!defined('TYPO3_MODE')) {
     ]
 );
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'JWeiland.' . $_EXTKEY,
+    'JWeiland.jobcenter',
     'Service',
     [
         'Service' => 'search, list'

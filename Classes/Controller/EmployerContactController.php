@@ -55,7 +55,7 @@ class EmployerContactController extends ActionController
     /**
      * get page title from a given page
      *
-     * @param integer $pid
+     * @param int $pid
      * @return string|null
      */
     protected function getPagetitle(int $pid)

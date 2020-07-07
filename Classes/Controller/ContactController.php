@@ -59,15 +59,16 @@ class ContactController extends ActionController
      * action list
      *
      * @param string $name
-     * @param integer $pid
+     * @param int $pid
      * @param bool $handicapped
      * @throws InvalidQueryException
      */
     public function listAction(string $name, int $pid, bool $handicapped)
     {
-        $contact = $this->contactRepository->findContact($name, $pid, $handicapped);
+        $this->contactRepository->setStoragePids([$pid]);
+        $contact = $this->contactRepository->findContact($name, $handicapped);
         if (!$contact instanceof Contact) {
-            $contact = $this->contactRepository->findFallback($pid, $handicapped);
+            $contact = $this->contactRepository->findFallback($handicapped);
         }
         $this->view->assign('contact', $contact);
         $this->view->assign('name', $name);
@@ -78,7 +79,7 @@ class ContactController extends ActionController
     /**
      * get page title from a given page
      *
-     * @param integer $pid
+     * @param int $pid
      * @return string|null
      */
     protected function getPagetitle(int $pid)

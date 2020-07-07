@@ -48,15 +48,20 @@ class Contact extends AbstractEntity
     protected $handicapped = false;
 
     /**
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\JWeiland\Jobcenter\Domain\Model\Letter>
-     * @lazy
+     * @var bool
      */
-    protected $letters;
+    protected $isFallback = false;
 
     /**
      * @var bool
      */
-    protected $isFallback = false;
+    protected $selfReliance = false;
+
+    /**
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\JWeiland\Jobcenter\Domain\Model\Letter>
+     * @lazy
+     */
+    protected $letters;
 
     public function __construct()
     {
@@ -113,16 +118,6 @@ class Contact extends AbstractEntity
         $this->telephone = $telephone;
     }
 
-    public function addLetter(Letter $letter)
-    {
-        $this->letters->attach($letter);
-    }
-
-    public function removeLetter(Letter $letterToRemove)
-    {
-        $this->letters->detach($letterToRemove);
-    }
-
     public function getHandicapped(): bool
     {
         return $this->handicapped;
@@ -131,6 +126,26 @@ class Contact extends AbstractEntity
     public function setHandicapped(bool $handicapped)
     {
         $this->handicapped = $handicapped;
+    }
+
+    public function getIsFallback(): bool
+    {
+        return $this->isFallback;
+    }
+
+    public function setIsFallback(bool $isFallback)
+    {
+        $this->isFallback = $isFallback;
+    }
+
+    public function getSelfReliance(): bool
+    {
+        return $this->selfReliance;
+    }
+
+    public function setSelfReliance(bool $isSelfReliance)
+    {
+        $this->selfReliance = $isSelfReliance;
     }
 
     public function getLetters(): ObjectStorage
@@ -143,13 +158,13 @@ class Contact extends AbstractEntity
         $this->letters = $letters;
     }
 
-    public function getIsFallback(): bool
+    public function addLetter(Letter $letter)
     {
-        return $this->isFallback;
+        $this->letters->attach($letter);
     }
 
-    public function setIsFallback(bool $isFallback)
+    public function removeLetter(Letter $letterToRemove)
     {
-        $this->isFallback = $isFallback;
+        $this->letters->detach($letterToRemove);
     }
 }

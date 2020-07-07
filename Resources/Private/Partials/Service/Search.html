@@ -5,8 +5,17 @@
 			<dd><f:form.textfield name="name" value="{name}" /></dd>
 		</dl>
 		<dl>
-			<dt><label><f:translate key="tx_jobcenter_domain_model_contact.self-reliance" /></label></dt>
-			<dd><f:form.checkbox name="selfreliance" value="1" /></dd>
+			<dt><label><f:translate key="tx_jobcenter_domain_model_contact.self_reliance" /></label></dt>
+			<dd>
+				<f:if condition="{selfReliance}">
+					<f:then>
+						<f:form.checkbox name="selfReliance" value="1" checked="checked" />
+					</f:then>
+					<f:else>
+						<f:form.checkbox name="selfReliance" value="1" />
+					</f:else>
+				</f:if>
+			</dd>
 		</dl>
 		<dl>
 			<dt><label>&nbsp;</label></dt>
