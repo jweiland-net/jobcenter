@@ -21,7 +21,7 @@ return [
             'endtime' => 'endtime'
         ],
         'searchFields' => 'letter_start,letter_end,handicapped,',
-        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_letter.gif'
+        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_letter.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, letter_start, letter_end'

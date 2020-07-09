@@ -19,7 +19,7 @@ return [
             'endtime' => 'endtime'
         ],
         'searchFields' => 'zip',
-        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_zip.gif'
+        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_zip.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, zip'

@@ -21,7 +21,7 @@ return [
             'endtime' => 'endtime'
         ],
         'searchFields' => 'salutation,name,address,room_number,telephone,letters,',
-        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_employer_contact.gif'
+        'iconfile' => 'EXT:jobcenter/Resources/Public/Icons/tx_jobcenter_domain_model_employer_contact.svg'
     ],
     'interface' => [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, salutation, first_name, last_name, address, zip, room_number, telephone, email, image, is_fallback'
