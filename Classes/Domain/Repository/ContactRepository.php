@@ -121,7 +121,7 @@ class ContactRepository extends Repository
         return $this->storagePids;
     }
 
-    public function setStoragePids(array $storagePids)
+    public function setStoragePids(array $storagePids): void
     {
         $this->storagePids = $storagePids;
     }

@@ -26,7 +26,7 @@ class ContactController extends ActionController
      */
     protected $contactRepository;
 
-    public function injectContactRepository(ContactRepository $contactRepository)
+    public function injectContactRepository(ContactRepository $contactRepository): void
     {
         $this->contactRepository = $contactRepository;
     }
@@ -36,7 +36,7 @@ class ContactController extends ActionController
      *
      * @param ViewInterface $view The view to be initialized
      */
-    public function initializeView(ViewInterface $view)
+    public function initializeView(ViewInterface $view): void
     {
         $pids = [];
         $pids[$this->settings['pidForManagement15_24']]
@@ -51,7 +51,7 @@ class ContactController extends ActionController
      * action search
      * shows the search form
      */
-    public function searchAction()
+    public function searchAction(): void
     {
     }
 
@@ -63,7 +63,7 @@ class ContactController extends ActionController
      * @param bool $handicapped
      * @throws InvalidQueryException
      */
-    public function listAction(string $name, int $pid, bool $handicapped)
+    public function listAction(string $name, int $pid, bool $handicapped): void
     {
         $this->contactRepository->setStoragePids([$pid]);
         $contact = $this->contactRepository->findContact($name, $handicapped);
@@ -80,11 +80,11 @@ class ContactController extends ActionController
      * get page title from a given page
      *
      * @param int $pid
-     * @return string|null
+     * @return string
      */
-    protected function getPagetitle(int $pid)
+    protected function getPagetitle(int $pid): string
     {
         $page = BackendUtility::getRecord('pages', $pid, 'title');
-        return $page['title'];
+        return $page['title'] ?: '';
     }
 }

@@ -24,7 +24,7 @@ class EmployerContactController extends ActionController
      */
     protected $employerContactRepository;
 
-    public function injectEmployerContactRepository(EmployerContactRepository $employerContactRepository)
+    public function injectEmployerContactRepository(EmployerContactRepository $employerContactRepository): void
     {
         $this->employerContactRepository = $employerContactRepository;
     }
@@ -33,7 +33,7 @@ class EmployerContactController extends ActionController
      * action search
      * shows the search form
      */
-    public function searchAction()
+    public function searchAction(): void
     {
     }
 
@@ -42,7 +42,7 @@ class EmployerContactController extends ActionController
      *
      * @param string $zip
      */
-    public function listAction(string $zip)
+    public function listAction(string $zip): void
     {
         $contact = $this->employerContactRepository->findContact($zip);
         if (!$contact instanceof EmployerContact) {
@@ -56,11 +56,11 @@ class EmployerContactController extends ActionController
      * get page title from a given page
      *
      * @param int $pid
-     * @return string|null
+     * @return string
      */
-    protected function getPagetitle(int $pid)
+    protected function getPagetitle(int $pid): string
     {
         $page = BackendUtility::getRecord('pages', $pid, 'title');
-        return $page['title'];
+        return $page['title'] ?: '';
     }
 }

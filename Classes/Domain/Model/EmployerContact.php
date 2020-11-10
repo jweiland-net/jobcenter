@@ -78,9 +78,10 @@ class EmployerContact extends AbstractEntity
         return $this->salutation;
     }
 
-    public function setSalutation(bool $salutation)
+    public function setSalutation(bool $salutation): self
     {
         $this->salutation = $salutation;
+        return $this;
     }
 
     public function getFirstName(): string
@@ -88,9 +89,10 @@ class EmployerContact extends AbstractEntity
         return $this->firstName;
     }
 
-    public function setFirstName(string $firstName)
+    public function setFirstName(string $firstName): self
     {
         $this->firstName = $firstName;
+        return $this;
     }
 
     public function getLastName(): string
@@ -98,9 +100,10 @@ class EmployerContact extends AbstractEntity
         return $this->lastName;
     }
 
-    public function setLastName(string $lastName)
+    public function setLastName(string $lastName): self
     {
         $this->lastName = $lastName;
+        return $this;
     }
 
     public function getAddress(): string
@@ -108,9 +111,10 @@ class EmployerContact extends AbstractEntity
         return $this->address;
     }
 
-    public function setAddress(string $address)
+    public function setAddress(string $address): self
     {
         $this->address = $address;
+        return $this;
     }
 
     public function getZip(): ObjectStorage
@@ -118,9 +122,10 @@ class EmployerContact extends AbstractEntity
         return $this->zip;
     }
 
-    public function setZip(ObjectStorage $zip)
+    public function setZip(ObjectStorage $zip): self
     {
         $this->zip = $zip;
+        return $this;
     }
 
     public function getRoomNumber(): string
@@ -128,9 +133,10 @@ class EmployerContact extends AbstractEntity
         return $this->roomNumber;
     }
 
-    public function setRoomNumber(string $roomNumber)
+    public function setRoomNumber(string $roomNumber): self
     {
         $this->roomNumber = $roomNumber;
+        return $this;
     }
 
     public function getTelephone(): string
@@ -138,9 +144,10 @@ class EmployerContact extends AbstractEntity
         return $this->telephone;
     }
 
-    public function setTelephone(string $telephone)
+    public function setTelephone(string $telephone): self
     {
         $this->telephone = $telephone;
+        return $this;
     }
 
     public function getEmail(): string
@@ -148,9 +155,10 @@ class EmployerContact extends AbstractEntity
         return $this->email;
     }
 
-    public function setEmail(string $email)
+    public function setEmail(string $email): self
     {
         $this->email = $email;
+        return $this;
     }
 
     public function getImage(): ObjectStorage
@@ -158,9 +166,10 @@ class EmployerContact extends AbstractEntity
         return $this->image;
     }
 
-    public function setImage(ObjectStorage $image)
+    public function setImage(ObjectStorage $image): self
     {
         $this->image = $image;
+        return $this;
     }
 
     public function getIsFallback(): bool
@@ -168,8 +177,9 @@ class EmployerContact extends AbstractEntity
         return $this->isFallback;
     }
 
-    public function setIsFallback(bool $isFallback)
+    public function setIsFallback(bool $isFallback): self
     {
         $this->isFallback = $isFallback;
+        return $this;
     }
 }

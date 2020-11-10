@@ -26,8 +26,9 @@ class Zip extends AbstractEntity
         return $this->zip;
     }
 
-    public function setZip(string $zip)
+    public function setZip(string $zip): self
     {
         $this->zip = $zip;
+        return $this;
     }
 }

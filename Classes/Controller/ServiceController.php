@@ -24,7 +24,7 @@ class ServiceController extends ActionController
      */
     protected $contactRepository;
 
-    public function injectContactRepository(ContactRepository $contactRepository)
+    public function injectContactRepository(ContactRepository $contactRepository): void
     {
         $this->contactRepository = $contactRepository;
     }
@@ -32,7 +32,7 @@ class ServiceController extends ActionController
     /**
      * action search
      */
-    public function searchAction()
+    public function searchAction():void
     {
     }
 
@@ -43,7 +43,7 @@ class ServiceController extends ActionController
      * @param bool $selfReliance
      * @throws InvalidQueryException
      */
-    public function listAction(string $name, bool $selfReliance = false)
+    public function listAction(string $name, bool $selfReliance = false): void
     {
         $this->contactRepository->setStoragePids([$this->settings['pidForService']]);
         $service = $this->contactRepository->findService($name, $selfReliance);

@@ -59,7 +59,7 @@ class Contact extends AbstractEntity
 
     /**
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\JWeiland\Jobcenter\Domain\Model\Letter>
-     * @lazy
+     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
      */
     protected $letters;
 
@@ -73,9 +73,10 @@ class Contact extends AbstractEntity
         return $this->salutation;
     }
 
-    public function setSalutation(bool $salutation)
+    public function setSalutation(bool $salutation): self
     {
         $this->salutation = $salutation;
+        return  $this;
     }
 
     public function getName(): string
@@ -83,9 +84,10 @@ class Contact extends AbstractEntity
         return $this->name;
     }
 
-    public function setName(string $name)
+    public function setName(string $name): self
     {
         $this->name = $name;
+        return $this;
     }
 
     public function getAddress(): string
@@ -93,9 +95,10 @@ class Contact extends AbstractEntity
         return $this->address;
     }
 
-    public function setAddress(string $address)
+    public function setAddress(string $address): self
     {
         $this->address = $address;
+        return $this;
     }
 
     public function getRoomNumber(): string
@@ -103,9 +106,10 @@ class Contact extends AbstractEntity
         return $this->roomNumber;
     }
 
-    public function setRoomNumber(string $roomNumber)
+    public function setRoomNumber(string $roomNumber): self
     {
         $this->roomNumber = $roomNumber;
+        return $this;
     }
 
     public function getTelephone(): string
@@ -113,9 +117,10 @@ class Contact extends AbstractEntity
         return $this->telephone;
     }
 
-    public function setTelephone(string $telephone)
+    public function setTelephone(string $telephone): self
     {
         $this->telephone = $telephone;
+        return $this;
     }
 
     public function getHandicapped(): bool
@@ -123,9 +128,10 @@ class Contact extends AbstractEntity
         return $this->handicapped;
     }
 
-    public function setHandicapped(bool $handicapped)
+    public function setHandicapped(bool $handicapped): self
     {
         $this->handicapped = $handicapped;
+        return $this;
     }
 
     public function getIsFallback(): bool
@@ -133,9 +139,10 @@ class Contact extends AbstractEntity
         return $this->isFallback;
     }
 
-    public function setIsFallback(bool $isFallback)
+    public function setIsFallback(bool $isFallback): self
     {
         $this->isFallback = $isFallback;
+        return $this;
     }
 
     public function getSelfReliance(): bool
@@ -143,9 +150,10 @@ class Contact extends AbstractEntity
         return $this->selfReliance;
     }
 
-    public function setSelfReliance(bool $isSelfReliance)
+    public function setSelfReliance(bool $isSelfReliance): self
     {
         $this->selfReliance = $isSelfReliance;
+        return $this;
     }
 
     public function getLetters(): ObjectStorage
@@ -153,18 +161,21 @@ class Contact extends AbstractEntity
         return $this->letters;
     }
 
-    public function setLetters(ObjectStorage $letters)
+    public function setLetters(ObjectStorage $letters): self
     {
         $this->letters = $letters;
+        return $this;
     }
 
-    public function addLetter(Letter $letter)
+    public function addLetter(Letter $letter): self
     {
         $this->letters->attach($letter);
+        return $this;
     }
 
-    public function removeLetter(Letter $letterToRemove)
+    public function removeLetter(Letter $letterToRemove): self
     {
         $this->letters->detach($letterToRemove);
+        return $this;
     }
 }
