@@ -1,17 +1,19 @@
 <?php
-declare(strict_types=1);
-namespace JWeiland\Jobcenter\Controller;
 
-/**
- * This file is part of the "jobcenter" Extension for TYPO3 CMS.
+declare(strict_types=1);
+
+/*
+ * This file is part of the package jweiland/jobcenter.
  *
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
+ * LICENSE file that was distributed with this source code.
  */
 
+namespace JWeiland\Jobcenter\Controller;
+
+use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use JWeiland\Jobcenter\Domain\Model\Contact;
 use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 
 /**
@@ -32,7 +34,7 @@ class ServiceController extends ActionController
     /**
      * action search
      */
-    public function searchAction():void
+    public function searchAction(): void
     {
     }
 

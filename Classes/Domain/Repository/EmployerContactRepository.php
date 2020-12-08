@@ -1,13 +1,15 @@
 <?php
-declare(strict_types=1);
-namespace JWeiland\Jobcenter\Domain\Repository;
 
-/**
- * This file is part of the "jobcenter" Extension for TYPO3 CMS.
+declare(strict_types=1);
+
+/*
+ * This file is part of the package jweiland/jobcenter.
  *
  * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
+ * LICENSE file that was distributed with this source code.
  */
+
+namespace JWeiland\Jobcenter\Domain\Repository;
 
 use JWeiland\Jobcenter\Domain\Model\EmployerContact;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
