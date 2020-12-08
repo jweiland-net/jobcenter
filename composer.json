@@ -45,7 +45,7 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "telephonedirectory",
+			"extension-key": "jobcenter",
 			"app-dir": ".build",
 			"web-dir": ".build/public"
 		}
