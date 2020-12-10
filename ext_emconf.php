@@ -1,7 +1,7 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Jobcenter',
-    'description' => 'Jobcenter',
+    'description' => 'Recommend employer contacts based on conditions',
     'category' => 'plugin',
     'author' => 'Stefan Froemken',
     'author_email' => 'projects@jweiland.net',
