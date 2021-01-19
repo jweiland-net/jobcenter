@@ -17,13 +17,6 @@ plugin.tx_jobcenter {
 
   persistence {
     storagePid = {$plugin.tx_jobcenter.persistence.storagePid}
-    classes {
-      JWeiland\Jobcenter\Domain\Model\EmployerContact {
-        mapping {
-          tableName = tx_jobcenter_domain_model_employer_contact
-        }
-      }
-    }
   }
 
   settings {
