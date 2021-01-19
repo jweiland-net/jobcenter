@@ -1,0 +1,13 @@
+# Remove that part while removing TYPO3 9 compatibility
+config.tx_extbase {
+  persistence{
+    classes {
+      JWeiland\Jobcenter\Domain\Model\EmployerContact {
+        mapping {
+          tableName = tx_jobcenter_domain_model_employer_contact
+          recordType =
+        }
+      }
+    }
+  }
+}
