@@ -40,7 +40,7 @@ class EmployerContact extends AbstractEntity
     protected $address = '';
 
     /**
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<JWeiland\Jobcenter\Domain\Model\Zip>
+     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\JWeiland\Jobcenter\Domain\Model\Zip>
      */
     protected $zip;
 
