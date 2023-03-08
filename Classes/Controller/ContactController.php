@@ -50,21 +50,12 @@ class ContactController extends ActionController
     }
 
     /**
-     * action search
-     * shows the search form
+     * Shows the search form
      */
     public function searchAction(): void
     {
     }
 
-    /**
-     * action list
-     *
-     * @param string $name
-     * @param int $pid
-     * @param bool $handicapped
-     * @throws InvalidQueryException
-     */
     public function listAction(string $name, int $pid, bool $handicapped): void
     {
         $this->contactRepository->setStoragePids([$pid]);
@@ -72,6 +63,7 @@ class ContactController extends ActionController
         if (!$contact instanceof Contact) {
             $contact = $this->contactRepository->findFallback($handicapped);
         }
+
         $this->view->assign('contact', $contact);
         $this->view->assign('name', $name);
         $this->view->assign('pid', $pid);
@@ -79,14 +71,10 @@ class ContactController extends ActionController
     }
 
     /**
-     * get page title from a given page
-     *
-     * @param int $pid
-     * @return string
+     * Get page title from a given page
      */
     protected function getPagetitle(int $pid): string
     {
-        $page = BackendUtility::getRecord('pages', $pid, 'title');
-        return $page['title'] ?: '';
+        return BackendUtility::getRecord('pages', $pid, 'title')['title'] ?: '';
     }
 }

@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Domain\Model;
 
+use TYPO3\CMS\Extbase\Annotation as Extbase;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
@@ -60,8 +61,8 @@ class Contact extends AbstractEntity
     protected $selfReliance = false;
 
     /**
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\JWeiland\Jobcenter\Domain\Model\Letter>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Lazy
+     * @var ObjectStorage<Letter>
+     * @Extbase\ORM\Lazy
      */
     protected $letters;
 
@@ -70,15 +71,22 @@ class Contact extends AbstractEntity
         $this->letters = new ObjectStorage();
     }
 
+    /**
+     * Called again with initialize object, as fetching an entity from the DB does not use the constructor
+     */
+    public function initializeObject(): void
+    {
+        $this->letters = $this->letters ?? new ObjectStorage();
+    }
+
     public function getSalutation(): bool
     {
         return $this->salutation;
     }
 
-    public function setSalutation(bool $salutation): self
+    public function setSalutation(bool $salutation): void
     {
         $this->salutation = $salutation;
-        return  $this;
     }
 
     public function getName(): string
@@ -86,10 +94,9 @@ class Contact extends AbstractEntity
         return $this->name;
     }
 
-    public function setName(string $name): self
+    public function setName(string $name): void
     {
         $this->name = $name;
-        return $this;
     }
 
     public function getAddress(): string
@@ -97,10 +104,9 @@ class Contact extends AbstractEntity
         return $this->address;
     }
 
-    public function setAddress(string $address): self
+    public function setAddress(string $address): void
     {
         $this->address = $address;
-        return $this;
     }
 
     public function getRoomNumber(): string
@@ -108,10 +114,9 @@ class Contact extends AbstractEntity
         return $this->roomNumber;
     }
 
-    public function setRoomNumber(string $roomNumber): self
+    public function setRoomNumber(string $roomNumber): void
     {
         $this->roomNumber = $roomNumber;
-        return $this;
     }
 
     public function getTelephone(): string
@@ -119,10 +124,9 @@ class Contact extends AbstractEntity
         return $this->telephone;
     }
 
-    public function setTelephone(string $telephone): self
+    public function setTelephone(string $telephone): void
     {
         $this->telephone = $telephone;
-        return $this;
     }
 
     public function getHandicapped(): bool
@@ -130,10 +134,9 @@ class Contact extends AbstractEntity
         return $this->handicapped;
     }
 
-    public function setHandicapped(bool $handicapped): self
+    public function setHandicapped(bool $handicapped): void
     {
         $this->handicapped = $handicapped;
-        return $this;
     }
 
     public function getIsFallback(): bool
@@ -141,10 +144,9 @@ class Contact extends AbstractEntity
         return $this->isFallback;
     }
 
-    public function setIsFallback(bool $isFallback): self
+    public function setIsFallback(bool $isFallback): void
     {
         $this->isFallback = $isFallback;
-        return $this;
     }
 
     public function getSelfReliance(): bool
@@ -152,10 +154,9 @@ class Contact extends AbstractEntity
         return $this->selfReliance;
     }
 
-    public function setSelfReliance(bool $isSelfReliance): self
+    public function setSelfReliance(bool $isSelfReliance): void
     {
         $this->selfReliance = $isSelfReliance;
-        return $this;
     }
 
     public function getLetters(): ObjectStorage
@@ -163,21 +164,18 @@ class Contact extends AbstractEntity
         return $this->letters;
     }
 
-    public function setLetters(ObjectStorage $letters): self
+    public function setLetters(ObjectStorage $letters): void
     {
         $this->letters = $letters;
-        return $this;
     }
 
-    public function addLetter(Letter $letter): self
+    public function addLetter(Letter $letter): void
     {
         $this->letters->attach($letter);
-        return $this;
     }
 
-    public function removeLetter(Letter $letterToRemove): self
+    public function removeLetter(Letter $letterToRemove): void
     {
         $this->letters->detach($letterToRemove);
-        return $this;
     }
 }

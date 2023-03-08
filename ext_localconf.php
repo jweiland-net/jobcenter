@@ -4,32 +4,34 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'JWeiland.jobcenter',
+    'Jobcenter',
     'Contact',
     [
-        'Contact' => 'search, list'
+        \JWeiland\Jobcenter\Controller\ContactController::class => 'search, list',
     ], // non-cacheable actions
     [
-        'Contact' => 'list'
+        \JWeiland\Jobcenter\Controller\ContactController::class => 'list',
     ]
 );
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'JWeiland.jobcenter',
+    'Jobcenter',
     'EmployerContact',
     [
-        'EmployerContact' => 'search, list'
+        \JWeiland\Jobcenter\Controller\EmployerContactController::class => 'search, list',
     ], // non-cacheable actions
     [
-        'EmployerContact' => 'list'
+        \JWeiland\Jobcenter\Controller\EmployerContactController::class => 'list',
     ]
 );
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'JWeiland.jobcenter',
+    'Jobcenter',
     'Service',
     [
-        'Service' => 'search, list'
+        \JWeiland\Jobcenter\Controller\ServiceController::class => 'search, list',
     ], // non-cacheable actions
     [
-        'Service' => 'list'
+        \JWeiland\Jobcenter\Controller\ServiceController::class => 'list',
     ]
 );

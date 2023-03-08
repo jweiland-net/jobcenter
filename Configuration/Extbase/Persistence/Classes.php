@@ -11,6 +11,6 @@ declare(strict_types=1);
 
 return [
     \JWeiland\Jobcenter\Domain\Model\EmployerContact::class => [
-        'tableName' => 'tx_jobcenter_domain_model_employer_contact'
-    ]
+        'tableName' => 'tx_jobcenter_domain_model_employer_contact',
+    ],
 ];

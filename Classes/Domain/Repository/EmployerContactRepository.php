@@ -24,31 +24,32 @@ class EmployerContactRepository extends Repository
      * @var array
      */
     protected $defaultOrderings = [
-        'uid' => QueryInterface::ORDER_DESCENDING
+        'uid' => QueryInterface::ORDER_DESCENDING,
     ];
 
     /**
-     * find contact specialized for given zip
-     *
-     * @param string $zip
-     * @return EmployerContact|object|null
+     * Find contact specialized for given zip
      */
-    public function findContact(string $zip)
+    public function findContact(string $zip): ?EmployerContact
     {
         $query = $this->createQuery();
 
-        return $query->matching($query->equals('zip.zip', $zip))->execute()->getFirst();
+        /** @var EmployerContact|null $employerContact */
+        $employerContact = $query->matching($query->equals('zip.zip', $zip))->execute()->getFirst();
+
+        return $employerContact;
     }
 
     /**
-     * find fallback
-     *
-     * @return EmployerContact|object|null
+     * Find fallback
      */
-    public function findFallback()
+    public function findFallback(): ?EmployerContact
     {
         $query = $this->createQuery();
 
-        return $query->matching($query->equals('isFallback', true))->execute()->getFirst();
+        /** @var EmployerContact|null $employerContact */
+        $employerContact = $query->matching($query->equals('isFallback', true))->execute()->getFirst();
+
+        return $employerContact;
     }
 }

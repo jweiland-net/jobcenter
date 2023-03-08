@@ -31,20 +31,10 @@ class ServiceController extends ActionController
         $this->contactRepository = $contactRepository;
     }
 
-    /**
-     * action search
-     */
     public function searchAction(): void
     {
     }
 
-    /**
-     * action list
-     *
-     * @param string $name
-     * @param bool $selfReliance
-     * @throws InvalidQueryException
-     */
     public function listAction(string $name, bool $selfReliance = false): void
     {
         $this->contactRepository->setStoragePids([$this->settings['pidForService']]);
