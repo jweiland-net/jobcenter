@@ -63,7 +63,6 @@ return [
                 ],
                 'foreign_table' => 'tx_jobcenter_domain_model_zip',
                 'foreign_table_where' => 'AND tx_jobcenter_domain_model_zip.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_zip.sys_language_uid IN (-1,0)',
-                'showIconTable' => false,
                 'default' => 0,
             ],
         ],
@@ -98,6 +97,7 @@ return [
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'size' => 13,
                 'eval' => 'datetime',
                 'default' => 0,
@@ -110,6 +110,7 @@ return [
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'size' => 13,
                 'eval' => 'datetime',
                 'default' => 0,
