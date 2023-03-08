@@ -14,7 +14,6 @@ namespace JWeiland\Jobcenter\Controller;
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 
 /**
  * Controller for granting of benefits (DE: Leistungsgewaehrung)
