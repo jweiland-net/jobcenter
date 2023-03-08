@@ -32,37 +32,28 @@ class EmployerContactController extends ActionController
     }
 
     /**
-     * action search
-     * shows the search form
+     * Shows the search form
      */
     public function searchAction(): void
     {
     }
 
-    /**
-     * action list
-     *
-     * @param string $zip
-     */
     public function listAction(string $zip): void
     {
         $contact = $this->employerContactRepository->findContact($zip);
         if (!$contact instanceof EmployerContact) {
             $contact = $this->employerContactRepository->findFallback();
         }
+
         $this->view->assign('contact', $contact);
         $this->view->assign('zip', $zip);
     }
 
     /**
-     * get page title from a given page
-     *
-     * @param int $pid
-     * @return string
+     * Get page title from a given page
      */
     protected function getPagetitle(int $pid): string
     {
-        $page = BackendUtility::getRecord('pages', $pid, 'title');
-        return $page['title'] ?: '';
+        return BackendUtility::getRecord('pages', $pid, 'title')['title'] ?: '';
     }
 }

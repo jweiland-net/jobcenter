@@ -7,10 +7,12 @@ plugin.tx_jobcenter {
     # cat=plugin.tx_jobcenter/file; type=string; label=Path to template layouts (FE)
     layoutRootPath = EXT:jobcenter/Resources/Private/Layouts/
   }
+
   persistence {
     # cat=plugin.tx_jobcenter//a; type=string; label=Default storage PID
     storagePid =
   }
+
   settings {
     # cat=plugin.tx_jobcenter//b; type=int+; label=Storage PID Management 15-24
     pidForManagement15_24 = 0

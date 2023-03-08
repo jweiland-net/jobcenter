@@ -4,17 +4,19 @@ if (!defined('TYPO3_MODE')) {
 }
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'JWeiland.jobcenter',
+    'Jobcenter',
     'Contact',
     'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.contact.title'
 );
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'JWeiland.jobcenter',
+    'Jobcenter',
     'EmployerContact',
     'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.employerContact.title'
 );
+
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-    'JWeiland.jobcenter',
+    'Jobcenter',
     'Service',
     'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.service.title'
 );

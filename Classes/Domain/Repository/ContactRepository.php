@@ -30,18 +30,15 @@ class ContactRepository extends Repository
      * @var array
      */
     protected $defaultOrderings = [
-        'uid' => QueryInterface::ORDER_DESCENDING
+        'uid' => QueryInterface::ORDER_DESCENDING,
     ];
 
     /**
      * Find contact specialized for given name
      *
-     * @param string $name
-     * @param bool $handicapped
-     * @return Contact|null
      * @throws InvalidQueryException
      */
-    public function findContact(string $name, bool $handicapped)
+    public function findContact(string $name, bool $handicapped): ?Contact
     {
         $query = $this->createQuery();
         $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
@@ -54,16 +51,14 @@ class ContactRepository extends Repository
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+
         return $contact;
     }
 
     /**
      * Find a fallback for contact
-     *
-     * @param bool $handicapped
-     * @return Contact|null
      */
-    public function findFallback(bool $handicapped)
+    public function findFallback(bool $handicapped): ?Contact
     {
         $query = $this->createQuery();
         $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
@@ -74,18 +69,16 @@ class ContactRepository extends Repository
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+
         return $contact;
     }
 
     /**
      * Find a contact for service
      *
-     * @param string $name
-     * @param bool $selfReliance
-     * @return Contact|null
      * @throws InvalidQueryException
      */
-    public function findService(string $name, bool $selfReliance)
+    public function findService(string $name, bool $selfReliance): ?Contact
     {
         $query = $this->createQuery();
         $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
@@ -97,15 +90,14 @@ class ContactRepository extends Repository
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+
         return $contact;
     }
 
     /**
      * Find fallback for service
-     *
-     * @return Contact|null
      */
-    public function findFallbackForService()
+    public function findFallbackForService(): ?Contact
     {
         $query = $this->createQuery();
         $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
@@ -115,6 +107,7 @@ class ContactRepository extends Repository
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+
         return $contact;
     }
 

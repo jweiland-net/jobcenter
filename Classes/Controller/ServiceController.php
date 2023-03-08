@@ -14,7 +14,6 @@ namespace JWeiland\Jobcenter\Controller;
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use TYPO3\CMS\Extbase\Persistence\Exception\InvalidQueryException;
 
 /**
  * Controller for granting of benefits (DE: Leistungsgewaehrung)
@@ -31,20 +30,10 @@ class ServiceController extends ActionController
         $this->contactRepository = $contactRepository;
     }
 
-    /**
-     * action search
-     */
     public function searchAction(): void
     {
     }
 
-    /**
-     * action list
-     *
-     * @param string $name
-     * @param bool $selfReliance
-     * @throws InvalidQueryException
-     */
     public function listAction(string $name, bool $selfReliance = false): void
     {
         $this->contactRepository->setStoragePids([$this->settings['pidForService']]);

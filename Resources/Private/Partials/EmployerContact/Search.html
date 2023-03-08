@@ -1,14 +1,19 @@
+<html lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
 <div class="search">
-	<f:form action="list" name="search" class="extform">
-		<div class="extdiv">
-			<label>
-				<f:translate key="tx_jobcenter_domain_model_employer_contact.zip"/>
-			</label>
-			<f:form.textfield name="zip" value="{zip}"/>
-		</div>
-		<div class="powermail_fieldwrap_submit marginbottom">
-			<f:form.submit value="{f:translate(key: 'search')}" class="powermail_submit"/>
-		</div>
-	</f:form>
-	<div>{f:translate(key: 'infotext')}</div>
+    <f:form action="list" name="search" class="extform">
+        <div class="extdiv">
+            <label>
+                <f:translate key="tx_jobcenter_domain_model_employer_contact.zip"/>
+            </label>
+            <f:form.textfield name="zip" value="{zip}"/>
+        </div>
+        <div class="powermail_fieldwrap_submit marginbottom">
+            <f:form.submit value="{f:translate(key: 'search')}" class="powermail_submit"/>
+        </div>
+    </f:form>
+    <div>{f:translate(key: 'infotext')}</div>
 </div>
+</html>

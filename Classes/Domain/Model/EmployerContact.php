@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Domain\Model;
 
+use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
@@ -40,7 +41,7 @@ class EmployerContact extends AbstractEntity
     protected $address = '';
 
     /**
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\JWeiland\Jobcenter\Domain\Model\Zip>
+     * @var ObjectStorage<Zip>
      */
     protected $zip;
 
@@ -60,7 +61,7 @@ class EmployerContact extends AbstractEntity
     protected $email = '';
 
     /**
-     * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
+     * @var ObjectStorage<FileReference>
      */
     protected $image;
 
@@ -75,15 +76,23 @@ class EmployerContact extends AbstractEntity
         $this->image = new ObjectStorage();
     }
 
+    /**
+     * Called again with initialize object, as fetching an entity from the DB does not use the constructor
+     */
+    public function initializeObject(): void
+    {
+        $this->zip = $this->zip ?? new ObjectStorage();
+        $this->image = $this->image ?? new ObjectStorage();
+    }
+
     public function getSalutation(): bool
     {
         return $this->salutation;
     }
 
-    public function setSalutation(bool $salutation): self
+    public function setSalutation(bool $salutation): void
     {
         $this->salutation = $salutation;
-        return $this;
     }
 
     public function getFirstName(): string
@@ -91,10 +100,9 @@ class EmployerContact extends AbstractEntity
         return $this->firstName;
     }
 
-    public function setFirstName(string $firstName): self
+    public function setFirstName(string $firstName): void
     {
         $this->firstName = $firstName;
-        return $this;
     }
 
     public function getLastName(): string
@@ -102,10 +110,9 @@ class EmployerContact extends AbstractEntity
         return $this->lastName;
     }
 
-    public function setLastName(string $lastName): self
+    public function setLastName(string $lastName): void
     {
         $this->lastName = $lastName;
-        return $this;
     }
 
     public function getAddress(): string
@@ -113,10 +120,9 @@ class EmployerContact extends AbstractEntity
         return $this->address;
     }
 
-    public function setAddress(string $address): self
+    public function setAddress(string $address): void
     {
         $this->address = $address;
-        return $this;
     }
 
     public function getZip(): ObjectStorage
@@ -124,10 +130,9 @@ class EmployerContact extends AbstractEntity
         return $this->zip;
     }
 
-    public function setZip(ObjectStorage $zip): self
+    public function setZip(ObjectStorage $zip): void
     {
         $this->zip = $zip;
-        return $this;
     }
 
     public function getRoomNumber(): string
@@ -135,10 +140,9 @@ class EmployerContact extends AbstractEntity
         return $this->roomNumber;
     }
 
-    public function setRoomNumber(string $roomNumber): self
+    public function setRoomNumber(string $roomNumber): void
     {
         $this->roomNumber = $roomNumber;
-        return $this;
     }
 
     public function getTelephone(): string
@@ -146,10 +150,9 @@ class EmployerContact extends AbstractEntity
         return $this->telephone;
     }
 
-    public function setTelephone(string $telephone): self
+    public function setTelephone(string $telephone): void
     {
         $this->telephone = $telephone;
-        return $this;
     }
 
     public function getEmail(): string
@@ -157,10 +160,9 @@ class EmployerContact extends AbstractEntity
         return $this->email;
     }
 
-    public function setEmail(string $email): self
+    public function setEmail(string $email): void
     {
         $this->email = $email;
-        return $this;
     }
 
     public function getImage(): ObjectStorage
@@ -168,10 +170,9 @@ class EmployerContact extends AbstractEntity
         return $this->image;
     }
 
-    public function setImage(ObjectStorage $image): self
+    public function setImage(ObjectStorage $image): void
     {
         $this->image = $image;
-        return $this;
     }
 
     public function getIsFallback(): bool
@@ -179,9 +180,8 @@ class EmployerContact extends AbstractEntity
         return $this->isFallback;
     }
 
-    public function setIsFallback(bool $isFallback): self
+    public function setIsFallback(bool $isFallback): void
     {
         $this->isFallback = $isFallback;
-        return $this;
     }
 }

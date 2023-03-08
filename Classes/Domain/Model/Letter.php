@@ -33,10 +33,9 @@ class Letter extends AbstractEntity
         return $this->letterStart;
     }
 
-    public function setLetterStart(string $letterStart): self
+    public function setLetterStart(string $letterStart): void
     {
         $this->letterStart = $letterStart;
-        return $this;
     }
 
     public function getLetterEnd(): string
@@ -44,9 +43,8 @@ class Letter extends AbstractEntity
         return $this->letterEnd;
     }
 
-    public function setLetterEnd(string $letterEnd): self
+    public function setLetterEnd(string $letterEnd): void
     {
         $this->letterEnd = $letterEnd;
-        return $this;
     }
 }
