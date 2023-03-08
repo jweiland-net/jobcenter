@@ -1,6 +1,6 @@
 # TYPO3 Extension `jobcenter`
 
-![Build Status](https://github.com/jweiland-net/jobcenter/workflows/CI/badge.svg)
+[![CI](https://github.com/jweiland-net/jobcenter/actions/workflows/ci.yml/badge.svg)](https://github.com/jweiland-net/jobcenter/actions/workflows/ci.yml)
 
 `jobcenter` is an extension for TYPO3 CMS. It is mostly used by cities and towns
 to help their inhabitants to find the correct contact person for granting of
