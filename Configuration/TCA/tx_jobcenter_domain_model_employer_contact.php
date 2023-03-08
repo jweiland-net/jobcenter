@@ -29,7 +29,7 @@ return [
                 --palette--;;address_zip_room,
                 --palette--;;telephone_email,
                 is_fallback, image,
-                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, 
+                --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access',
         ],
     ],
@@ -62,7 +62,6 @@ return [
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => true,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
@@ -72,7 +71,6 @@ return [
                 ],
                 'foreign_table' => 'tx_jobcenter_domain_model_employer_contact',
                 'foreign_table_where' => 'AND tx_jobcenter_domain_model_employer_contact.pid=###CURRENT_PID### AND tx_jobcenter_domain_model_employer_contact.sys_language_uid IN (-1,0)',
-                'showIconTable' => false,
                 'default' => 0,
             ],
         ],
@@ -107,6 +105,7 @@ return [
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'size' => 13,
                 'eval' => 'datetime',
                 'default' => 0,
@@ -119,6 +118,7 @@ return [
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'size' => 13,
                 'eval' => 'datetime',
                 'default' => 0,
