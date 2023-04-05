@@ -1,0 +1,41 @@
+<html lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Config</th>
+        <th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>Extension</strong></td>
+        <td>Jobcenter</td>
+    </tr>
+    <tr>
+        <td><strong>Plugin</strong></td>
+        <td>
+            <f:switch expression="{list_type}">
+                <f:case value="jobcenter_contact">Job Seekers</f:case>
+                <f:case value="jobcenter_employercontact">Employers</f:case>
+                <f:defaultCase>Granting of services</f:defaultCase>
+            </f:switch>
+        </td>
+    </tr>
+    <f:if condition="{pages}">
+        <tr>
+            <td><strong>Storages</strong></td>
+            <td>{pages}</td>
+        </tr>
+    </f:if>
+    <f:if condition="{recursive}">
+        <tr>
+            <td><strong>Recursive</strong></td>
+            <td>{recursive}</td>
+        </tr>
+    </f:if>
+    </tbody>
+</table>
+</html>

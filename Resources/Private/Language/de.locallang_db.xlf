@@ -3,18 +3,29 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
 		<header/>
 		<body>
-
 			<trans-unit id="plugin.contact.title">
 				<source>Jobcenter: Contact</source>
 				<target>Jobcenter: Fallmanagement</target>
+			</trans-unit>
+			<trans-unit id="plugin.contact.description">
+				<source>Provides a plugin where job seekers can find their contact person</source>
+				<target>Stelt ein Plugin zur Verfügung, wo Arbeitssuchende ihren Ansprechpartner finden</target>
 			</trans-unit>
 			<trans-unit id="plugin.employerContact.title">
 				<source>Jobcenter: Contact for Employers</source>
 				<target>Jobcenter: Ansprechpartner für Arbeitgeber</target>
 			</trans-unit>
+			<trans-unit id="plugin.employerContact.description">
+				<source>Provides a plugin where employers can find their contact person</source>
+				<target>Stelt ein Plugin zur Verfügung, wo Arbeitgeber ihren Ansprechpartner finden</target>
+			</trans-unit>
 			<trans-unit id="plugin.service.title">
 				<source>Jobcenter: Service</source>
 				<target>Jobcenter: Finanzielle Leistungsgewährung</target>
+			</trans-unit>
+			<trans-unit id="plugin.service.description">
+				<source>Provides a plugin to find the contact person for granting of services</source>
+				<target>Stelt ein Plugin zur Verfügung, mit dem man den Ansprechpartner zur Leistungsgewährung findet</target>
 			</trans-unit>
 
 			<trans-unit id="palette.language_hidden" xml:space="preserve">
