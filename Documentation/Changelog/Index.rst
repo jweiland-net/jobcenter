@@ -7,6 +7,16 @@
 Change log
 ==========
 
+Version 3.1.0
+=============
+
+*   Add Plugin Preview
+
+Version 3.0.1
+=============
+
+*   [BUGFIX] Wrong extension name in documentation
+
 Version 3.0.0
 =============
 
