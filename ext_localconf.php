@@ -35,3 +35,9 @@ if (!defined('TYPO3_MODE')) {
         \JWeiland\Jobcenter\Controller\ServiceController::class => 'list',
     ]
 );
+
+// Add jobcenter plugin to new element wizard
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jobcenter/Configuration/TSconfig/ContentElementWizard.tsconfig">'
+);
+
