@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataset>
+    <tx_jobcenter_domain_model_contact>
+        <uid>1</uid>
+        <pid>10</pid>
+        <name>Anton: A-F - U25 - handicapped: 0 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>2</uid>
+        <pid>10</pid>
+        <name>Igor: I-Pf - U25  - handicapped: 0 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>3</uid>
+        <pid>10</pid>
+        <name>Stefan: S-Z - U25  - handicapped: 0 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>4</uid>
+        <pid>10</pid>
+        <name>August: A-G - U25  - handicapped: 1 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>5</uid>
+        <pid>10</pid>
+        <name>Theodor: T-Z - U25  - handicapped: 1 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>6</uid>
+        <pid>10</pid>
+        <name>Andy: A-I - U25  - handicapped: 0 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>7</uid>
+        <pid>10</pid>
+        <name>Lars: L-Z - U25  - handicapped: 0 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>8</uid>
+        <pid>10</pid>
+        <name>Andrea: A-F - U25  - handicapped: 1 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>9</uid>
+        <pid>10</pid>
+        <name>Udo: U-Z - U25  - handicapped: 1 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>10</uid>
+        <pid>10</pid>
+        <name>Fallback: Dieter - U25 - handicapped: 0 - self_reliance: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>11</uid>
+        <pid>10</pid>
+        <name>Fallback: Erik - U25 - handicapped: 1 - self_reliance: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>12</uid>
+        <pid>10</pid>
+        <name>Fallback: Joachim - U25 - handicapped: 0 - self_reliance: 1</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>13</uid>
+        <pid>10</pid>
+        <name>Fallback: Tanja - U25 - handicapped: 1 - self_reliance: 1</name>
+        <handicapped>1</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+
+    <tx_jobcenter_domain_model_contact>
+        <uid>14</uid>
+        <pid>11</pid>
+        <name>Anton: A-F - Ü25 - handicapped: 0 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>15</uid>
+        <pid>11</pid>
+        <name>Igor: I-Pf - Ü25  - handicapped: 0 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>16</uid>
+        <pid>11</pid>
+        <name>Stefan: S-Z - Ü25  - handicapped: 0 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>17</uid>
+        <pid>11</pid>
+        <name>August: A-G - Ü25  - handicapped: 1 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>18</uid>
+        <pid>11</pid>
+        <name>Theodor: T-Z - Ü25  - handicapped: 1 - self_reliance: 0 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>19</uid>
+        <pid>11</pid>
+        <name>Andy: A-I - Ü25  - handicapped: 0 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>20</uid>
+        <pid>11</pid>
+        <name>Lars: L-Z - Ü25  - handicapped: 0 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>21</uid>
+        <pid>11</pid>
+        <name>Andrea: A-F - Ü25  - handicapped: 1 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>22</uid>
+        <pid>11</pid>
+        <name>Udo: U-Z - Ü25  - handicapped: 1 - self_reliance: 1 - fallback: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>23</uid>
+        <pid>11</pid>
+        <name>Fallback: Dieter - Ü25 - handicapped: 0 - self_reliance: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>24</uid>
+        <pid>11</pid>
+        <name>Fallback: Erik - Ü25 - handicapped: 1 - self_reliance: 0</name>
+        <handicapped>1</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>25</uid>
+        <pid>11</pid>
+        <name>Fallback: Joachim - Ü25 - handicapped: 0 - self_reliance: 1</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>26</uid>
+        <pid>11</pid>
+        <name>Fallback: Tanja - Ü25 - handicapped: 1 - self_reliance: 1</name>
+        <handicapped>1</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+
+    <tx_jobcenter_domain_model_contact>
+        <uid>27</uid>
+        <pid>12</pid>
+        <name>Andy: A-I - Service - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>28</uid>
+        <pid>12</pid>
+        <name>Lars: L-Z - Service - self_reliance: 0 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>29</uid>
+        <pid>12</pid>
+        <name>Andrea: A-F - Service - self_reliance: 1 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>30</uid>
+        <pid>12</pid>
+        <name>Udo: U-Z - Service - self_reliance: 1 - fallback: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>0</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>31</uid>
+        <pid>12</pid>
+        <name>Fallback: Manuel - Service - self_reliance: 0</name>
+        <handicapped>0</handicapped>
+        <self_reliance>0</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+    <tx_jobcenter_domain_model_contact>
+        <uid>32</uid>
+        <pid>12</pid>
+        <name>Fallback: Petra - Service - self_reliance: 1</name>
+        <handicapped>0</handicapped>
+        <self_reliance>1</self_reliance>
+        <is_fallback>1</is_fallback>
+        <hidden>0</hidden>
+        <deleted>0</deleted>
+    </tx_jobcenter_domain_model_contact>
+</dataset>
