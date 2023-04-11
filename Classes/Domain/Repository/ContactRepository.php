@@ -24,11 +24,6 @@ class ContactRepository extends Repository
     /**
      * @var array
      */
-    protected $storagePids = [];
-
-    /**
-     * @var array
-     */
     protected $defaultOrderings = [
         'uid' => QueryInterface::ORDER_DESCENDING,
     ];
@@ -38,19 +33,24 @@ class ContactRepository extends Repository
      *
      * @throws InvalidQueryException
      */
-    public function findContact(string $name, bool $handicapped): ?Contact
+    public function findContact(string $name, int $pid, bool $handicapped, bool $selfReliance = false): ?Contact
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
+        $query->getQuerySettings()->setStoragePageIds([$pid]);
 
         $constraints = [];
         $constraints[] = $query->lessThanOrEqual('letters.letterStart', $name);
         $constraints[] = $query->greaterThanOrEqual('letters.letterEnd', $name);
         $constraints[] = $query->equals('handicapped', $handicapped);
+        $constraints[] = $query->equals('selfReliance', $selfReliance);
         $constraints[] = $query->equals('isFallback', false);
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+
+        if (!$contact instanceof Contact) {
+            return $this->findFallback($pid, $handicapped, $selfReliance);
+        }
 
         return $contact;
     }
@@ -58,14 +58,15 @@ class ContactRepository extends Repository
     /**
      * Find a fallback for contact
      */
-    public function findFallback(bool $handicapped): ?Contact
+    protected function findFallback(int $pid, bool $handicapped, bool $selfReliance = false): ?Contact
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
+        $query->getQuerySettings()->setStoragePageIds([$pid]);
 
         $constraints = [];
         $constraints[] = $query->equals('isFallback', true);
         $constraints[] = $query->equals('handicapped', $handicapped);
+        $constraints[] = $query->equals('selfReliance', $selfReliance);
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
@@ -78,10 +79,10 @@ class ContactRepository extends Repository
      *
      * @throws InvalidQueryException
      */
-    public function findService(string $name, bool $selfReliance): ?Contact
+    public function findService(string $name, int $pid, bool $selfReliance): ?Contact
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
+        $query->getQuerySettings()->setStoragePageIds([$pid]);
 
         $constraints = [];
         $constraints[] = $query->lessThanOrEqual('letters.letterStart', $name);
@@ -91,33 +92,28 @@ class ContactRepository extends Repository
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
 
+        if (!$contact instanceof Contact) {
+            return $this->findFallbackForService($pid, $selfReliance);
+        }
+
         return $contact;
     }
 
     /**
      * Find fallback for service
      */
-    public function findFallbackForService(): ?Contact
+    protected function findFallbackForService(int $pid, bool $selfReliance = false): ?Contact
     {
         $query = $this->createQuery();
-        $query->getQuerySettings()->setStoragePageIds($this->getStoragePids());
+        $query->getQuerySettings()->setStoragePageIds([$pid]);
 
         $constraints = [];
         $constraints[] = $query->equals('isFallback', true);
+        $constraints[] = $query->equals('selfReliance', $selfReliance);
 
         /** @var Contact|null $contact */
         $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
 
         return $contact;
-    }
-
-    public function getStoragePids(): array
-    {
-        return $this->storagePids;
-    }
-
-    public function setStoragePids(array $storagePids): void
-    {
-        $this->storagePids = $storagePids;
     }
 }
