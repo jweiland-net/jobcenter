@@ -7,6 +7,14 @@
 Change log
 ==========
 
+Version 3.2.0
+=============
+
+*   [FEATURE] Add selfreliance as checkbox to search form
+*   [TASK] ContactRepository finds fallback itself
+*   [TASK] Show FlashMessage, if a contact person could not be found
+*   [TASK] Add func tests
+
 Version 3.1.0
 =============
 

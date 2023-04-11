@@ -5,42 +5,35 @@
 <f:layout name="Default"/>
 
 <f:section name="main">
-    <f:render partial="Service/Search" arguments="{name: name}"/>
-    <table class="tx_jobcenter">
-        <tr>
-            <th>
-                <f:translate key="tx_jobcenter_domain_model_contact.salutation"/>
-            </th>
-            <th>
-                <f:translate key="tx_jobcenter_domain_model_contact.name"/>
-            </th>
-            <th>
-                <f:translate key="tx_jobcenter_domain_model_contact.address"/>
-            </th>
-            <th>
-                <f:translate key="tx_jobcenter_domain_model_contact.room_number"/>
-            </th>
-            <th>
-                <f:translate key="tx_jobcenter_domain_model_contact.telephone"/>
-            </th>
-        </tr>
+    <f:flashMessages />
 
-        <tr>
-            <td>
-                <f:if condition="{service.salutation}">
-                    <f:then>
-                        <f:translate key="tx_jobcenter_domain_model_contact.salutation.mrs"/>
-                    </f:then>
-                    <f:else>
-                        <f:translate key="tx_jobcenter_domain_model_contact.salutation.mr"/>
-                    </f:else>
-                </f:if>
-            </td>
-            <td>{service.name}</td>
-            <td>{service.address}</td>
-            <td>{service.roomNumber}</td>
-            <td>{service.telephone}</td>
-        </tr>
-    </table>
+    <f:render partial="Service/Search" arguments="{name: name}"/>
+
+    <f:if condition="{service}">
+        <table class="tx_jobcenter">
+            <thead>
+            <tr>
+                <th>{f:translate(key: 'tx_jobcenter_domain_model_contact.salutation')}</th>
+                <th>{f:translate(key: 'tx_jobcenter_domain_model_contact.name')}</th>
+                <th>{f:translate(key: 'tx_jobcenter_domain_model_contact.address')}</th>
+                <th>{f:translate(key: 'tx_jobcenter_domain_model_contact.room_number')}</th>
+                <th>{f:translate(key: 'tx_jobcenter_domain_model_contact.telephone')}</th>
+            </tr>
+            </thead>
+
+            <tr>
+                <td>
+                    <f:if condition="{service.salutation}">
+                        <f:then>{f:translate(key: 'tx_jobcenter_domain_model_contact.salutation.mrs')}</f:then>
+                        <f:else>{f:translate(key: 'tx_jobcenter_domain_model_contact.salutation.mr')}</f:else>
+                    </f:if>
+                </td>
+                <td>{service.name}</td>
+                <td>{service.address}</td>
+                <td>{service.roomNumber}</td>
+                <td>{service.telephone}</td>
+            </tr>
+        </table>
+    </f:if>
 </f:section>
 </html>

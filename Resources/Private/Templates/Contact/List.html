@@ -2,37 +2,42 @@
       xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
 
-<f:layout name="Default" />
+<f:layout name="Default"/>
 
 <f:section name="main">
-	<f:render partial="Contact/Search" arguments="{name: name, pids: pids, pid: pid, handicapped: handicapped}" />
-	<f:if condition="{contact}">
-		<div class="rulerbefore4">
-			<dl class="extdl clearfix rulerafter">
-				<dt class="noborder">
-					<f:if condition="{contact.salutation}">
-						<f:then>
-							<f:translate key="tx_jobcenter_domain_model_contact.salutation.mrs"/>
-						</f:then>
-						<f:else>
-							<f:translate key="tx_jobcenter_domain_model_contact.salutation.mr"/>
-						</f:else>
-					</f:if>
-					{contact.name}
-				</dt>
-				<dd class="grid_8 floatleft noborder">{contact.address}
-					<f:if condition="{contact.roomNumber}">
-						<br />
-						<f:translate key="tx_jobcenter_domain_model_contact.room_number"/>: {contact.roomNumber}
-					</f:if>
-				</dd>
-				<f:if condition="{contact.telephone}">
-					<dd class="grid_4 floatleft noborder">
-						<span aria-hidden="true" class="icon-phone_pf"></span>{contact.telephone}
-					</dd>
-				</f:if>
-			</dl>
-		</div>
-	</f:if>
+    <f:flashMessages />
+
+    <f:render partial="Contact/Search"
+              arguments="{name: name, pids: pids, pid: pid, handicapped: handicapped, selfReliance: selfReliance}"/>
+
+    <f:if condition="{contact}">
+        <div class="rulerbefore4">
+            <dl class="extdl clearfix rulerafter">
+                <dt class="noborder">
+                    <f:if condition="{contact.salutation}">
+                        <f:then>
+                            <f:translate key="tx_jobcenter_domain_model_contact.salutation.mrs"/>
+                        </f:then>
+                        <f:else>
+                            <f:translate key="tx_jobcenter_domain_model_contact.salutation.mr"/>
+                        </f:else>
+                    </f:if>
+                    {contact.name}
+                </dt>
+                <dd class="grid_8 floatleft noborder">{contact.address}
+                    <f:if condition="{contact.roomNumber}">
+                        <br/>
+                        <f:translate key="tx_jobcenter_domain_model_contact.room_number"/>
+                        : {contact.roomNumber}
+                    </f:if>
+                </dd>
+                <f:if condition="{contact.telephone}">
+                    <dd class="grid_4 floatleft noborder">
+                        <span aria-hidden="true" class="icon-phone_pf"></span>{contact.telephone}
+                    </dd>
+                </f:if>
+            </dl>
+        </div>
+    </f:if>
 </f:section>
 </html>
