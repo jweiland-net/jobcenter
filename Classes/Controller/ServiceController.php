@@ -12,7 +12,6 @@ declare(strict_types=1);
 namespace JWeiland\Jobcenter\Controller;
 
 use JWeiland\Jobcenter\Domain\Model\Contact;
-use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -20,15 +19,7 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  */
 class ServiceController extends ActionController
 {
-    /**
-     * @var ContactRepository
-     */
-    protected $contactRepository;
-
-    public function injectContactRepository(ContactRepository $contactRepository): void
-    {
-        $this->contactRepository = $contactRepository;
-    }
+    use InjectContactRepositoryTrait;
 
     public function searchAction(): void
     {

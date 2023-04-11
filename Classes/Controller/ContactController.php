@@ -12,7 +12,6 @@ declare(strict_types=1);
 namespace JWeiland\Jobcenter\Controller;
 
 use JWeiland\Jobcenter\Domain\Model\Contact;
-use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
@@ -22,15 +21,7 @@ use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
  */
 class ContactController extends ActionController
 {
-    /**
-     * @var ContactRepository
-     */
-    protected $contactRepository;
-
-    public function injectContactRepository(ContactRepository $contactRepository): void
-    {
-        $this->contactRepository = $contactRepository;
-    }
+    use InjectContactRepositoryTrait;
 
     /**
      * Add some global available markers to the view
