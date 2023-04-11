@@ -12,7 +12,9 @@ declare(strict_types=1);
 namespace JWeiland\Jobcenter\Controller;
 
 use JWeiland\Jobcenter\Domain\Model\Contact;
+use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 use TYPO3\CMS\Extbase\Mvc\View\ViewInterface;
 
@@ -46,18 +48,22 @@ class ContactController extends ActionController
     {
     }
 
-    public function listAction(string $name, int $pid, bool $handicapped): void
+    public function listAction(string $name, int $pid, bool $handicapped, bool $selfReliance = false): void
     {
-        $this->contactRepository->setStoragePids([$pid]);
-        $contact = $this->contactRepository->findContact($name, $handicapped);
+        $contact = $this->contactRepository->findContact($name, $pid, $handicapped, $selfReliance);
         if (!$contact instanceof Contact) {
-            $contact = $this->contactRepository->findFallback($handicapped);
+            $this->addFlashMessage(
+                'Currently, there is no person defined which is responsible for this request.',
+                'No contact found',
+                AbstractMessage::NOTICE
+            );
         }
 
         $this->view->assign('contact', $contact);
         $this->view->assign('name', $name);
         $this->view->assign('pid', $pid);
         $this->view->assign('handicapped', $handicapped);
+        $this->view->assign('selfReliance', $selfReliance);
     }
 
     /**

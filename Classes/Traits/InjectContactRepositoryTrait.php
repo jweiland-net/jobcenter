@@ -9,7 +9,7 @@ declare(strict_types=1);
  * LICENSE file that was distributed with this source code.
  */
 
-namespace JWeiland\Jobcenter\Controller;
+namespace JWeiland\Jobcenter\Traits;
 
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 

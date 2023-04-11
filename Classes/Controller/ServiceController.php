@@ -12,6 +12,8 @@ declare(strict_types=1);
 namespace JWeiland\Jobcenter\Controller;
 
 use JWeiland\Jobcenter\Domain\Model\Contact;
+use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
+use TYPO3\CMS\Core\Messaging\AbstractMessage;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -27,11 +29,19 @@ class ServiceController extends ActionController
 
     public function listAction(string $name, bool $selfReliance = false): void
     {
-        $this->contactRepository->setStoragePids([$this->settings['pidForService']]);
-        $service = $this->contactRepository->findService($name, $selfReliance);
+        $service = $this->contactRepository->findService(
+            $name,
+            $this->settings['pidForService'],
+            $selfReliance
+        );
         if (!$service instanceof Contact) {
-            $service = $this->contactRepository->findFallbackForService();
+            $this->addFlashMessage(
+                'Currently, there is no person defined which is responsible for this request.',
+                'No contact found',
+                AbstractMessage::NOTICE
+            );
         }
+
         $this->view->assign('service', $service);
         $this->view->assign('name', $name);
         $this->view->assign('selfReliance', $selfReliance);
