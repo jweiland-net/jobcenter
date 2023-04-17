@@ -31,7 +31,7 @@ class ServiceController extends ActionController
     {
         $service = $this->contactRepository->findService(
             $name,
-            $this->settings['pidForService'],
+            (int)$this->settings['pidForService'],
             $selfReliance
         );
         if (!$service instanceof Contact) {
