@@ -7,6 +7,11 @@
 Change log
 ==========
 
+Version 3.2.1
+=============
+
+*   [BUGFIX] Cast PID of TypoScript to INT for ContactRepository
+
 Version 3.2.0
 =============
 
