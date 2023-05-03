@@ -28,7 +28,7 @@ which contains the `jobcenter` plugin.
 
     Choose `Info/Modify` from the upper selectbox and then click on `Edit the
     whole template record` button below the little table. On tab `Includes`
-    locate the section `Include static (from extension)`. Use the search below
+    locate the section `Include static (from extension)`. Use the search above
     `Available items` to search for `jobcenter`. Hopefully just one record is
     visible below. Choose it, to move that record to the left.
 
