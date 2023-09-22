@@ -10,7 +10,7 @@
 		"job",
 		"center"
 	],
-	"homepage": "https://www.jweiland.net",
+	"homepage": "https://jweiland.net",
 	"authors": [
 		{
 			"name": "Stefan Froemken",
@@ -31,6 +31,9 @@
 		"friendsofphp/php-cs-fixer": "^3.10",
 		"nimut/testing-framework": "^6.0",
 		"phpunit/phpunit": "^9.5"
+	},
+	"replace": {
+		"typo3-ter/jobcenter": "self.version"
 	},
 	"autoload": {
 		"psr-4": {
