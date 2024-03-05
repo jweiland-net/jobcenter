@@ -1,166 +1,155 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
-		<header/>
-		<body>
-			<trans-unit id="plugin.contact.title">
-				<source>Jobcenter: Contact</source>
-				<target>Jobcenter: Fallmanagement</target>
-			</trans-unit>
-			<trans-unit id="plugin.contact.description">
-				<source>Provides a plugin where job seekers can find their contact person</source>
-				<target>Stelt ein Plugin zur Verfügung, wo Arbeitssuchende ihren Ansprechpartner finden</target>
-			</trans-unit>
-			<trans-unit id="plugin.employerContact.title">
-				<source>Jobcenter: Contact for Employers</source>
-				<target>Jobcenter: Ansprechpartner für Arbeitgeber</target>
-			</trans-unit>
-			<trans-unit id="plugin.employerContact.description">
-				<source>Provides a plugin where employers can find their contact person</source>
-				<target>Stelt ein Plugin zur Verfügung, wo Arbeitgeber ihren Ansprechpartner finden</target>
-			</trans-unit>
-			<trans-unit id="plugin.service.title">
-				<source>Jobcenter: Service</source>
-				<target>Jobcenter: Finanzielle Leistungsgewährung</target>
-			</trans-unit>
-			<trans-unit id="plugin.service.description">
-				<source>Provides a plugin to find the contact person for granting of services</source>
-				<target>Stelt ein Plugin zur Verfügung, mit dem man den Ansprechpartner zur Leistungsgewährung findet</target>
-			</trans-unit>
-
-			<trans-unit id="palette.language_hidden" xml:space="preserve">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="plugin.contact.title">
+        <source>Jobcenter: Contact</source>
+        <target state="needs-translation">Jobcenter: Contact</target>
+      </trans-unit>
+      <trans-unit id="plugin.contact.description">
+        <source>Provides a plugin where job seekers can find their contact person</source>
+        <target state="needs-translation">Provides a plugin where job seekers can find their contact person</target>
+      </trans-unit>
+      <trans-unit id="plugin.employerContact.title">
+        <source>Jobcenter: Contact for Employers</source>
+        <target state="needs-translation">Jobcenter: Contact for Employers</target>
+      </trans-unit>
+      <trans-unit id="plugin.employerContact.description">
+        <source>Provides a plugin where employers can find their contact person</source>
+        <target state="needs-translation">Provides a plugin where employers can find their contact person</target>
+      </trans-unit>
+      <trans-unit id="plugin.service.title">
+        <source>Jobcenter: Service</source>
+        <target state="needs-translation">Jobcenter: Service</target>
+      </trans-unit>
+      <trans-unit id="plugin.service.description">
+        <source>Provides a plugin to find the contact person for granting of services</source>
+        <target state="needs-translation">Provides a plugin to find the contact person for granting of services</target>
+      </trans-unit>
+      <trans-unit id="palette.language_hidden" xml:space="preserve">
 				<source>Visibility and Language</source>
-				<target>Sichtbarkeit und Sprache</target>
-			</trans-unit>
-
-			<trans-unit id="tx_jobcenter_domain_model_contact">
-				<source>Contact</source>
-				<target>Ansprechpartner</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.salutation">
-				<source>Salutation</source>
-				<target>Anrede</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
-				<source>Mr.</source>
-				<target>Herr</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
-				<source>Mrs.</source>
-				<target>Frau</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.name">
-				<source>Name</source>
-				<target>Name</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.address">
-				<source>Address</source>
-				<target>Adresse</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.room_number">
-				<source>Room number</source>
-				<target>Raumnummer</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.telephone">
-				<source>Telephone</source>
-				<target>Telefonnummer</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
-				<source>Handicapped</source>
-				<target>Betreuung Schwerbehinderung</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
-				<source>Fallback?</source>
-				<target>Fallback?</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
-				<source>Earnings through self reliance</source>
-				<target>Verdienst durch Selbständigkeit</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_contact.letters">
-				<source>Letters</source>
-				<target>Buchstabenzuordnung</target>
-			</trans-unit>
-
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact">
-				<source>Contact for Employer</source>
-				<target>Ansprechpartner für Arbeitgeber</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
-				<source>Salutation</source>
-				<target>Anrede</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
-				<source>Mr.</source>
-				<target>Herr</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
-				<source>Mrs.</source>
-				<target>Frau</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
-				<source>Firstname</source>
-				<target>Vorname</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
-				<source>Lastname</source>
-				<target>Nachname</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
-				<source>Address</source>
-				<target>Adresse</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
-				<source>Zip</source>
-				<target>PLZ</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
-				<source>Room number</source>
-				<target>Raumnummer</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
-				<source>Telephone</source>
-				<target>Telefonnummer</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
-				<source>Email</source>
-				<target>Email</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
-				<source>Image</source>
-				<target>Bild</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
-				<source>Fallback?</source>
-				<target>Fallback?</target>
-			</trans-unit>
-
-			<trans-unit id="tx_jobcenter_domain_model_letter">
-				<source>Letters</source>
-				<target>Anfangsbuchstaben</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
-				<source>Letter start</source>
-				<target>Start Buchstaben</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
-				<source>Letter end</source>
-				<target>Ende Buchstaben</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_letter.handicapped">
-				<source>Handicapped</source>
-				<target>Betreuung Schwerbehinderung</target>
-			</trans-unit>
-
-			<trans-unit id="tx_jobcenter_domain_model_zip">
-				<source>Zip</source>
-				<target>PLZ</target>
-			</trans-unit>
-			<trans-unit id="tx_jobcenter_domain_model_zip.zip">
-				<source>Zip</source>
-				<target>PLZ</target>
-			</trans-unit>
-
-		</body>
-	</file>
+			<target state="needs-translation">Visibility and Language</target></trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact">
+        <source>Contact</source>
+        <target state="needs-translation">Contact</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+        <source>Salutation</source>
+        <target state="needs-translation">Salutation</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+        <source>Mr.</source>
+        <target state="needs-translation">Mr.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target state="needs-translation">Mrs.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.name">
+        <source>Name</source>
+        <target state="needs-translation">Name</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.address">
+        <source>Address</source>
+        <target state="needs-translation">Address</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+        <source>Room Number</source>
+        <target state="needs-translation">Room Number</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+        <source>Telephone</source>
+        <target state="needs-translation">Telephone</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+        <source>Handicapped</source>
+        <target state="needs-translation">Handicapped</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+        <source>Fallback?</source>
+        <target state="needs-translation">Fallback?</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+        <source>Earnings through self reliance</source>
+        <target state="needs-translation">Earnings through self reliance</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.letters">
+        <source>Letters</source>
+        <target state="needs-translation">Letters</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact">
+        <source>Contact for Employer</source>
+        <target state="needs-translation">Contact for Employer</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+        <source>Salutation</source>
+        <target state="needs-translation">Salutation</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+        <source>Mr.</source>
+        <target state="needs-translation">Mr.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target state="needs-translation">Mrs.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+        <source>Firstname</source>
+        <target state="needs-translation">Firstname</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+        <source>Lastname</source>
+        <target state="needs-translation">Lastname</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+        <source>Address</source>
+        <target state="needs-translation">Address</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+        <source>Zip</source>
+        <target state="needs-translation">Zip</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+        <source>Room number</source>
+        <target state="needs-translation">Room number</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+        <source>Telephone</source>
+        <target state="needs-translation">Telephone</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+        <source>Email</source>
+        <target state="needs-translation">Email</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+        <source>Image</source>
+        <target state="needs-translation">Image</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+        <source>Fallback?</source>
+        <target state="needs-translation">Fallback?</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter">
+        <source>Letter</source>
+        <target state="needs-translation">Letter</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+        <source>Letter Start</source>
+        <target state="needs-translation">Letter Start</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+        <source>Letter End</source>
+        <target state="needs-translation">Letter End</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip">
+        <source>Zip</source>
+        <target state="needs-translation">Zip</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip.zip">
+        <source>Zip</source>
+        <target state="needs-translation">Zip</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
