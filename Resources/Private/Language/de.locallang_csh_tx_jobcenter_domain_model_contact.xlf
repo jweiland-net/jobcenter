@@ -3,41 +3,41 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="de">
     <header/>
     <body>
-      <trans-unit id="salutation.description">
+      <trans-unit id="salutation.description" approved="yes">
         <source>Please choose one of the following salutations</source>
-        <target state="needs-translation">Please choose one of the following salutations</target>
+        <target state="final">Bitte wählen Sie eine der folgenden Anreden</target>
       </trans-unit>
-      <trans-unit id="name.description">
+      <trans-unit id="name.description" approved="yes">
         <source>Name of the contact person</source>
-        <target state="needs-translation">Name of the contact person</target>
+        <target state="final">Name des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="address.description">
+      <trans-unit id="address.description" approved="yes">
         <source>Address of the contact person</source>
-        <target state="needs-translation">Address of the contact person</target>
+        <target state="final">Adresse des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="room_number.description">
+      <trans-unit id="room_number.description" approved="yes">
         <source>Room number of the contact person</source>
-        <target state="needs-translation">Room number of the contact person</target>
+        <target state="final">Raumnummer des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="telephone.description">
+      <trans-unit id="telephone.description" approved="yes">
         <source>Telephone of the contact person</source>
-        <target state="needs-translation">Telephone of the contact person</target>
+        <target state="final">Telefonnummer des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="handicapped.description">
+      <trans-unit id="handicapped.description" approved="yes">
         <source>Is the contact person responsible for handicapped inhabitants?</source>
-        <target state="needs-translation">Is the contact person responsible for handicapped inhabitants?</target>
+        <target state="final">Ist der Ansprechpartner für behinderte Einwohner zuständig?</target>
       </trans-unit>
-      <trans-unit id="is_fallback.description">
+      <trans-unit id="is_fallback.description" approved="yes">
         <source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
-        <target state="needs-translation">Is the contact person a fallback, if no letter range of other contact persons matches?</target>
+        <target state="final">Soll auf diesen Ansprechpartner zurückgegriffen werden, wenn andere Ansprechpartner auf die Anfrage nicht passen?</target>
       </trans-unit>
-      <trans-unit id="self_reliance.description">
+      <trans-unit id="self_reliance.description" approved="yes">
         <source>Is the contact person responsible for self-reliance inhabitants?</source>
-        <target state="needs-translation">Is the contact person responsible for self-reliance inhabitants?</target>
+        <target state="final">Ist der Ansprechpartner für Selbständige Einwohner zuständig?</target>
       </trans-unit>
-      <trans-unit id="letters.description">
+      <trans-unit id="letters.description" approved="yes">
         <source>For which range of letter is the contact person responsible?</source>
-        <target state="needs-translation">For which range of letter is the contact person responsible?</target>
+        <target state="final">Für welchen Buchstabenbereich ist der Ansprechpartner zuständig?</target>
       </trans-unit>
     </body>
   </file>
