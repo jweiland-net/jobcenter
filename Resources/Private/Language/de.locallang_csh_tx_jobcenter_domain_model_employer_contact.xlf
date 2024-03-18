@@ -3,45 +3,45 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="de">
     <header/>
     <body>
-      <trans-unit id="salutation.description">
+      <trans-unit id="salutation.description" approved="yes">
         <source>Please choose one of the following salutations</source>
-        <target state="needs-translation">Please choose one of the following salutations</target>
+        <target state="final">Bitte wählen Sie eine der folgenden Anreden</target>
       </trans-unit>
-      <trans-unit id="first_name.description">
+      <trans-unit id="first_name.description" approved="yes">
         <source>Firstname of the contact person</source>
-        <target state="needs-translation">Firstname of the contact person</target>
+        <target state="final">Vorname des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="last_name.description">
+      <trans-unit id="last_name.description" approved="yes">
         <source>Lastname of the contact person</source>
-        <target state="needs-translation">Lastname of the contact person</target>
+        <target state="final">Nachname des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="address.description">
+      <trans-unit id="address.description" approved="yes">
         <source>Address of the contact person</source>
-        <target state="needs-translation">Address of the contact person</target>
+        <target state="final">Adresse des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="zip.description">
+      <trans-unit id="zip.description" approved="yes">
         <source>Zip of the contact person</source>
-        <target state="needs-translation">Zip of the contact person</target>
+        <target state="final">PLZ des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="room_number.description">
+      <trans-unit id="room_number.description" approved="yes">
         <source>Room number of the contact person</source>
-        <target state="needs-translation">Room number of the contact person</target>
+        <target state="final">Raumnummer des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="telephone.description">
+      <trans-unit id="telephone.description" approved="yes">
         <source>Telephone of the contact person</source>
-        <target state="needs-translation">Telephone of the contact person</target>
+        <target state="final">Telefonnummer des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="email.description">
+      <trans-unit id="email.description" approved="yes">
         <source>Email of the contact person</source>
-        <target state="needs-translation">Email of the contact person</target>
+        <target state="final">Email des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="image.description">
+      <trans-unit id="image.description" approved="yes">
         <source>Image of the contact person</source>
-        <target state="needs-translation">Image of the contact person</target>
+        <target state="final">Bild des Ansprechpartners</target>
       </trans-unit>
-      <trans-unit id="is_fallback.description">
+      <trans-unit id="is_fallback.description" approved="yes">
         <source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
-        <target state="needs-translation">Is the contact person a fallback, if no letter range of other contact persons matches?</target>
+        <target state="final">Soll auf diesen Ansprechpartner zurückgegriffen werden, wenn andere Ansprechpartner auf die Anfrage nicht passen?</target>
       </trans-unit>
     </body>
   </file>
