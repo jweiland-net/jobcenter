@@ -3,141 +3,141 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="de">
     <header/>
     <body>
-      <trans-unit id="tx_jobcenter_domain_model_contact">
+      <trans-unit id="tx_jobcenter_domain_model_contact" approved="yes">
         <source>Contact</source>
-        <target state="needs-translation">Contact</target>
+        <target state="final">Ansprechpartner</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation" approved="yes">
         <source>Salutation</source>
-        <target state="needs-translation">Salutation</target>
+        <target state="final">Anrede</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr" approved="yes">
         <source>Mr.</source>
-        <target state="needs-translation">Mr.</target>
+        <target state="final">Herr</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs" approved="yes">
         <source>Mrs.</source>
-        <target state="needs-translation">Mrs.</target>
+        <target state="final">Frau</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.name">
+      <trans-unit id="tx_jobcenter_domain_model_contact.name" approved="yes">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="final">Name</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.address">
+      <trans-unit id="tx_jobcenter_domain_model_contact.address" approved="yes">
         <source>Address</source>
-        <target state="needs-translation">Address</target>
+        <target state="final">Adresse</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+      <trans-unit id="tx_jobcenter_domain_model_contact.room_number" approved="yes">
         <source>Room number</source>
-        <target state="needs-translation">Room number</target>
+        <target state="final">Zimmernummer</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+      <trans-unit id="tx_jobcenter_domain_model_contact.telephone" approved="yes">
         <source>Telephone</source>
-        <target state="needs-translation">Telephone</target>
+        <target state="final">Telefonnummer</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped" approved="yes">
         <source>Handicapped</source>
-        <target state="needs-translation">Handicapped</target>
+        <target state="final">Betreuung Schwerbehinderung</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback" approved="yes">
         <source>Fallback?</source>
-        <target state="needs-translation">Fallback?</target>
+        <target state="final">Fallback?</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance" approved="yes">
         <source>Earnings through self reliance</source>
-        <target state="needs-translation">Earnings through self reliance</target>
+        <target state="final">Verdienst durch Selbständigkeit</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_contact.letters">
+      <trans-unit id="tx_jobcenter_domain_model_contact.letters" approved="yes">
         <source>Letters</source>
-        <target state="needs-translation">Letters</target>
+        <target state="final">Buchstabenzuordnung</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact" approved="yes">
         <source>Contact for Employer</source>
-        <target state="needs-translation">Contact for Employer</target>
+        <target state="final">Ansprechpartner für Arbeitgeber</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation" approved="yes">
         <source>Salutation</source>
-        <target state="needs-translation">Salutation</target>
+        <target state="final">Anrede</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr" approved="yes">
         <source>Mr.</source>
-        <target state="needs-translation">Mr.</target>
+        <target state="final">Herr</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs" approved="yes">
         <source>Mrs.</source>
-        <target state="needs-translation">Mrs.</target>
+        <target state="final">Frau</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name" approved="yes">
         <source>Firstname</source>
-        <target state="needs-translation">Firstname</target>
+        <target state="final">Vorname</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name" approved="yes">
         <source>Lastname</source>
-        <target state="needs-translation">Lastname</target>
+        <target state="final">Nachname</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address" approved="yes">
         <source>Address</source>
-        <target state="needs-translation">Address</target>
+        <target state="final">Adresse</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip" approved="yes">
         <source>Zip</source>
-        <target state="needs-translation">Zip</target>
+        <target state="final">PLZ</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number" approved="yes">
         <source>Room number</source>
-        <target state="needs-translation">Room number</target>
+        <target state="final">Raumnummer</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone" approved="yes">
         <source>Telephone</source>
-        <target state="needs-translation">Telephone</target>
+        <target state="final">Telefonnummer</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email" approved="yes">
         <source>Email</source>
-        <target state="needs-translation">Email</target>
+        <target state="final">E-Mail</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image" approved="yes">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="final">Bild</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback" approved="yes">
         <source>Fallback?</source>
-        <target state="needs-translation">Fallback?</target>
+        <target state="final">Fallback?</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_letter">
+      <trans-unit id="tx_jobcenter_domain_model_letter" approved="yes">
         <source>Letters</source>
-        <target state="needs-translation">Letters</target>
+        <target state="final">Anfangsbuchstaben</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start" approved="yes">
         <source>Letter start</source>
-        <target state="needs-translation">Letter start</target>
+        <target state="final">Start Buchstaben</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end" approved="yes">
         <source>Letter end</source>
-        <target state="needs-translation">Letter end</target>
+        <target state="final">Ende Buchstaben</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_zip">
+      <trans-unit id="tx_jobcenter_domain_model_zip" approved="yes">
         <source>Zip</source>
-        <target state="needs-translation">Zip</target>
+        <target state="final">PLZ</target>
       </trans-unit>
-      <trans-unit id="tx_jobcenter_domain_model_zip.zip">
+      <trans-unit id="tx_jobcenter_domain_model_zip.zip" approved="yes">
         <source>Zip</source>
-        <target state="needs-translation">Zip</target>
+        <target state="final">PLZ</target>
       </trans-unit>
-      <trans-unit id="search">
+      <trans-unit id="search" approved="yes">
         <source>Search</source>
-        <target state="needs-translation">Search</target>
+        <target state="final">Suche</target>
       </trans-unit>
-      <trans-unit id="noResults">
+      <trans-unit id="noResults" approved="yes">
         <source>No results found</source>
-        <target state="needs-translation">No results found</target>
+        <target state="final">Keine Ergebnisse gefunden</target>
       </trans-unit>
-      <trans-unit id="age">
+      <trans-unit id="age" approved="yes">
         <source>Age</source>
-        <target state="needs-translation">Age</target>
+        <target state="final">Alter</target>
       </trans-unit>
-      <trans-unit id="infotext">
+      <trans-unit id="infotext" approved="yes">
         <source>Info: your data will not be saved.</source>
-        <target state="needs-translation">Info: your data will not be saved.</target>
+        <target state="final">Hinweis: Ihre Daten werden nicht gespeichert.</target>
       </trans-unit>
     </body>
   </file>
