@@ -3,9 +3,9 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="de">
     <header/>
     <body>
-      <trans-unit id="zip.description">
+      <trans-unit id="zip.description" approved="yes">
         <source>Zip of the contact person</source>
-        <target state="needs-translation">Zip of the contact person</target>
+        <target state="final">PLZ des Ansprechpartners</target>
       </trans-unit>
     </body>
   </file>
