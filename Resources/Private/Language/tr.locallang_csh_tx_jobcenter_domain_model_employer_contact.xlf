@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="tr">
+    <header/>
+    <body>
+      <trans-unit id="salutation.description">
+        <source>Please choose one of the following salutations</source>
+        <target state="needs-translation">Please choose one of the following salutations</target>
+      </trans-unit>
+      <trans-unit id="first_name.description">
+        <source>Firstname of the contact person</source>
+        <target state="needs-translation">Firstname of the contact person</target>
+      </trans-unit>
+      <trans-unit id="last_name.description">
+        <source>Lastname of the contact person</source>
+        <target state="needs-translation">Lastname of the contact person</target>
+      </trans-unit>
+      <trans-unit id="address.description">
+        <source>Address of the contact person</source>
+        <target state="needs-translation">Address of the contact person</target>
+      </trans-unit>
+      <trans-unit id="zip.description">
+        <source>Zip of the contact person</source>
+        <target state="needs-translation">Zip of the contact person</target>
+      </trans-unit>
+      <trans-unit id="room_number.description">
+        <source>Room number of the contact person</source>
+        <target state="needs-translation">Room number of the contact person</target>
+      </trans-unit>
+      <trans-unit id="telephone.description">
+        <source>Telephone of the contact person</source>
+        <target state="needs-translation">Telephone of the contact person</target>
+      </trans-unit>
+      <trans-unit id="email.description">
+        <source>Email of the contact person</source>
+        <target state="needs-translation">Email of the contact person</target>
+      </trans-unit>
+      <trans-unit id="image.description">
+        <source>Image of the contact person</source>
+        <target state="needs-translation">Image of the contact person</target>
+      </trans-unit>
+      <trans-unit id="is_fallback.description">
+        <source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
+        <target state="needs-translation">Is the contact person a fallback, if no letter range of other contact persons matches?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
