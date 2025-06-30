@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Controller;
 
+use Psr\Http\Message\ResponseInterface;
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
@@ -44,11 +45,12 @@ class ContactController extends ActionController
     /**
      * Shows the search form
      */
-    public function searchAction(): void
+    public function searchAction(): ResponseInterface
     {
+        return $this->htmlResponse();
     }
 
-    public function listAction(string $name, int $pid, bool $handicapped, bool $selfReliance = false): void
+    public function listAction(string $name, int $pid, bool $handicapped, bool $selfReliance = false): ResponseInterface
     {
         $contact = $this->contactRepository->findContact($name, $pid, $handicapped, $selfReliance);
         if (!$contact instanceof Contact) {
@@ -64,6 +66,8 @@ class ContactController extends ActionController
         $this->view->assign('pid', $pid);
         $this->view->assign('handicapped', $handicapped);
         $this->view->assign('selfReliance', $selfReliance);
+
+        return $this->htmlResponse();
     }
 
     /**

@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Controller;
 
+use Psr\Http\Message\ResponseInterface;
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
 use TYPO3\CMS\Core\Messaging\AbstractMessage;
@@ -23,11 +24,12 @@ class ServiceController extends ActionController
 {
     use InjectContactRepositoryTrait;
 
-    public function searchAction(): void
+    public function searchAction(): ResponseInterface
     {
+        return $this->htmlResponse();
     }
 
-    public function listAction(string $name, bool $selfReliance = false): void
+    public function listAction(string $name, bool $selfReliance = false): ResponseInterface
     {
         $service = $this->contactRepository->findService(
             $name,
@@ -45,5 +47,7 @@ class ServiceController extends ActionController
         $this->view->assign('service', $service);
         $this->view->assign('name', $name);
         $this->view->assign('selfReliance', $selfReliance);
+
+        return $this->htmlResponse();
     }
 }

@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Controller;
 
+use Psr\Http\Message\ResponseInterface;
 use JWeiland\Jobcenter\Domain\Model\EmployerContact;
 use JWeiland\Jobcenter\Domain\Repository\EmployerContactRepository;
 use TYPO3\CMS\Backend\Utility\BackendUtility;
@@ -34,11 +35,12 @@ class EmployerContactController extends ActionController
     /**
      * Shows the search form
      */
-    public function searchAction(): void
+    public function searchAction(): ResponseInterface
     {
+        return $this->htmlResponse();
     }
 
-    public function listAction(string $zip): void
+    public function listAction(string $zip): ResponseInterface
     {
         $contact = $this->employerContactRepository->findContact($zip);
         if (!$contact instanceof EmployerContact) {
@@ -47,6 +49,8 @@ class EmployerContactController extends ActionController
 
         $this->view->assign('contact', $contact);
         $this->view->assign('zip', $zip);
+
+        return $this->htmlResponse();
     }
 
     /**
