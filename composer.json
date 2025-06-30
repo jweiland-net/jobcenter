@@ -16,6 +16,11 @@
 			"name": "Stefan Froemken",
 			"email": "sfroemken@jweiland.net",
 			"role": "Lead Developer"
+		},
+		{
+			"name": "Hoja Mustaffa Abdul Latheef",
+			"email": "hlatheef@jweiland.net",
+			"role": "Senior Developer"
 		}
 	],
 	"support": {
@@ -24,13 +29,14 @@
 		"source": "https://github.com/jweiland-net/jobcenter"
 	},
 	"require": {
-		"typo3/cms-core": "^10.4.36 || ^11.5.23"
+		"typo3/cms-core": "^12.4.8"
 	},
 	"require-dev": {
 		"roave/security-advisories": "dev-latest",
-		"friendsofphp/php-cs-fixer": "^3.10",
-		"nimut/testing-framework": "^6.0",
-		"phpunit/phpunit": "^9.5"
+		"friendsofphp/php-cs-fixer": "^3.14",
+		"phpunit/phpunit": "^9.6",
+		"typo3/coding-standards": "^0.6",
+		"typo3/testing-framework": "^7.0.2"
 	},
 	"replace": {
 		"typo3-ter/jobcenter": "self.version"
@@ -46,7 +52,7 @@
 		}
 	},
 	"config": {
-		"vendor-dir": ".build/vendor",
+		"vendor-dir": ".Build/vendor",
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
@@ -55,21 +61,8 @@
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "jobcenter",
-			"app-dir": ".build",
-			"web-dir": ".build/public"
+			"app-dir": ".Build",
+			"web-dir": ".Build/public"
 		}
 	},
-	"scripts": {
-		"php:fix": ".build/vendor/bin/php-cs-fixer --config=Build/php-cs-fixer/config.php fix Classes",
-		"ci:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
-		"ci:php:fixer": ".build/vendor/bin/php-cs-fixer --config=Build/php-cs-fixer/config.php fix --dry-run -v --show-progress=dots --diff Classes",
-		"ci:tests:functional": "php .build/vendor/bin/phpunit -c .build/vendor/nimut/testing-framework/res/Configuration/FunctionalTests.xml Tests/Functional",
-		"link-extension": [
-			"@php -r 'is_dir($extFolder=__DIR__.\"/.build/public/typo3conf/ext/\") || mkdir($extFolder, 0777, true);'",
-			"@php -r 'file_exists($extFolder=__DIR__.\"/.build/public/typo3conf/ext/jobcenter\") || symlink(__DIR__,$extFolder);'"
-		],
-		"post-autoload-dump": [
-			"@link-extension"
-		]
-	}
 }
