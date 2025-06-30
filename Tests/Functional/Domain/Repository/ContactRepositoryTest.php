@@ -11,8 +11,8 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Tests\Functional\Domain\Repository;
 
+use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
-use Nimut\TestingFramework\TestCase\FunctionalTestCase;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
