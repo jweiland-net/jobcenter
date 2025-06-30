@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Domain\Model;
 
+use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 use TYPO3\CMS\Extbase\Annotation as Extbase;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
@@ -62,8 +63,8 @@ class Contact extends AbstractEntity
 
     /**
      * @var ObjectStorage<Letter>
-     * @Extbase\ORM\Lazy
      */
+    #[Lazy]
     protected $letters;
 
     public function __construct()
