@@ -8,9 +8,21 @@
 
 ![Build Status](https://github.com/jweiland-net/jobcenter/actions/workflows/ci.yml/badge.svg)
 
-`jobcenter` is an extension for TYPO3 CMS. It is mostly used by cities and towns
-to help their inhabitants to find the correct contact person for granting of
-benefits in the town hall.
+The **Jobcenter** extension is built for TYPO3 CMS and is commonly used by
+cities and municipalities in Germany.
+Its main purpose is to help citizens find the correct contact person for
+**granting of benefits** (Leistungsgewährung) at their local town hall.
+
+It provides a flexible and user-friendly system to manage and display contact
+persons based on visitor input such as:
+
+- Age group (e.g., 15–24 or 25–49)
+- Location (by PID or ZIP code)
+- Disability status
+- Self-reliance
+
+The extension is based on **Extbase & Fluid**, integrates smoothly into TYPO3,
+and is designed for **German Jobcenter use cases**.
 
 ## 1 Features
 
