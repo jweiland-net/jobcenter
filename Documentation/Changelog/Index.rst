@@ -7,6 +7,14 @@
 Change log
 ==========
 
+Version 4.0.0
+=============
+
+*   TYPO3 Version compatibility for 12 LTS
+*   Test Cases rewrites to TYPO3 Testing Framework
+*   Removed compatibility for TYPO3 11 and lower versions
+*   All deprecated calls replaced
+
 Version 3.2.1
 =============
 
