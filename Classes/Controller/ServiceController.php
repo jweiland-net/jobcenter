@@ -14,7 +14,7 @@ namespace JWeiland\Jobcenter\Controller;
 use Psr\Http\Message\ResponseInterface;
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
-use TYPO3\CMS\Core\Messaging\AbstractMessage;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -40,7 +40,7 @@ class ServiceController extends ActionController
             $this->addFlashMessage(
                 'Currently, there is no person defined which is responsible for this request.',
                 'No contact found',
-                AbstractMessage::NOTICE
+                ContextualFeedbackSeverity::NOTICE
             );
         }
 

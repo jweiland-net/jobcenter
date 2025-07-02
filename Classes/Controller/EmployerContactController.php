@@ -11,10 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Controller;
 
+use JWeiland\Jobcenter\Traits\InjectEmployerContactRepositoryTrait;
 use Psr\Http\Message\ResponseInterface;
 use JWeiland\Jobcenter\Domain\Model\EmployerContact;
-use JWeiland\Jobcenter\Domain\Repository\EmployerContactRepository;
-use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -22,15 +21,7 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  */
 class EmployerContactController extends ActionController
 {
-    /**
-     * @var EmployerContactRepository
-     */
-    protected $employerContactRepository;
-
-    public function injectEmployerContactRepository(EmployerContactRepository $employerContactRepository): void
-    {
-        $this->employerContactRepository = $employerContactRepository;
-    }
+    use InjectEmployerContactRepositoryTrait;
 
     /**
      * Shows the search form
@@ -51,13 +42,5 @@ class EmployerContactController extends ActionController
         $this->view->assign('zip', $zip);
 
         return $this->htmlResponse();
-    }
-
-    /**
-     * Get page title from a given page
-     */
-    protected function getPagetitle(int $pid): string
-    {
-        return BackendUtility::getRecord('pages', $pid, 'title')['title'] ?: '';
     }
 }

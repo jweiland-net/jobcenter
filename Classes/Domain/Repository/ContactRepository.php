@@ -22,7 +22,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 class ContactRepository extends Repository
 {
     /**
-     * @var array
+     * @var array<string, mixed>
      */
     protected $defaultOrderings = [
         'uid' => QueryInterface::ORDER_DESCENDING,
