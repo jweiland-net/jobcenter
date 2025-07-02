@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/jobcenter.
+ * This file is part of the package jweiland/maps2.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Tests\Functional\Domain\Repository;
 
-use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 /**
  * Test ContactRepository
@@ -47,7 +47,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     protected function tearDown(): void
     {
         unset(
-            $this->subject
+            $this->subject,
         );
 
         parent::tearDown();
@@ -97,7 +97,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     {
         self::assertStringContainsString(
             $expected,
-            $this->subject->findContact($name, $pid, $handicapped, $selfReliance)->getName()
+            $this->subject->findContact($name, $pid, $handicapped, $selfReliance)->getName(),
         );
     }
 
@@ -122,7 +122,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     {
         self::assertStringContainsString(
             $expected,
-            $this->subject->findService($name, $pid, $selfReliance)->getName()
+            $this->subject->findService($name, $pid, $selfReliance)->getName(),
         );
     }
 }

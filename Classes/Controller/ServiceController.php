@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/jobcenter.
+ * This file is part of the package jweiland/maps2.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Controller;
 
-use Psr\Http\Message\ResponseInterface;
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
+use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
@@ -34,13 +34,13 @@ class ServiceController extends ActionController
         $service = $this->contactRepository->findService(
             $name,
             (int)$this->settings['pidForService'],
-            $selfReliance
+            $selfReliance,
         );
         if (!$service instanceof Contact) {
             $this->addFlashMessage(
                 'Currently, there is no person defined which is responsible for this request.',
                 'No contact found',
-                ContextualFeedbackSeverity::NOTICE
+                ContextualFeedbackSeverity::NOTICE,
             );
         }
 

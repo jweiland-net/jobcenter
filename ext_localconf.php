@@ -1,4 +1,12 @@
 <?php
+
+/*
+ * This file is part of the package jweiland/maps2.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
 if (!defined('TYPO3')) {
     die('Access denied.');
 }
@@ -17,7 +25,7 @@ ExtensionUtility::configurePlugin(
     // non-cacheable actions
     [
         ContactController::class => 'list',
-    ]
+    ],
 );
 
 ExtensionUtility::configurePlugin(
@@ -29,7 +37,7 @@ ExtensionUtility::configurePlugin(
     // non-cacheable actions
     [
         EmployerContactController::class => 'list',
-    ]
+    ],
 );
 
 ExtensionUtility::configurePlugin(
@@ -41,5 +49,5 @@ ExtensionUtility::configurePlugin(
     // non-cacheable actions
     [
         ServiceController::class => 'list',
-    ]
+    ],
 );

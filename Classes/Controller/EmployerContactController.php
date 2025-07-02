@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the package jweiland/jobcenter.
+ * This file is part of the package jweiland/maps2.
  *
  * For the full copyright and license information, please read the
  * LICENSE file that was distributed with this source code.
@@ -11,9 +11,9 @@ declare(strict_types=1);
 
 namespace JWeiland\Jobcenter\Controller;
 
+use JWeiland\Jobcenter\Domain\Model\EmployerContact;
 use JWeiland\Jobcenter\Traits\InjectEmployerContactRepositoryTrait;
 use Psr\Http\Message\ResponseInterface;
-use JWeiland\Jobcenter\Domain\Model\EmployerContact;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**

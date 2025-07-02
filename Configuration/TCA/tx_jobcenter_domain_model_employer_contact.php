@@ -1,4 +1,12 @@
 <?php
+
+/*
+ * This file is part of the package jweiland/maps2.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_employer_contact',
@@ -206,7 +214,7 @@ return [
             'config' => [
                 'type' => 'file',
                 'maxitems' => 1,
-                'allowed' => 'common-image-types'
+                'allowed' => 'common-image-types',
             ],
         ],
         'is_fallback' => [
