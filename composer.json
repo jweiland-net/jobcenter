@@ -52,12 +52,13 @@
 		}
 	},
 	"config": {
-		"vendor-dir": ".Build/vendor",
 		"allow-plugins": {
 			"ergebnis/composer-normalize": true,
 			"typo3/class-alias-loader": true,
 			"typo3/cms-composer-installers": true
-		}
+		},
+		"bin-dir": ".Build/bin",
+		"vendor-dir": ".Build/vendor"
 	},
 	"extra": {
 		"typo3/cms": {
