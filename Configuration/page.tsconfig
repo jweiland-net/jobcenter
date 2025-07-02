@@ -1,0 +1,36 @@
+mod.wizards.newContentElement.wizardItems.plugins {
+  elements {
+    jobcenter_employee {
+      iconIdentifier = ext-jobcenter-icon
+      title = LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.contact.title
+      description = LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.contact.description
+      tt_content_defValues {
+        CType = list
+        list_type = jobcenter_contact
+      }
+    }
+    jobcenter_employer {
+      iconIdentifier = ext-jobcenter-icon
+      title = LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.employerContact.title
+      description = LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.employerContact.description
+      tt_content_defValues {
+        CType = list
+        list_type = jobcenter_employercontact
+      }
+    }
+    jobcenter_service {
+      iconIdentifier = ext-jobcenter-icon
+      title = LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.service.title
+      description = LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:plugin.service.description
+      tt_content_defValues {
+        CType = list
+        list_type = jobcenter_service
+      }
+    }
+  }
+}
+
+# Add CType Preview
+mod.web_layout.tt_content.preview.list.jobcenter_contact = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
+mod.web_layout.tt_content.preview.list.jobcenter_employercontact = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
+mod.web_layout.tt_content.preview.list.jobcenter_service = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html

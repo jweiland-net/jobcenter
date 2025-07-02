@@ -203,10 +203,11 @@ return [
         'image' => [
             'exclude' => true,
             'label' => 'LLL:EXT:jobcenter/Resources/Private/Language/locallang_db.xlf:tx_jobcenter_domain_model_employer_contact.image',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig('image', [
-                'minitems' => 0,
+            'config' => [
+                'type' => 'file',
                 'maxitems' => 1,
-            ]),
+                'allowed' => 'common-image-types'
+            ],
         ],
         'is_fallback' => [
             'exclude' => true,

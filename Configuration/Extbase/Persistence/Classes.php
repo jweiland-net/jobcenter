@@ -9,8 +9,10 @@ declare(strict_types=1);
  * LICENSE file that was distributed with this source code.
  */
 
+use JWeiland\Jobcenter\Domain\Model\EmployerContact;
+
 return [
-    \JWeiland\Jobcenter\Domain\Model\EmployerContact::class => [
+    EmployerContact::class => [
         'tableName' => 'tx_jobcenter_domain_model_employer_contact',
     ],
 ];
