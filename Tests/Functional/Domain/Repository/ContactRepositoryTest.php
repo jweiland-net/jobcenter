@@ -55,7 +55,7 @@ class ContactRepositoryTest extends FunctionalTestCase
         parent::tearDown();
     }
 
-    public function contactDataProvider(): array
+    public static function contactDataProvider(): array
     {
         return [
             'Find U25 contact for Birgit H0 SR0 will return Anton' => ['Birgit', 10, false, false, 'Anton'],
@@ -100,7 +100,7 @@ class ContactRepositoryTest extends FunctionalTestCase
         );
     }
 
-    public function serviceDataProvider(): array
+    public static function serviceDataProvider(): array
     {
         return [
             'Find Service contact for Friedrich SR0 will return Andy' => ['Friedrich', 12, false, 'Andy'],
