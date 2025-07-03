@@ -31,6 +31,6 @@ mod.wizards.newContentElement.wizardItems.plugins {
 }
 
 # Add CType Preview
-mod.web_layout.tt_content.preview.list.jobcenter_contact = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
-mod.web_layout.tt_content.preview.list.jobcenter_employercontact = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
-mod.web_layout.tt_content.preview.list.jobcenter_service = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
+mod.web_layout.tt_content.preview.jobcenter_contact = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
+mod.web_layout.tt_content.preview.jobcenter_employercontact = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
+mod.web_layout.tt_content.preview.jobcenter_service = EXT:jobcenter/Resources/Private/Templates/PluginPreview/TableView.html
