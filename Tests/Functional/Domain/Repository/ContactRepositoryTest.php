@@ -28,7 +28,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     /**
      * @var array
      */
-    protected $testExtensionsToLoad = [
+    protected array $testExtensionsToLoad = [
         'typo3conf/ext/jobcenter',
     ];
 
