@@ -46,7 +46,7 @@ class ContactRepository extends Repository
         $constraints[] = $query->equals('isFallback', false);
 
         /** @var Contact|null $contact */
-        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        $contact = $query->matching($query->logicalAnd(...$constraints))->execute()->getFirst();
 
         if (!$contact instanceof Contact) {
             return $this->findFallback($pid, $handicapped, $selfReliance);
@@ -69,7 +69,7 @@ class ContactRepository extends Repository
         $constraints[] = $query->equals('selfReliance', $selfReliance);
 
         /** @var Contact|null $contact */
-        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        $contact = $query->matching($query->logicalAnd(...$constraints))->execute()->getFirst();
 
         return $contact;
     }
@@ -90,7 +90,7 @@ class ContactRepository extends Repository
         $constraints[] = $query->equals('selfReliance', $selfReliance);
 
         /** @var Contact|null $contact */
-        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        $contact = $query->matching($query->logicalAnd(...$constraints))->execute()->getFirst();
 
         if (!$contact instanceof Contact) {
             return $this->findFallbackForService($pid, $selfReliance);
@@ -112,7 +112,7 @@ class ContactRepository extends Repository
         $constraints[] = $query->equals('selfReliance', $selfReliance);
 
         /** @var Contact|null $contact */
-        $contact = $query->matching($query->logicalAnd($constraints))->execute()->getFirst();
+        $contact = $query->matching($query->logicalAnd(...$constraints))->execute()->getFirst();
 
         return $contact;
     }

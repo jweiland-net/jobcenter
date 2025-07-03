@@ -1,0 +1,34 @@
+"tx_jobcenter_domain_model_contact",,,,,,,,
+,uid,pid,name,handicapped,self_reliance,is_fallback,hidden,deleted
+,1,10,"Anton: A-F - U25 - handicapped: 0 - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,2,10,"Igor: I-Pf - U25  - handicapped: 0 - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,3,10,"Stefan: S-Z - U25  - handicapped: 0 - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,4,10,"August: A-G - U25  - handicapped: 1 - self_reliance: 0 - fallback: 0",1,0,0,0,0
+,5,10,"Theodor: T-Z - U25  - handicapped: 1 - self_reliance: 0 - fallback: 0",1,0,0,0,0
+,6,10,"Andy: A-I - U25  - handicapped: 0 - self_reliance: 1 - fallback: 0",0,1,0,0,0
+,7,10,"Lars: L-Z - U25  - handicapped: 0 - self_reliance: 1 - fallback: 0",0,1,0,0,0
+,8,10,"Andrea: A-F - U25  - handicapped: 1 - self_reliance: 1 - fallback: 0",1,1,0,0,0
+,9,10,"Udo: U-Z - U25  - handicapped: 1 - self_reliance: 1 - fallback: 0",1,1,0,0,0
+,10,10,"Fallback: Dieter - U25 - handicapped: 0 - self_reliance: 0",0,0,1,0,0
+,11,10,"Fallback: Erik - U25 - handicapped: 1 - self_reliance: 0",1,0,1,0,0
+,12,10,"Fallback: Joachim - U25 - handicapped: 0 - self_reliance: 1",0,1,1,0,0
+,13,10,"Fallback: Tanja - U25 - handicapped: 1 - self_reliance: 1",1,1,1,0,0
+,14,11,"Anton: A-F - Ü25 - handicapped: 0 - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,15,11,"Igor: I-Pf - Ü25  - handicapped: 0 - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,16,11,"Stefan: S-Z - Ü25  - handicapped: 0 - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,17,11,"August: A-G - Ü25  - handicapped: 1 - self_reliance: 0 - fallback: 0",1,0,0,0,0
+,18,11,"Theodor: T-Z - Ü25  - handicapped: 1 - self_reliance: 0 - fallback: 0",1,0,0,0,0
+,19,11,"Andy: A-I - Ü25  - handicapped: 0 - self_reliance: 1 - fallback: 0",0,1,0,0,0
+,20,11,"Lars: L-Z - Ü25  - handicapped: 0 - self_reliance: 1 - fallback: 0",0,1,0,0,0
+,21,11,"Andrea: A-F - Ü25  - handicapped: 1 - self_reliance: 1 - fallback: 0",1,1,0,0,0
+,22,11,"Udo: U-Z - Ü25  - handicapped: 1 - self_reliance: 1 - fallback: 0",1,1,0,0,0
+,23,11,"Fallback: Dieter - Ü25 - handicapped: 0 - self_reliance: 0",0,0,1,0,0
+,24,11,"Fallback: Erik - Ü25 - handicapped: 1 - self_reliance: 0",1,0,1,0,0
+,25,11,"Fallback: Joachim - Ü25 - handicapped: 0 - self_reliance: 1",0,1,1,0,0
+,26,11,"Fallback: Tanja - Ü25 - handicapped: 1 - self_reliance: 1",1,1,1,0,0
+,27,12,"Andy: A-I - Service - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,28,12,"Lars: L-Z - Service - self_reliance: 0 - fallback: 0",0,0,0,0,0
+,29,12,"Andrea: A-F - Service - self_reliance: 1 - fallback: 0",0,1,0,0,0
+,30,12,"Udo: U-Z - Service - self_reliance: 1 - fallback: 0",0,1,0,0,0
+,31,12,"Fallback: Manuel - Service - self_reliance: 0",0,0,1,0,0
+,32,12,"Fallback: Petra - Service - self_reliance: 1",0,1,1,0,0

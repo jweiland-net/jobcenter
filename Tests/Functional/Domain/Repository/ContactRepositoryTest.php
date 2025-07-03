@@ -36,9 +36,9 @@ class ContactRepositoryTest extends FunctionalTestCase
     {
         parent::setUp();
 
-        $this->importDataSet('ntf://Database/pages.xml');
-        $this->importDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_contact.xml');
-        $this->importDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_letter.xml');
+        $this->importCSVDataSet(__DIR__ . '/../../Fixtures/pages.csv');
+        $this->importCSVDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_contact.csv');
+        $this->importCSVDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_letter.csv');
 
         // Use GeneralUtility because of all these inject methods and the constructor
         $this->subject = GeneralUtility::makeInstance(ContactRepository::class);
