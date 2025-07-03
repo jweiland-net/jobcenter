@@ -1,0 +1,53 @@
+categories:
+  jobcenter:
+    label: 'jobcenter'
+  jobcenter.templates:
+    label: 'Templates'
+    parent: jobcenter
+  jobcenter.pages:
+    label: 'Pages'
+    parent: jobcenter
+
+settings:
+  jobcenter.templateRootPath:
+    label: 'Templates'
+    category: jobcenter.templates
+    description: 'Path to template root'
+    type: string
+    default: 'EXT:jobcenter/Resources/Private/Templates/'
+  jobcenter.partialRootPath:
+    label: 'Partials'
+    category: jobcenter.templates
+    description: 'Path to partial root'
+    type: string
+    default: 'EXT:jobcenter/Resources/Private/Partials/'
+  jobcenter.layoutRootPath:
+    label: 'Layouts'
+    category: jobcenter.templates
+    description: 'Path to layout root'
+    type: string
+    default: 'EXT:jobcenter/Resources/Private/Layouts/'
+  jobcenter.storagePid:
+    label: 'Default storage PID'
+    category: jobcenter.pages
+    description: 'Folder that stores all POIs'
+    type: int
+    default: 0
+  jobcenter.pidForManagement15_24:
+    label: 'Storage PID Management 15-24'
+    category: jobcenter.pages
+    description: 'Storage PID Management 15-24'
+    type: int
+    default: 0
+  jobcenter.pidForManagement25_49:
+    label: 'Storage PID Management 25-49'
+    category: jobcenter.pages
+    description: 'Storage PID Management 25-49'
+    type: int
+    default: 0
+  jobcenter.pidForService:
+    label: 'Storage PID for Service'
+    category: jobcenter.pages
+    description: 'Storage PID for Service'
+    type: int
+    default: 0

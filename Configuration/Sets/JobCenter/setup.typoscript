@@ -2,27 +2,27 @@ plugin.tx_jobcenter {
   view {
     templateRootPaths {
       0 = EXT:jobcenter/Resources/Private/Templates/
-      1 = {$plugin.tx_jobcenter.view.templateRootPath}
+      1 = {$jobcenter.templateRootPath}
     }
 
     partialRootPaths {
       0 = EXT:jobcenter/Resources/Private/Partials/
-      1 = {$plugin.tx_jobcenter.view.partialRootPath}
+      1 = {$jobcenter.partialRootPath}
     }
     layoutRootPaths {
       0 = EXT:jobcenter/Resources/Private/Layouts/
-      1 = {$plugin.tx_jobcenter.view.layoutRootPath}
+      1 = {$jobcenter.layoutRootPath}
     }
   }
 
   persistence {
-    storagePid = {$plugin.tx_jobcenter.persistence.storagePid}
+    storagePid = {$jobcenter.storagePid}
   }
 
   settings {
-    pidForManagement15_24 = {$plugin.tx_jobcenter.settings.pidForManagement15_24}
-    pidForManagement25_49 = {$plugin.tx_jobcenter.settings.pidForManagement25_49}
-    pidForService = {$plugin.tx_jobcenter.settings.pidForService}
+    pidForManagement15_24 = {$jobcenter.pidForManagement15_24}
+    pidForManagement25_49 = {$jobcenter.pidForManagement25_49}
+    pidForService = {$jobcenter.pidForService}
   }
 }
 
