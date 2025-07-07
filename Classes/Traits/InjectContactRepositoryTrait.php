@@ -18,10 +18,7 @@ use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
  */
 trait InjectContactRepositoryTrait
 {
-    /**
-     * @var ContactRepository
-     */
-    protected $contactRepository;
+    protected ContactRepository $contactRepository;
 
     public function injectContactRepository(ContactRepository $contactRepository): void
     {

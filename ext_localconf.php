@@ -1,43 +1,53 @@
 <?php
-if (!defined('TYPO3_MODE')) {
+
+/*
+ * This file is part of the package jweiland/jobcenter.
+ *
+ * For the full copyright and license information, please read the
+ * LICENSE file that was distributed with this source code.
+ */
+
+if (!defined('TYPO3')) {
     die('Access denied.');
 }
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+use JWeiland\Jobcenter\Controller\ContactController;
+use JWeiland\Jobcenter\Controller\EmployerContactController;
+use JWeiland\Jobcenter\Controller\ServiceController;
+use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
+
+ExtensionUtility::configurePlugin(
     'Jobcenter',
     'Contact',
     [
-        \JWeiland\Jobcenter\Controller\ContactController::class => 'search, list',
-    ], // non-cacheable actions
+        ContactController::class => 'search, list',
+    ],
+    // non-cacheable actions
     [
-        \JWeiland\Jobcenter\Controller\ContactController::class => 'list',
-    ]
+        ContactController::class => 'list',
+    ],
 );
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+ExtensionUtility::configurePlugin(
     'Jobcenter',
     'EmployerContact',
     [
-        \JWeiland\Jobcenter\Controller\EmployerContactController::class => 'search, list',
-    ], // non-cacheable actions
+        EmployerContactController::class => 'search, list',
+    ],
+    // non-cacheable actions
     [
-        \JWeiland\Jobcenter\Controller\EmployerContactController::class => 'list',
-    ]
+        EmployerContactController::class => 'list',
+    ],
 );
 
-\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+ExtensionUtility::configurePlugin(
     'Jobcenter',
     'Service',
     [
-        \JWeiland\Jobcenter\Controller\ServiceController::class => 'search, list',
-    ], // non-cacheable actions
+        ServiceController::class => 'search, list',
+    ],
+    // non-cacheable actions
     [
-        \JWeiland\Jobcenter\Controller\ServiceController::class => 'list',
-    ]
+        ServiceController::class => 'list',
+    ],
 );
-
-// Add jobcenter plugin to new element wizard
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
-    '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:jobcenter/Configuration/TSconfig/ContentElementWizard.tsconfig">'
-);
-

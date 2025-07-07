@@ -12,8 +12,8 @@ declare(strict_types=1);
 namespace JWeiland\Jobcenter\Tests\Functional\Domain\Repository;
 
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
-use Nimut\TestingFramework\TestCase\FunctionalTestCase;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
 /**
  * Test ContactRepository
@@ -28,7 +28,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     /**
      * @var array
      */
-    protected $testExtensionsToLoad = [
+    protected array $testExtensionsToLoad = [
         'typo3conf/ext/jobcenter',
     ];
 
@@ -36,9 +36,9 @@ class ContactRepositoryTest extends FunctionalTestCase
     {
         parent::setUp();
 
-        $this->importDataSet('ntf://Database/pages.xml');
-        $this->importDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_contact.xml');
-        $this->importDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_letter.xml');
+        $this->importCSVDataSet(__DIR__ . '/../../Fixtures/pages.csv');
+        $this->importCSVDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_contact.csv');
+        $this->importCSVDataSet(__DIR__ . '/../../Fixtures/tx_jobcenter_domain_model_letter.csv');
 
         // Use GeneralUtility because of all these inject methods and the constructor
         $this->subject = GeneralUtility::makeInstance(ContactRepository::class);
@@ -47,7 +47,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     protected function tearDown(): void
     {
         unset(
-            $this->subject
+            $this->subject,
         );
 
         parent::tearDown();
@@ -97,7 +97,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     {
         self::assertStringContainsString(
             $expected,
-            $this->subject->findContact($name, $pid, $handicapped, $selfReliance)->getName()
+            $this->subject->findContact($name, $pid, $handicapped, $selfReliance)->getName(),
         );
     }
 
@@ -122,7 +122,7 @@ class ContactRepositoryTest extends FunctionalTestCase
     {
         self::assertStringContainsString(
             $expected,
-            $this->subject->findService($name, $pid, $selfReliance)->getName()
+            $this->subject->findService($name, $pid, $selfReliance)->getName(),
         );
     }
 }

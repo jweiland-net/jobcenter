@@ -37,7 +37,6 @@ CREATE TABLE tx_jobcenter_domain_model_employer_contact
 CREATE TABLE tx_jobcenter_domain_model_letter
 (
 	contact      int(11) unsigned DEFAULT '0' NOT NULL,
-
 	letter_start varchar(255) DEFAULT '' NOT NULL,
 	letter_end   varchar(255) DEFAULT '' NOT NULL,
 );
@@ -48,6 +47,5 @@ CREATE TABLE tx_jobcenter_domain_model_letter
 CREATE TABLE tx_jobcenter_domain_model_zip
 (
 	employer_contact int(11) unsigned DEFAULT '0' NOT NULL,
-
 	zip              varchar(255) DEFAULT '' NOT NULL,
 );

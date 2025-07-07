@@ -13,7 +13,8 @@ namespace JWeiland\Jobcenter\Controller;
 
 use JWeiland\Jobcenter\Domain\Model\Contact;
 use JWeiland\Jobcenter\Traits\InjectContactRepositoryTrait;
-use TYPO3\CMS\Core\Messaging\AbstractMessage;
+use Psr\Http\Message\ResponseInterface;
+use TYPO3\CMS\Core\Type\ContextualFeedbackSeverity;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
 
 /**
@@ -23,27 +24,30 @@ class ServiceController extends ActionController
 {
     use InjectContactRepositoryTrait;
 
-    public function searchAction(): void
+    public function searchAction(): ResponseInterface
     {
+        return $this->htmlResponse();
     }
 
-    public function listAction(string $name, bool $selfReliance = false): void
+    public function listAction(string $name, bool $selfReliance = false): ResponseInterface
     {
         $service = $this->contactRepository->findService(
             $name,
             (int)$this->settings['pidForService'],
-            $selfReliance
+            $selfReliance,
         );
         if (!$service instanceof Contact) {
             $this->addFlashMessage(
                 'Currently, there is no person defined which is responsible for this request.',
                 'No contact found',
-                AbstractMessage::NOTICE
+                ContextualFeedbackSeverity::NOTICE,
             );
         }
 
         $this->view->assign('service', $service);
         $this->view->assign('name', $name);
         $this->view->assign('selfReliance', $selfReliance);
+
+        return $this->htmlResponse();
     }
 }

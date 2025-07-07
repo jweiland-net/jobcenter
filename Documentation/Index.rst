@@ -20,7 +20,7 @@ Jobcenter
     en
 
 :Author:
-    Stefan Froemken
+    Stefan Froemken, Hoja Mustaffa Abdul Latheef
 
 :License:
     This document is published under the
