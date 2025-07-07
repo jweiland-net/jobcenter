@@ -26,6 +26,7 @@ ExtensionUtility::configurePlugin(
     [
         ContactController::class => 'list',
     ],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
 );
 
 ExtensionUtility::configurePlugin(
@@ -38,6 +39,7 @@ ExtensionUtility::configurePlugin(
     [
         EmployerContactController::class => 'list',
     ],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
 );
 
 ExtensionUtility::configurePlugin(
@@ -50,4 +52,5 @@ ExtensionUtility::configurePlugin(
     [
         ServiceController::class => 'list',
     ],
+    ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT,
 );

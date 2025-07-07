@@ -7,6 +7,18 @@
 Change log
 ==========
 
+Version 5.0.0
+=============
+
+*   Added Version 13 Compatibility
+*   Site configuration (site sets) integration for cleaner setup
+*   Removed deprecated functions
+*   Removed obsolete functions
+*   Cleaned up TCA, FlexForm, and backend form setups
+*   Code formatting and PSR-12 cleanup
+*   Custom CType plugins replacing deprecated list_type
+*   Added migration for custom list_type to CType
+
 Version 4.0.0
 =============
 

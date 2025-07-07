@@ -12,6 +12,8 @@ declare(strict_types=1);
 namespace JWeiland\Jobcenter\Tests\Functional\Domain\Repository;
 
 use JWeiland\Jobcenter\Domain\Repository\ContactRepository;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 
@@ -53,7 +55,7 @@ class ContactRepositoryTest extends FunctionalTestCase
         parent::tearDown();
     }
 
-    public function contactDataProvider(): array
+    public static function contactDataProvider(): array
     {
         return [
             'Find U25 contact for Birgit H0 SR0 will return Anton' => ['Birgit', 10, false, false, 'Anton'],
@@ -88,11 +90,8 @@ class ContactRepositoryTest extends FunctionalTestCase
         ];
     }
 
-    /**
-     * @test
-     *
-     * @dataProvider contactDataProvider
-     */
+    #[DataProvider('contactDataProvider')]
+    #[Test]
     public function findContact(string $name, int $pid, bool $handicapped, bool $selfReliance, string $expected): void
     {
         self::assertStringContainsString(
@@ -101,7 +100,7 @@ class ContactRepositoryTest extends FunctionalTestCase
         );
     }
 
-    public function serviceDataProvider(): array
+    public static function serviceDataProvider(): array
     {
         return [
             'Find Service contact for Friedrich SR0 will return Andy' => ['Friedrich', 12, false, 'Andy'],
@@ -113,11 +112,8 @@ class ContactRepositoryTest extends FunctionalTestCase
         ];
     }
 
-    /**
-     * @test
-     *
-     * @dataProvider serviceDataProvider
-     */
+    #[Test]
+    #[DataProvider('serviceDataProvider')]
     public function findService(string $name, int $pid, bool $selfReliance, string $expected): void
     {
         self::assertStringContainsString(
