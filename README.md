@@ -6,7 +6,7 @@
 [![Monthly Downloads][extension-monthly-downloads]][extension-packagist-url]
 [![TYPO3 13.4][TYPO3-shield]][TYPO3-13-url]
 
-![Build Status](https://github.com/jweiland-net/jobcenter/workflows/CI/badge.svg)
+![Build Status](https://github.com/jweiland-net/jobcenter/actions/workflows/ci.yml/badge.svg)
 
 The **Jobcenter** extension is built for TYPO3 CMS and is commonly used by
 cities and municipalities in Germany.
