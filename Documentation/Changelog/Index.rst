@@ -7,6 +7,11 @@
 Change log
 ==========
 
+Version 5.0.2
+=============
+
+*   [BUGFIX] TCA Migrations for tables done
+
 Version 5.0.1
 =============
 
