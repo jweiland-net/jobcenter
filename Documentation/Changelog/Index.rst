@@ -7,6 +7,11 @@
 Change log
 ==========
 
+Version 5.0.3
+=============
+
+*   [BUGFIX] Updated wizard title with [extension] name format
+
 Version 5.0.2
 =============
 

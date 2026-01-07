@@ -31,7 +31,7 @@ class PluginToContentElementUpdate extends AbstractListTypeToCTypeUpdate
 
     public function getTitle(): string
     {
-        return 'EXT:jobcenter - Migrate plugins to Content Elements';
+        return '[jobcenter] Migrate plugins to Content Elements';
     }
 
     public function getDescription(): string
