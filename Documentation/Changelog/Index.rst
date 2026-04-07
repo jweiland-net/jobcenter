@@ -7,6 +7,11 @@
 Change log
 ==========
 
+Version 5.0.4
+=============
+
+*   [BUGFIX] Let TYPO3 columns and TCA be created automatically
+
 Version 5.0.3
 =============
 
