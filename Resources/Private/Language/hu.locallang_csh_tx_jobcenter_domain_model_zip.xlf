@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="zip.description">
         <source>Zip of the contact person</source>
-        <target state="needs-translation">Zip of the contact person</target>
+        <target state="translated">A kapcsolattartó irányítószáma</target>
       </trans-unit>
     </body>
   </file>
