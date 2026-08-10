@@ -5,11 +5,11 @@
     <body>
       <trans-unit id="letter_start.description">
         <source>The contact person is responsible from this letter</source>
-        <target state="needs-translation">The contact person is responsible from this letter</target>
+        <target state="translated">A kapcsolattartó ettől a betűtől felelős</target>
       </trans-unit>
       <trans-unit id="letter_end.description">
         <source>The contact person is responsible until this letter</source>
-        <target state="needs-translation">The contact person is responsible until this letter</target>
+        <target state="translated">A kapcsolattartó eddig a betűig felelős</target>
       </trans-unit>
     </body>
   </file>
