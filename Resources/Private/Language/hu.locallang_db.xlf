@@ -5,150 +5,150 @@
     <body>
       <trans-unit id="plugin.contact.title">
         <source>Jobcenter: Contact</source>
-        <target state="needs-translation">Jobcenter: Contact</target>
+        <target state="translated">Jobcenter: Kapcsolat</target>
       </trans-unit>
       <trans-unit id="plugin.contact.description">
         <source>Provides a plugin where job seekers can find their contact person</source>
-        <target state="needs-translation">Provides a plugin where job seekers can find their contact person</target>
+        <target state="translated">Olyan bővítmény, amellyel az álláskeresők megtalálhatják kapcsolattartójukat</target>
       </trans-unit>
       <trans-unit id="plugin.employerContact.title">
         <source>Jobcenter: Contact for Employers</source>
-        <target state="needs-translation">Jobcenter: Contact for Employers</target>
+        <target state="translated">Jobcenter: Kapcsolat a munkáltatók számára</target>
       </trans-unit>
       <trans-unit id="plugin.employerContact.description">
         <source>Provides a plugin where employers can find their contact person</source>
-        <target state="needs-translation">Provides a plugin where employers can find their contact person</target>
+        <target state="translated">Olyan bővítmény, amellyel a munkáltatók megtalálhatják kapcsolattartójukat</target>
       </trans-unit>
       <trans-unit id="plugin.service.title">
         <source>Jobcenter: Service</source>
-        <target state="needs-translation">Jobcenter: Service</target>
+        <target state="translated">Jobcenter: Szolgáltatás</target>
       </trans-unit>
       <trans-unit id="plugin.service.description">
         <source>Provides a plugin to find the contact person for granting of services</source>
-        <target state="needs-translation">Provides a plugin to find the contact person for granting of services</target>
+        <target state="translated">Olyan bővítmény, amellyel megtalálható a szolgáltatások megállapításáért felelős kapcsolattartó</target>
       </trans-unit>
       <trans-unit id="palette.language_hidden" xml:space="preserve">
 				<source>Visibility and Language</source>
-			<target state="needs-translation">Visibility and Language</target></trans-unit>
+			<target state="translated">Láthatóság és nyelv</target></trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact">
         <source>Contact</source>
-        <target state="needs-translation">Contact</target>
+        <target state="translated">Kapcsolat</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
         <source>Salutation</source>
-        <target state="needs-translation">Salutation</target>
+        <target state="translated">Megszólítás</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
         <source>Mr.</source>
-        <target state="needs-translation">Mr.</target>
+        <target state="translated">Úr</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
         <source>Mrs.</source>
-        <target state="needs-translation">Mrs.</target>
+        <target state="translated">Asszony</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.name">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="translated">Név</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.address">
         <source>Address</source>
-        <target state="needs-translation">Address</target>
+        <target state="translated">Cím</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
         <source>Room Number</source>
-        <target state="needs-translation">Room Number</target>
+        <target state="translated">Szobaszám</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
         <source>Telephone</source>
-        <target state="needs-translation">Telephone</target>
+        <target state="translated">Telefon</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
         <source>Handicapped</source>
-        <target state="needs-translation">Handicapped</target>
+        <target state="translated">Fogyatékossággal élő</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
         <source>Fallback?</source>
-        <target state="needs-translation">Fallback?</target>
+        <target state="translated">Tartalék?</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
         <source>Earnings through self reliance</source>
-        <target state="needs-translation">Earnings through self reliance</target>
+        <target state="translated">Önellátásból származó jövedelem</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_contact.letters">
         <source>Letters</source>
-        <target state="needs-translation">Letters</target>
+        <target state="translated">Betűk</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact">
         <source>Contact for Employer</source>
-        <target state="needs-translation">Contact for Employer</target>
+        <target state="translated">Kapcsolat a munkáltató számára</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
         <source>Salutation</source>
-        <target state="needs-translation">Salutation</target>
+        <target state="translated">Megszólítás</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
         <source>Mr.</source>
-        <target state="needs-translation">Mr.</target>
+        <target state="translated">Úr</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
         <source>Mrs.</source>
-        <target state="needs-translation">Mrs.</target>
+        <target state="translated">Asszony</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
         <source>Firstname</source>
-        <target state="needs-translation">Firstname</target>
+        <target state="translated">Keresztnév</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
         <source>Lastname</source>
-        <target state="needs-translation">Lastname</target>
+        <target state="translated">Vezetéknév</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
         <source>Address</source>
-        <target state="needs-translation">Address</target>
+        <target state="translated">Cím</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
         <source>Zip</source>
-        <target state="needs-translation">Zip</target>
+        <target state="translated">Irányítószám</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
         <source>Room number</source>
-        <target state="needs-translation">Room number</target>
+        <target state="translated">Szobaszám</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
         <source>Telephone</source>
-        <target state="needs-translation">Telephone</target>
+        <target state="translated">Telefon</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
         <source>Email</source>
-        <target state="needs-translation">Email</target>
+        <target state="translated">E-mail</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="translated">Kép</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
         <source>Fallback?</source>
-        <target state="needs-translation">Fallback?</target>
+        <target state="translated">Tartalék?</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_letter">
         <source>Letter</source>
-        <target state="needs-translation">Letter</target>
+        <target state="translated">Betű</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
         <source>Letter Start</source>
-        <target state="needs-translation">Letter Start</target>
+        <target state="translated">Kezdőbetű</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
         <source>Letter End</source>
-        <target state="needs-translation">Letter End</target>
+        <target state="translated">Befejező betű</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_zip">
         <source>Zip</source>
-        <target state="needs-translation">Zip</target>
+        <target state="translated">Irányítószám</target>
       </trans-unit>
       <trans-unit id="tx_jobcenter_domain_model_zip.zip">
         <source>Zip</source>
-        <target state="needs-translation">Zip</target>
+        <target state="translated">Irányítószám</target>
       </trans-unit>
     </body>
   </file>
