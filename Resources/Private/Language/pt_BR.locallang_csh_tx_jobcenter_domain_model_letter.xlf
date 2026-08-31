@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="pt-BR">
+    <header/>
+    <body>
+      <trans-unit id="letter_start.description">
+        <source>The contact person is responsible from this letter</source>
+        <target state="needs-translation">The contact person is responsible from this letter</target>
+      </trans-unit>
+      <trans-unit id="letter_end.description">
+        <source>The contact person is responsible until this letter</source>
+        <target state="needs-translation">The contact person is responsible until this letter</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter">
-		<header/>
-		<body>
-			<trans-unit id="letter_start.description">
-				<source>The contact person is responsible from this letter</source>
-				<target>Der Ansprechpartner ist zuständig ab diesem Buchstaben</target>
-			</trans-unit>
-			<trans-unit id="letter_end.description">
-				<source>The contact person is responsible until this letter</source>
-				<target>Der Ansprechpartner ist zuständig zu zu diesem Buchstaben</target>
-			</trans-unit>
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="letter_start.description" approved="yes">
+        <source>The contact person is responsible from this letter</source>
+        <target state="final">Der Ansprechpartner ist ab diesem Buchstaben verantwortlich</target>
+      </trans-unit>
+      <trans-unit id="letter_end.description" approved="yes">
+        <source>The contact person is responsible until this letter</source>
+        <target state="final">Die Kontaktperson ist bis zu diesem Buchstaben verantwortlich</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="hu">
+    <header/>
+    <body>
+      <trans-unit id="tx_jobcenter_domain_model_contact">
+        <source>Contact</source>
+        <target state="translated">Kapcsolat</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+        <source>Salutation</source>
+        <target state="translated">Megszólítás</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+        <source>Mr.</source>
+        <target state="translated">Úr</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target state="translated">Asszony</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.name">
+        <source>Name</source>
+        <target state="translated">Név</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.address">
+        <source>Address</source>
+        <target state="translated">Cím</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+        <source>Room number</source>
+        <target state="translated">Szobaszám</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+        <source>Telephone</source>
+        <target state="translated">Telefon</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+        <source>Handicapped</source>
+        <target state="translated">Fogyatékossággal élő</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+        <source>Fallback?</source>
+        <target state="translated">Tartalék?</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+        <source>Earnings through self reliance</source>
+        <target state="translated">Önellátásból származó jövedelem</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.letters">
+        <source>Letters</source>
+        <target state="translated">Betűk</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact">
+        <source>Contact for Employer</source>
+        <target state="translated">Kapcsolat a munkáltató számára</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+        <source>Salutation</source>
+        <target state="translated">Megszólítás</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+        <source>Mr.</source>
+        <target state="translated">Úr</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target state="translated">Asszony</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+        <source>Firstname</source>
+        <target state="translated">Keresztnév</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+        <source>Lastname</source>
+        <target state="translated">Vezetéknév</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+        <source>Address</source>
+        <target state="translated">Cím</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+        <source>Zip</source>
+        <target state="translated">Irányítószám</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+        <source>Room number</source>
+        <target state="translated">Szobaszám</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+        <source>Telephone</source>
+        <target state="translated">Telefon</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+        <source>Email</source>
+        <target state="translated">E-mail</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+        <source>Image</source>
+        <target state="translated">Kép</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+        <source>Fallback?</source>
+        <target state="translated">Tartalék?</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter">
+        <source>Letters</source>
+        <target state="translated">Betűk</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+        <source>Letter start</source>
+        <target state="translated">Kezdőbetű</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+        <source>Letter end</source>
+        <target state="translated">Befejező betű</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip">
+        <source>Zip</source>
+        <target state="translated">Irányítószám</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip.zip">
+        <source>Zip</source>
+        <target state="translated">Irányítószám</target>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search</source>
+        <target state="translated">Keresés</target>
+      </trans-unit>
+      <trans-unit id="noResults">
+        <source>No results found</source>
+        <target state="translated">Nincs találat</target>
+      </trans-unit>
+      <trans-unit id="age">
+        <source>Age</source>
+        <target state="translated">Életkor</target>
+      </trans-unit>
+      <trans-unit id="infotext">
+        <source>Info: your data will not be saved.</source>
+        <target state="translated">Információ: adatai nem kerülnek mentésre.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
