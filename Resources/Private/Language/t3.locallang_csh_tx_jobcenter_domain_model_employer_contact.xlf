@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="salutation.description">
+        <source>Please choose one of the following salutations</source>
+        <target>crwdns307498:0crwdne307498:0</target>
+      </trans-unit>
+      <trans-unit id="first_name.description">
+        <source>Firstname of the contact person</source>
+        <target>crwdns307500:0crwdne307500:0</target>
+      </trans-unit>
+      <trans-unit id="last_name.description">
+        <source>Lastname of the contact person</source>
+        <target>crwdns307502:0crwdne307502:0</target>
+      </trans-unit>
+      <trans-unit id="address.description">
+        <source>Address of the contact person</source>
+        <target>crwdns307504:0crwdne307504:0</target>
+      </trans-unit>
+      <trans-unit id="zip.description">
+        <source>Zip of the contact person</source>
+        <target>crwdns307506:0crwdne307506:0</target>
+      </trans-unit>
+      <trans-unit id="room_number.description">
+        <source>Room number of the contact person</source>
+        <target>crwdns307508:0crwdne307508:0</target>
+      </trans-unit>
+      <trans-unit id="telephone.description">
+        <source>Telephone of the contact person</source>
+        <target>crwdns307510:0crwdne307510:0</target>
+      </trans-unit>
+      <trans-unit id="email.description">
+        <source>Email of the contact person</source>
+        <target>crwdns307512:0crwdne307512:0</target>
+      </trans-unit>
+      <trans-unit id="image.description">
+        <source>Image of the contact person</source>
+        <target>crwdns307514:0crwdne307514:0</target>
+      </trans-unit>
+      <trans-unit id="is_fallback.description">
+        <source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
+        <target>crwdns307516:0crwdne307516:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
