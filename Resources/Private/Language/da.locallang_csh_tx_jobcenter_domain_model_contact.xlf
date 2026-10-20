@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="da">
+    <header/>
+    <body>
+      <trans-unit id="salutation.description">
+        <source>Please choose one of the following salutations</source>
+        <target state="needs-translation">Please choose one of the following salutations</target>
+      </trans-unit>
+      <trans-unit id="name.description">
+        <source>Name of the contact person</source>
+        <target state="needs-translation">Name of the contact person</target>
+      </trans-unit>
+      <trans-unit id="address.description">
+        <source>Address of the contact person</source>
+        <target state="needs-translation">Address of the contact person</target>
+      </trans-unit>
+      <trans-unit id="room_number.description">
+        <source>Room number of the contact person</source>
+        <target state="needs-translation">Room number of the contact person</target>
+      </trans-unit>
+      <trans-unit id="telephone.description">
+        <source>Telephone of the contact person</source>
+        <target state="needs-translation">Telephone of the contact person</target>
+      </trans-unit>
+      <trans-unit id="handicapped.description">
+        <source>Is the contact person responsible for handicapped inhabitants?</source>
+        <target state="needs-translation">Is the contact person responsible for handicapped inhabitants?</target>
+      </trans-unit>
+      <trans-unit id="is_fallback.description">
+        <source>Is the contact person a fallback, if no letter range of other contact persons matches?</source>
+        <target state="needs-translation">Is the contact person a fallback, if no letter range of other contact persons matches?</target>
+      </trans-unit>
+      <trans-unit id="self_reliance.description">
+        <source>Is the contact person responsible for self-reliance inhabitants?</source>
+        <target state="needs-translation">Is the contact person responsible for self-reliance inhabitants?</target>
+      </trans-unit>
+      <trans-unit id="letters.description">
+        <source>For which range of letter is the contact person responsible?</source>
+        <target state="needs-translation">For which range of letter is the contact person responsible?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

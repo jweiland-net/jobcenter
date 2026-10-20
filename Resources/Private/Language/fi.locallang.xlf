@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="fi">
+    <header/>
+    <body>
+      <trans-unit id="tx_jobcenter_domain_model_contact">
+        <source>Contact</source>
+        <target state="needs-translation">Contact</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+        <source>Salutation</source>
+        <target state="needs-translation">Salutation</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+        <source>Mr.</source>
+        <target state="needs-translation">Mr.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target state="needs-translation">Mrs.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.name">
+        <source>Name</source>
+        <target state="needs-translation">Name</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.address">
+        <source>Address</source>
+        <target state="needs-translation">Address</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+        <source>Room number</source>
+        <target state="needs-translation">Room number</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+        <source>Telephone</source>
+        <target state="needs-translation">Telephone</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+        <source>Handicapped</source>
+        <target state="needs-translation">Handicapped</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+        <source>Fallback?</source>
+        <target state="needs-translation">Fallback?</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+        <source>Earnings through self reliance</source>
+        <target state="needs-translation">Earnings through self reliance</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.letters">
+        <source>Letters</source>
+        <target state="needs-translation">Letters</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact">
+        <source>Contact for Employer</source>
+        <target state="needs-translation">Contact for Employer</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+        <source>Salutation</source>
+        <target state="needs-translation">Salutation</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+        <source>Mr.</source>
+        <target state="needs-translation">Mr.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target state="needs-translation">Mrs.</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+        <source>Firstname</source>
+        <target state="needs-translation">Firstname</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+        <source>Lastname</source>
+        <target state="needs-translation">Lastname</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+        <source>Address</source>
+        <target state="needs-translation">Address</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+        <source>Zip</source>
+        <target state="needs-translation">Zip</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+        <source>Room number</source>
+        <target state="needs-translation">Room number</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+        <source>Telephone</source>
+        <target state="needs-translation">Telephone</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+        <source>Email</source>
+        <target state="needs-translation">Email</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+        <source>Image</source>
+        <target state="needs-translation">Image</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+        <source>Fallback?</source>
+        <target state="needs-translation">Fallback?</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter">
+        <source>Letters</source>
+        <target state="needs-translation">Letters</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+        <source>Letter start</source>
+        <target state="needs-translation">Letter start</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+        <source>Letter end</source>
+        <target state="needs-translation">Letter end</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip">
+        <source>Zip</source>
+        <target state="needs-translation">Zip</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip.zip">
+        <source>Zip</source>
+        <target state="needs-translation">Zip</target>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search</source>
+        <target state="needs-translation">Search</target>
+      </trans-unit>
+      <trans-unit id="noResults">
+        <source>No results found</source>
+        <target state="needs-translation">No results found</target>
+      </trans-unit>
+      <trans-unit id="age">
+        <source>Age</source>
+        <target state="needs-translation">Age</target>
+      </trans-unit>
+      <trans-unit id="infotext">
+        <source>Info: your data will not be saved.</source>
+        <target state="needs-translation">Info: your data will not be saved.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="plugin.contact.title">
+        <source>Jobcenter: Contact</source>
+        <target>crwdns307524:0crwdne307524:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.contact.description">
+        <source>Provides a plugin where job seekers can find their contact person</source>
+        <target>crwdns307526:0crwdne307526:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.employerContact.title">
+        <source>Jobcenter: Contact for Employers</source>
+        <target>crwdns307528:0crwdne307528:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.employerContact.description">
+        <source>Provides a plugin where employers can find their contact person</source>
+        <target>crwdns307530:0crwdne307530:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.service.title">
+        <source>Jobcenter: Service</source>
+        <target>crwdns307532:0crwdne307532:0</target>
+      </trans-unit>
+      <trans-unit id="plugin.service.description">
+        <source>Provides a plugin to find the contact person for granting of services</source>
+        <target>crwdns307534:0crwdne307534:0</target>
+      </trans-unit>
+      <trans-unit id="palette.language_hidden" xml:space="preserve">
+				<source>Visibility and Language</source>
+			<target>crwdns307536:0crwdne307536:0</target></trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact">
+        <source>Contact</source>
+        <target>crwdns307538:0crwdne307538:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+        <source>Salutation</source>
+        <target>crwdns307540:0crwdne307540:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+        <source>Mr.</source>
+        <target>crwdns307542:0crwdne307542:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target>crwdns307544:0crwdne307544:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.name">
+        <source>Name</source>
+        <target>crwdns307546:0crwdne307546:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.address">
+        <source>Address</source>
+        <target>crwdns307548:0crwdne307548:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+        <source>Room Number</source>
+        <target>crwdns307550:0crwdne307550:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+        <source>Telephone</source>
+        <target>crwdns307552:0crwdne307552:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+        <source>Handicapped</source>
+        <target>crwdns307554:0crwdne307554:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+        <source>Fallback?</source>
+        <target>crwdns307556:0crwdne307556:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+        <source>Earnings through self reliance</source>
+        <target>crwdns307558:0crwdne307558:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.letters">
+        <source>Letters</source>
+        <target>crwdns307560:0crwdne307560:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact">
+        <source>Contact for Employer</source>
+        <target>crwdns307562:0crwdne307562:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+        <source>Salutation</source>
+        <target>crwdns307564:0crwdne307564:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+        <source>Mr.</source>
+        <target>crwdns307566:0crwdne307566:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target>crwdns307568:0crwdne307568:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+        <source>Firstname</source>
+        <target>crwdns307570:0crwdne307570:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+        <source>Lastname</source>
+        <target>crwdns307572:0crwdne307572:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+        <source>Address</source>
+        <target>crwdns307574:0crwdne307574:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+        <source>Zip</source>
+        <target>crwdns307576:0crwdne307576:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+        <source>Room number</source>
+        <target>crwdns307578:0crwdne307578:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+        <source>Telephone</source>
+        <target>crwdns307580:0crwdne307580:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+        <source>Email</source>
+        <target>crwdns307582:0crwdne307582:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+        <source>Image</source>
+        <target>crwdns307584:0crwdne307584:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+        <source>Fallback?</source>
+        <target>crwdns307586:0crwdne307586:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter">
+        <source>Letter</source>
+        <target>crwdns307588:0crwdne307588:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+        <source>Letter Start</source>
+        <target>crwdns307590:0crwdne307590:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+        <source>Letter End</source>
+        <target>crwdns307592:0crwdne307592:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip">
+        <source>Zip</source>
+        <target>crwdns307594:0crwdne307594:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip.zip">
+        <source>Zip</source>
+        <target>crwdns307596:0crwdne307596:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

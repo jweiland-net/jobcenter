@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-06-02T13:41:02Z" product-name="jobcenter" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="tx_jobcenter_domain_model_contact">
+        <source>Contact</source>
+        <target>crwdns307412:0crwdne307412:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation">
+        <source>Salutation</source>
+        <target>crwdns307414:0crwdne307414:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mr">
+        <source>Mr.</source>
+        <target>crwdns307416:0crwdne307416:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target>crwdns307418:0crwdne307418:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.name">
+        <source>Name</source>
+        <target>crwdns307420:0crwdne307420:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.address">
+        <source>Address</source>
+        <target>crwdns307422:0crwdne307422:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.room_number">
+        <source>Room number</source>
+        <target>crwdns307424:0crwdne307424:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.telephone">
+        <source>Telephone</source>
+        <target>crwdns307426:0crwdne307426:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.handicapped">
+        <source>Handicapped</source>
+        <target>crwdns307428:0crwdne307428:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.is_fallback">
+        <source>Fallback?</source>
+        <target>crwdns307430:0crwdne307430:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.self_reliance">
+        <source>Earnings through self reliance</source>
+        <target>crwdns307432:0crwdne307432:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_contact.letters">
+        <source>Letters</source>
+        <target>crwdns307434:0crwdne307434:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact">
+        <source>Contact for Employer</source>
+        <target>crwdns307436:0crwdne307436:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation">
+        <source>Salutation</source>
+        <target>crwdns307438:0crwdne307438:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mr">
+        <source>Mr.</source>
+        <target>crwdns307440:0crwdne307440:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.salutation.mrs">
+        <source>Mrs.</source>
+        <target>crwdns307442:0crwdne307442:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.first_name">
+        <source>Firstname</source>
+        <target>crwdns307444:0crwdne307444:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.last_name">
+        <source>Lastname</source>
+        <target>crwdns307446:0crwdne307446:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.address">
+        <source>Address</source>
+        <target>crwdns307448:0crwdne307448:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.zip">
+        <source>Zip</source>
+        <target>crwdns307450:0crwdne307450:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.room_number">
+        <source>Room number</source>
+        <target>crwdns307452:0crwdne307452:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.telephone">
+        <source>Telephone</source>
+        <target>crwdns307454:0crwdne307454:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.email">
+        <source>Email</source>
+        <target>crwdns307456:0crwdne307456:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.image">
+        <source>Image</source>
+        <target>crwdns307458:0crwdne307458:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_employer_contact.is_fallback">
+        <source>Fallback?</source>
+        <target>crwdns307460:0crwdne307460:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter">
+        <source>Letters</source>
+        <target>crwdns307462:0crwdne307462:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_start">
+        <source>Letter start</source>
+        <target>crwdns307464:0crwdne307464:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_letter.letter_end">
+        <source>Letter end</source>
+        <target>crwdns307466:0crwdne307466:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip">
+        <source>Zip</source>
+        <target>crwdns307468:0crwdne307468:0</target>
+      </trans-unit>
+      <trans-unit id="tx_jobcenter_domain_model_zip.zip">
+        <source>Zip</source>
+        <target>crwdns307470:0crwdne307470:0</target>
+      </trans-unit>
+      <trans-unit id="search">
+        <source>Search</source>
+        <target>crwdns307472:0crwdne307472:0</target>
+      </trans-unit>
+      <trans-unit id="noResults">
+        <source>No results found</source>
+        <target>crwdns307474:0crwdne307474:0</target>
+      </trans-unit>
+      <trans-unit id="age">
+        <source>Age</source>
+        <target>crwdns307476:0crwdne307476:0</target>
+      </trans-unit>
+      <trans-unit id="infotext">
+        <source>Info: your data will not be saved.</source>
+        <target>crwdns307478:0crwdne307478:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
